@@ -1,0 +1,32 @@
+{
+	x: 22.5d,
+	y: 1.0d,
+	text: [
+		"用钻石扔到星能液里等2min就能使它吸收星能变成水晶石哦"
+	],
+	dependencies: [
+		"10711273"
+	],
+	tasks: [{
+		uid: "046f0127",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 400,
+						fract: 0,
+						purity: 100,
+						sizeOverride: -1
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

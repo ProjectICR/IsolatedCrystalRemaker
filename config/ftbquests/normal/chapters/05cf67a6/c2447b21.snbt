@@ -1,0 +1,23 @@
+{
+	title: "合金的不同形式",
+	x: 5.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"732ed9f6"
+	],
+	tasks: [{
+		uid: "6692ead1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}]
+}

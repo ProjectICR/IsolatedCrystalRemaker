@@ -1,0 +1,18 @@
+{
+	title: "灰色高级花药台",
+	x: 8.0d,
+	y: 3.5d,
+	text: [
+		"哼 哼 啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊（来自花药台的呻吟）"
+	],
+	dependencies: [
+		"c68e813f"
+	],
+	tasks: [{
+		uid: "a592fe52",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}]
+	}]
+}

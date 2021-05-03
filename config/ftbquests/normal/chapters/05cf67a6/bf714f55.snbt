@@ -1,0 +1,25 @@
+{
+	title: "哥哥，为什么我们要烧开水啊？",
+	x: 1.5d,
+	y: 3.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"7d036d36"
+	],
+	tasks: [{
+		uid: "ed45c2cc",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 7"
+		}]
+	},
+	{
+		uid: "a52aec7e",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 8"
+		}]
+	}]
+}

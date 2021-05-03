@@ -1,0 +1,18 @@
+{
+	title: "绿色的骨粉",
+	x: 2.0d,
+	y: 3.0d,
+	text: [
+		"如你所见，它就是绿色的骨粉，但它有什么用呢？你猜啊qaq"
+	],
+	dependencies: [
+		"6a6f14b8"
+	],
+	tasks: [{
+		uid: "61eef649",
+		type: "item",
+		items: [{
+			item: "botania:fertilizer"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "草泥马，燃起来了",
+	x: 14.0d,
+	y: 2.5d,
+	text: [
+		"燃尼玛，草起来了"
+	],
+	dependencies: [
+		"a35198ae"
+	],
+	tasks: [{
+		uid: "631f6394",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}]
+	}]
+}

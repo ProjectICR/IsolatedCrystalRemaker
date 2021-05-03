@@ -1,0 +1,19 @@
+{
+	title: "沙雕（有端联想）",
+	x: 11.5d,
+	y: 8.0d,
+	text: [
+		"众所周知，星能液+岩浆=刷沙机"
+	],
+	dependencies: [
+		"79882bdc",
+		"10711273"
+	],
+	tasks: [{
+		uid: "ab39a7dd",
+		type: "item",
+		items: [{
+			item: "minecraft:sand"
+		}]
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "限定干员：年",
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"她的体内温度有1400度哦"
+	],
+	dependencies: [
+		"73d26e12"
+	],
+	tasks: [{
+		uid: "4f181a78",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock",
+			Damage: 10s
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,63 @@
+{
+	title: "偶系渣渣辉",
+	x: 13.0d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9464463b"
+	],
+	tasks: [{
+		uid: "9a67dc20",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "cec82faa",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 1 3"
+		}],
+		count: 17L
+	},
+	{
+		uid: "5f31d104",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}],
+		count: 2L
+	},
+	{
+		uid: "01789576",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}],
+		count: 2L
+	},
+	{
+		uid: "86c09ea8",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "10e34c1e",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	},
+	{
+		uid: "6e2f111e",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	}]
+}

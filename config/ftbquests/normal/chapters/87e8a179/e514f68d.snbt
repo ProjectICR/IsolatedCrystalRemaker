@@ -1,0 +1,50 @@
+{
+	title: "阿瓦达索命",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "botania:twigwand",
+		tag: {
+			color1: 0,
+			color2: 0
+		}
+	},
+	x: 11.5d,
+	y: 1.0d,
+	text: [
+		"你需要先去到扎斯特·因纳夫·艾特姆的魔杖店买一根魔杖和一个魔力发射器，在魔力发射器附近放一个魔力池并绑定，在产能花的帮助下魔力发射器会喷射出一种蓝色的不明液体在魔力池里"
+	],
+	dependencies: [
+		"39421bae"
+	],
+	tasks: [{
+		uid: "5935aadd",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:twigwand",
+			tag: {
+				color1: 0,
+				color2: 0
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "54ad7c9e",
+		type: "item",
+		items: [{
+			item: "botania:spreader"
+		}]
+	},
+	{
+		uid: "ae070d09",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	}]
+}

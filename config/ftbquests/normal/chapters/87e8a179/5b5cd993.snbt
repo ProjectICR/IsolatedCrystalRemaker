@@ -1,0 +1,18 @@
+{
+	title: "型月重工1",
+	x: 7.0d,
+	y: 0.5d,
+	text: [
+		"啊！老婆你在干嘛呀（指间桐樱）"
+	],
+	dependencies: [
+		"b10d2e5d"
+	],
+	tasks: [{
+		uid: "fc393334",
+		type: "item",
+		items: [{
+			item: "minecraft:furnace"
+		}]
+	}]
+}

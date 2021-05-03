@@ -1,0 +1,7 @@
+{
+	title: "农夫快乐任务",
+	icon: "mysticalagriculture:tier2_inferium_seeds",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

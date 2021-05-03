@@ -1,0 +1,22 @@
+{
+	title: "气液转换",
+	x: 9.0d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"027b7ab5"
+	],
+	tasks: [{
+		uid: "9c3efe70",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

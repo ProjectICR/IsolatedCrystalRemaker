@@ -1,0 +1,25 @@
+{
+	title: "琥珀金的一万种用法",
+	x: 5.0d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"97daca39"
+	],
+	tasks: [{
+		uid: "93578b7f",
+		type: "item",
+		items: [{
+			item: "redstonearsenal:material 1 32"
+		}]
+	},
+	{
+		uid: "b6ca97c0",
+		type: "item",
+		items: [{
+			item: "redstonearsenal:material 1 160"
+		}]
+	}]
+}

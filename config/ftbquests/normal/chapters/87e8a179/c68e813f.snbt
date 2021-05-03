@@ -1,0 +1,123 @@
+{
+	title: "希望之花",
+	x: 5.5d,
+	y: 4.0d,
+	text: [
+		"我们的目的地根本不重要，只要继续前行就好了，只要不止步，道路就会不断延伸！我是不会停下来的，只要你们不停下来，我就会在前方等着你们！所以，不要停下来啊！"
+	],
+	dependencies: [
+		"22300ea0"
+	],
+	tasks: [{
+		uid: "e7d648e7",
+		type: "item",
+		items: [{
+			item: "botania:petal"
+		}]
+	},
+	{
+		uid: "ff29e29c",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 1"
+		}]
+	},
+	{
+		uid: "c87f8238",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 2"
+		}]
+	},
+	{
+		uid: "5254038d",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 3"
+		}]
+	},
+	{
+		uid: "83af982b",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 4"
+		}]
+	},
+	{
+		uid: "bef00a59",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 5"
+		}]
+	},
+	{
+		uid: "35208cce",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 6"
+		}]
+	},
+	{
+		uid: "a1c1d69f",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 7"
+		}]
+	},
+	{
+		uid: "961379ea",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 8"
+		}]
+	},
+	{
+		uid: "03145361",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 9"
+		}]
+	},
+	{
+		uid: "f7aef191",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 10"
+		}]
+	},
+	{
+		uid: "98c64f52",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 11"
+		}]
+	},
+	{
+		uid: "7b112de6",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 12"
+		}]
+	},
+	{
+		uid: "31f1dbc9",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 13"
+		}]
+	},
+	{
+		uid: "cd860fa9",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 14"
+		}]
+	},
+	{
+		uid: "dae52da3",
+		type: "item",
+		items: [{
+			item: "botania:petal 1 15"
+		}]
+	}]
+}

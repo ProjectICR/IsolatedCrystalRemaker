@@ -1,0 +1,21 @@
+{
+	title: "大量存储",
+	x: -5.5d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fa505083"
+	],
+	tasks: [{
+		uid: "34ca44e3",
+		type: "item",
+		items: [{
+			id: "storagedrawers:basicdrawers",
+			tag: {
+				material: "oak"
+			}
+		}]
+	}]
+}

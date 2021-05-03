@@ -1,0 +1,18 @@
+{
+	title: "你看这个工作台它又方又正",
+	x: 1.0d,
+	y: 1.5d,
+	text: [
+		"你手中方正的工作台，是我此生不变的信仰"
+	],
+	dependencies: [
+		"d2f15f82"
+	],
+	tasks: [{
+		uid: "fdd731ab",
+		type: "item",
+		items: [{
+			item: "minecraft:crafting_table"
+		}]
+	}]
+}

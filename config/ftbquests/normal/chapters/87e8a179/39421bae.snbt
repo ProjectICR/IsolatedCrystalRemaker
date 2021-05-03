@@ -1,0 +1,27 @@
+{
+	title: "命运石之门",
+	icon: "botania:livingrock",
+	x: 9.0d,
+	y: 0.5d,
+	text: [
+		"这一切都是那个破石头门的选择"
+	],
+	dependencies: [
+		"5b5cd993",
+		"d48466f7"
+	],
+	tasks: [{
+		uid: "42a5b18f",
+		type: "item",
+		items: [{
+			item: "botania:livingrock"
+		}]
+	},
+	{
+		uid: "1792dd3b",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	}]
+}

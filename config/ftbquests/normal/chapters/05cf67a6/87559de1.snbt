@@ -1,0 +1,60 @@
+{
+	title: "工业涡轮",
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"bf714f55"
+	],
+	tasks: [{
+		uid: "09306b1b",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 10"
+		}]
+	},
+	{
+		uid: "d9ee86e7",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 7"
+		}]
+	},
+	{
+		uid: "3b99fd5a",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:turbineblade"
+		}]
+	},
+	{
+		uid: "0b54eae8",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 11"
+		}]
+	},
+	{
+		uid: "251ef626",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 12"
+		}]
+	},
+	{
+		uid: "50261c37",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 8"
+		}]
+	},
+	{
+		uid: "86e3fd4f",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 6"
+		}]
+	}]
+}

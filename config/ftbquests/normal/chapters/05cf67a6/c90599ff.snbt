@@ -1,0 +1,18 @@
+{
+	title: "黑科技：可控核聚变",
+	x: 0.0d,
+	y: 4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"bf714f55"
+	],
+	tasks: [{
+		uid: "ac91f5d5",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 20.0d,
+	y: 9.5d,
+	text: [
+		"你可不只需要打一个哦"
+	],
+	dependencies: [
+		"b30553e2"
+	],
+	tasks: [{
+		uid: "97361a66",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}]
+}

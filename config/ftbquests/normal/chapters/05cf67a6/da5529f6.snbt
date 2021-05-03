@@ -1,0 +1,41 @@
+{
+	title: "我起了，一箭秒了，有什么好说的？",
+	x: 0.0d,
+	y: 7.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2502ad4a"
+	],
+	tasks: [{
+		uid: "92745cc9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "redstonearsenal:tool.bow_flux",
+			tag: {
+				Energy: 320000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c68c5cd8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "redstonearsenal:util.quiver_flux",
+			tag: {
+				Energy: 320000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

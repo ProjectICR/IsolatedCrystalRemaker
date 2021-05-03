@@ -1,0 +1,18 @@
+{
+	title: "大型硬盘架",
+	x: -1.0d,
+	y: -1.5d,
+	text: [
+		"然而做出来以后是空的"
+	],
+	dependencies: [
+		"44c2c86d"
+	],
+	tasks: [{
+		uid: "48cb5d29",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}]
+	}]
+}

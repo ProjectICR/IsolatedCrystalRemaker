@@ -1,0 +1,19 @@
+{
+	title: "电生磁，磁生电",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"86c29c9a",
+		"98705876"
+	],
+	tasks: [{
+		uid: "7c614fcd",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 2"
+		}]
+	}]
+}

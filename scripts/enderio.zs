@@ -1,7 +1,8 @@
+#loader crafttweaker
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
-import scripts.funcX;
+import scripts.functionLib;
 
 var ShapedRecipes as IIngredient[][][IItemStack] = {
     <enderio:item_basic_capacitor> : [
@@ -35,6 +36,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-funcX.addShapedRecipe(ShapedRecipes);
+functionLib.addShapedRecipe(ShapedRecipes);
 
 <ore:blockGlassHardened>.remove(<enderio:block_fused_quartz>);

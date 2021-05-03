@@ -1,0 +1,18 @@
+{
+	title: "并没有贴图的云墨方块",
+	x: 19.5d,
+	y: 0.0d,
+	text: [
+		"并不是我们懒得画，而是画的太好了画出来它自己飘走了"
+	],
+	dependencies: [
+		"1a6e2c0c"
+	],
+	tasks: [{
+		uid: "96df060d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:becoming_starlight_block"
+		}]
+	}]
+}

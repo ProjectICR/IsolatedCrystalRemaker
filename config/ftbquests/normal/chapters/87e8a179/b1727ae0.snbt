@@ -1,0 +1,17 @@
+{
+	x: 21.0d,
+	y: 1.5d,
+	text: [
+		"你需要将红石与铁矿石扔进星能液中，红石会瞬间变成火药，铁矿石等待20s后变成星辉矿石。"
+	],
+	dependencies: [
+		"10711273"
+	],
+	tasks: [{
+		uid: "51b443c3",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore 1 1"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "有木有wifi",
+	x: 1.5d,
+	y: 4.5d,
+	dependencies: [
+		"11d2320e"
+	],
+	tasks: [{
+		uid: "52e87845",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "appliedenergistics2:wireless_terminal",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

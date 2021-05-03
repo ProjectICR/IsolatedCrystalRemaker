@@ -1,0 +1,18 @@
+{
+	title: "手摇发电机",
+	x: -3.5d,
+	y: -1.5d,
+	text: [
+		"可以给能源原件充能"
+	],
+	dependencies: [
+		"a48c60b4"
+	],
+	tasks: [{
+		uid: "abc9e888",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:charger"
+		}]
+	}]
+}

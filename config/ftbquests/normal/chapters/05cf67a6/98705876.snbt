@@ -1,0 +1,18 @@
+{
+	title: "钢铁是怎样炼成的",
+	x: -2.5d,
+	y: 0.5d,
+	text: [
+		"请务必给你的第一台高炉起名为：保尔柯察金"
+	],
+	dependencies: [
+		"f66cc799"
+	],
+	tasks: [{
+		uid: "c4044395",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}]
+	}]
+}

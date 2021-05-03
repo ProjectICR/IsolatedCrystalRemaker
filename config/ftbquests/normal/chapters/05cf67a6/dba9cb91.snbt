@@ -1,0 +1,18 @@
+{
+	title: "老婆饼里没有老婆",
+	x: -1.0d,
+	y: -2.0d,
+	text: [
+		"石英磨具里也没有石英"
+	],
+	dependencies: [
+		"85d72f45"
+	],
+	tasks: [{
+		uid: "5c53209b",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:grindstone"
+		}]
+	}]
+}

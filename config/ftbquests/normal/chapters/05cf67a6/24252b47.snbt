@@ -1,0 +1,18 @@
+{
+	title: "光学仪器",
+	x: 11.0d,
+	y: -1.5d,
+	text: [
+		"掺杂铟元素的玻璃有特殊的光学性质。前期的铟只能通过富集锡粉获取，之后就不用了"
+	],
+	dependencies: [
+		"329c38a3"
+	],
+	tasks: [{
+		uid: "9e17c9c5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:glass"
+		}]
+	}]
+}

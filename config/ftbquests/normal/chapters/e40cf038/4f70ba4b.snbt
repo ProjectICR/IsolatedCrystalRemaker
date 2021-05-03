@@ -1,0 +1,18 @@
+{
+	title: "最大化存储",
+	x: 5.0d,
+	y: -1.5d,
+	text: [
+		"然而种类还是很少"
+	],
+	dependencies: [
+		"a168f7ff"
+	],
+	tasks: [{
+		uid: "54262462",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 38"
+		}]
+	}]
+}

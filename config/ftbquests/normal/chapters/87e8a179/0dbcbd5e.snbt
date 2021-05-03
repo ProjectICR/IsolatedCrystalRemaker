@@ -1,0 +1,32 @@
+{
+	title: "浴火焚身",
+	x: 14.5d,
+	y: 5.5d,
+	text: [
+		"悄悄告诉你：恶魔头南瓜+铁栅栏像摆雪傀儡那样摆起来就可以获得一只只会掉烈焰粉的烈焰人了"
+	],
+	dependencies: [
+		"a48c60b4"
+	],
+	tasks: [{
+		uid: "4ddc7bd4",
+		type: "item",
+		items: [{
+			item: "botania:blazeblock"
+		}]
+	},
+	{
+		uid: "c5fd90ff",
+		type: "item",
+		items: [{
+			item: "botania:felpumpkin"
+		}]
+	},
+	{
+		uid: "0a6aba42",
+		type: "item",
+		items: [{
+			item: "minecraft:blaze_powder"
+		}]
+	}]
+}

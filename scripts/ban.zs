@@ -1,3 +1,4 @@
+#loader crafttweaker
 import crafttweaker.item.IItemStack;
 
 var banList as IItemStack[] = [
@@ -50,14 +51,28 @@ var banList as IItemStack[] = [
     <appliedenergistics2:part:320>,
     <appliedenergistics2:part:460>,
     <appliedenergistics2:part:240>,
-    <appliedenergistics2:part:180>
+    <appliedenergistics2:part:180>,
+
+    //compactmachines Mod
+    <compactmachines3:fieldprojector>,
+    <compactmachines3:psd>,
+
+    //storagedrawers Mod
+    <storagedrawers:basicdrawers>,
+    <storagedrawers:basicdrawers:2>,
+    <storagedrawers:basicdrawers:1>,
+    <storagedrawers:basicdrawers:3>,
+    <storagedrawers:basicdrawers:4>,
+    <storagedrawers:customdrawers>,
+    <storagedrawers:customdrawers:1>,
+    <storagedrawers:customdrawers:2>,
+    <storagedrawers:customdrawers:3>,
+    <storagedrawers:customdrawers:4>,
+    <storagedrawers:framingtable>
 ];
 
 for banItem in banList {
     recipes.remove(banItem);
 }
 
-for i in 0 .. 6 {
-    recipes.remove(<threng:machine>.definition.makeStack(i));
-    recipes.remove(<threng:big_assembler>.definition.makeStack(i));
-}
+furnace.remove(<astralsorcery:itemcraftingcomponent:1>);

@@ -1,0 +1,17 @@
+{
+	x: 14.0d,
+	y: 7.5d,
+	dependencies: [
+		"ace7b4a4"
+	],
+	tasks: [{
+		uid: "c60b2133",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "clayconia"
+			}
+		}]
+	}]
+}

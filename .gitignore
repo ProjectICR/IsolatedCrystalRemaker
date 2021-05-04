@@ -13,7 +13,4 @@ $ cat .gitignore
 !/.gitignore
 !/README.md
 config/
-<<<<<<< HEAD
 scripts/.zsrc
-=======
->>>>>>> parent of dd5004a (Update .gitignore)

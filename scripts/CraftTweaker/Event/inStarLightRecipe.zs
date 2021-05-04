@@ -1,4 +1,3 @@
-#loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IFacing;

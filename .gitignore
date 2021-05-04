@@ -13,4 +13,3 @@ $ cat .gitignore
 !/.gitignore
 !/README.md
 config/
-scripts/.zsrc

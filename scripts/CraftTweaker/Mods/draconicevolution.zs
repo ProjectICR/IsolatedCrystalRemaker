@@ -2,7 +2,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-import scripts.functionLib;
+import scripts.grassUtils.RecipeUtils;
 
 var blood_orb as IItemStack = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
 
@@ -38,4 +38,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-functionLib.addShapedRecipe(ShapedRecipes);
+for output, inputBox in ShapedRecipes {
+    RecipeUtils.recipeTweak(true, output, inputBox);
+}

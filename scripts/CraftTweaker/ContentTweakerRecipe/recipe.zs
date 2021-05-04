@@ -1,11 +1,10 @@
-
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.ICraftingInventory;
 
-import scripts.functionLib;
+import scripts.grassUtils.StringHelper;
 
 var materials as int[string] = {
     "Cesium" : 3000,
@@ -20,7 +19,7 @@ var materials as int[string] = {
     "Berylliumaluminumalloy" : 4500
 };
 
-recipes.addShaped(functionLib.getItemRecipeNameWithUnderline(<contenttweaker:becoming_starlight_block>), <contenttweaker:becoming_starlight_block>, [
+recipes.addShaped(StringHelper.getItemNameWithUnderline(<contenttweaker:becoming_starlight_block>), <contenttweaker:becoming_starlight_block>, [
     [<ore:livingrock>, null, <ore:livingrock>],
     [<ore:ingotManasteel>, <botania:manatablet>.withTag({mana: 1000}, false).marked("manatablet").reuse() , <ore:ingotManasteel>],
     [<ore:livingwood>, null, <ore:livingwood>]

@@ -1,7 +1,8 @@
+#loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-import scripts.functionLib;
+import scripts.grassUtils.RecipeUtils;
 
 //钢锭
 var ingotSteel as IIngredient = <ore:ingotSteel>;
@@ -172,4 +173,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-functionLib.addShapedRecipe(ShapedRecipes);
+for output, inputBox in ShapedRecipes {
+    RecipeUtils.recipeTweak(true, output, inputBox);
+}

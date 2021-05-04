@@ -3,7 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 
-import scripts.functionLib;
+import scripts.grassUtils.RecipeUtils;
 
 var ShapedRecipes as IIngredient[][][IItemStack] = {
     <minecraft:gravel> : [
@@ -17,7 +17,9 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-functionLib.addShapedRecipe(ShapedRecipes);
+for output, inputBox in ShapedRecipes {
+    RecipeUtils.recipeTweak(true, output, inputBox);
+}
 
 recipes.addShaped("recipe_shares_time", <minecraft:shears>, [
     [null, <ore:plankWood>],

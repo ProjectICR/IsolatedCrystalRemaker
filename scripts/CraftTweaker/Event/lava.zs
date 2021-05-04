@@ -1,3 +1,4 @@
+#loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;

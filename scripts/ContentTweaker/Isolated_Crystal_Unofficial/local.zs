@@ -1,7 +1,7 @@
 #loader contenttweaker
-import scripts.Isolated_Crystal_Unofficial.ICU_Material.materialList;
-import scripts.Isolated_Crystal_Unofficial.ICU_Item.registerItemNames;
-import scripts.Isolated_Crystal_Unofficial.ICU_Block.registerBlocks;
+import scripts.ContentTweaker.Isolated_Crystal_Unofficial.ICU_Material.materialList;
+import scripts.ContentTweaker.Isolated_Crystal_Unofficial.ICU_Item.registerItemNames;
+import scripts.ContentTweaker.Isolated_Crystal_Unofficial.ICU_Block.registerBlocks;
 
 function local(unlocalName as string, localName as string) {
     game.setLocalization("zh_cn", unlocalName, localName);

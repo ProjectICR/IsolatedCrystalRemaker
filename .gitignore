@@ -12,5 +12,12 @@ $ cat .gitignore
 #Files
 !/.gitignore
 !/README.md
-scripts/.zsrc
-config/astralsorcery.cfg
+
+#configs
+/.scripts/.zsrc
+/.config/astralsorcery.cfg
+/.config/Guide-API/Guide-API.cfg
+/.config/IC2.ini
+/.config/splash.properties
+/.config/topaddons.cfg
+/.config/AppliedEnergistics2/CustomRecipes.cfg

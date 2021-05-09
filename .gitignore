@@ -25,3 +25,4 @@ $ cat .gitignore
 /.config/ThermalTinkering/config.cfg
 /.config/ThermalTinkering/moltenFluids.txt
 /.config/brandon3055/contributors.json
+config/AE2Stuff/readme.txt

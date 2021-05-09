@@ -12,5 +12,5 @@ $ cat .gitignore
 #Files
 !/.gitignore
 !/README.md
-config/
 scripts/.zsrc
+config/astralsorcery.cfg

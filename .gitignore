@@ -21,3 +21,7 @@ $ cat .gitignore
 /.config/splash.properties
 /.config/topaddons.cfg
 /.config/AppliedEnergistics2/CustomRecipes.cfg
+/.config/ThermalTinkering/fluids.txt
+/.config/ThermalTinkering/config.cfg
+/.config/ThermalTinkering/moltenFluids.txt
+/.config/brandon3055/contributors.json

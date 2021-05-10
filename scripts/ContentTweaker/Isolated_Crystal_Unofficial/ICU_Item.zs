@@ -48,7 +48,8 @@ static registerItemNames as string[string] = {
     "glass_four_level" : "光学选矿透镜 LV.4",
     "glass_five_level" : "光学选矿透镜 LV.5",
     "glass_three_level" : "光学选矿透镜 LV.3",
-    "glass_gradual_system" : "光学选矿系统"
+    "glass_gradual_system" : "光学选矿系统",
+	"glass_fragment" : "玻璃碎片"
 };
 
 for item in registerItemNames {

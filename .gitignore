@@ -25,5 +25,9 @@ $ cat .gitignore
 /.config/ThermalTinkering/config.cfg
 /.config/ThermalTinkering/moltenFluids.txt
 /.config/brandon3055/contributors.json
-config/AE2Stuff/readme.txt
-config/InvTweaks.cfg
+/.config/AE2Stuff/readme.txt
+/.config/InvTweaks.cfg
+/.config/astralsorcery/amulet_enchantments.cfg
+/.config/AppliedEnergistics2/VersionChecker.cfg
+/.config/jei/worldSettings.cfg
+/.scripts/ContentTweaker/Isolated_Crystal_Unofficial/ICU_Item.zs

@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IFacing;
@@ -23,7 +23,7 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
 	var world as IWorld = player.world;
 	var item as IItemStack = event.stackCopy;
 	
-	if(!world.remote){
+	if(!world.remote && !isNull(item)){
 		if(item.definition.id == "thaumcraft:crystal_essence" && isNull(player.data.PlayerPersisted.GiverDreamJournl)){
 			var keyValue as string = item.tag.Aspects[0].key.asString();
 			var data as IData = fromJson('{"PlayerPersisted" : {"' + keyValue + '" : 1}}');

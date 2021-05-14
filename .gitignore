@@ -14,23 +14,6 @@ $ cat .gitignore
 !/README.md
 
 #configs
-/.scripts/.zsrc
-/.config/astralsorcery.cfg
-/.config/Guide-API/Guide-API.cfg
-/.config/IC2.ini
-/.config/splash.properties
-/.config/topaddons.cfg
-/.config/AppliedEnergistics2/CustomRecipes.cfg
-/.config/ThermalTinkering/fluids.txt
-/.config/ThermalTinkering/config.cfg
-/.config/ThermalTinkering/moltenFluids.txt
-/.config/brandon3055/contributors.json
-/.config/AE2Stuff/readme.txt
-/.config/InvTweaks.cfg
-/.config/astralsorcery/amulet_enchantments.cfg
-/.config/AppliedEnergistics2/VersionChecker.cfg
-/.config/jei/worldSettings.cfg
-/.scripts/ContentTweaker/Isolated_Crystal_Unofficial/ICU_Item.zs
 config/AE2Stuff/readme.txt
 scripts/.zsrc
 config/

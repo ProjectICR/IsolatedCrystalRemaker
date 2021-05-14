@@ -31,3 +31,4 @@ $ cat .gitignore
 /.config/AppliedEnergistics2/VersionChecker.cfg
 /.config/jei/worldSettings.cfg
 /.scripts/ContentTweaker/Isolated_Crystal_Unofficial/ICU_Item.zs
+config/AE2Stuff/readme.txt

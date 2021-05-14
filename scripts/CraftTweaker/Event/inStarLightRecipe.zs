@@ -40,13 +40,18 @@ function getSpecialBlockPos(x as double, y as double, z as double) as IBlockPos 
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
+
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
+
             var nbt as IData = entityItem.nbt;
             var pos as IBlockPos = getSpecialBlockPos(entityItem.posX, entityItem.posY, entityItem.posZ);
-            if(entityItem.item.matches(<minecraft:stone>)) return;
+
             for seconds, recipeBox in oneItemRecipe {
                 if(world.getBlockState(pos) == starLight && entityItem.item.matches(recipeBox[1])) {
+                    if(entityItem.item.matches(<minecraft:stone>)) {
+                        return;
+                    }
                     if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
                         entityItem.setNBT({time : 0});
                     } else {
@@ -54,15 +59,21 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     }
 
                     nbt = entityItem.nbt.ForgeData;
+
                     if(timer(nbt, seconds)) {
+
                         entityItem.setDead();
-                        if(!recipeBox[1].matches(<minecraft:stone>)) 
-                            world.setBlockState(<blockstate:minecraft:air>, pos);
+                        world.setBlockState(<blockstate:minecraft:air>, pos);
                         EventUtils.spawnItem(world, recipeBox[0], pos.getOffset(IFacing.up(), 1));
+
                         if(!isNull(nbt.playerName)) {
+
                             var playerName as string = nbt.playerName.asString();
-                            if(recipeBox[0].matches(<astralsorcery:blockaltar>))
+
+                            if(recipeBox[0].matches(<astralsorcery:blockaltar>)) {
                                 server.commandManager.executeCommand(server, "astralsorcery research " ~ playerName ~ " BASIC_CRAFT");
+                            }
+
                             world.getPlayerByName(playerName).sendChat("合成完毕");
                         }           
                     }
@@ -74,10 +85,13 @@ events.onWorldTick(function(event as WorldTickEvent) {
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
+
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
+
             var nbt as IData = entityItem.nbt;
             var pos as IBlockPos = getSpecialBlockPos(entityItem.posX, entityItem.posY, entityItem.posZ);
+
             for seconds, recipeBox in twoItemRecipe {
                 if(world.getBlockState(pos) == starLight && entityItem.item.matches(recipeBox[2])) {
                     if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
@@ -87,10 +101,15 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     }
 
                     nbt = entityItem.nbt.ForgeData;
+
                     for entity in world.getEntitiesInArea(pos.asPosition3f()) {
+
                         var otherPos as IBlockPos = getSpecialBlockPos(entity.posX, entity.posY, entity.posZ);
+
                         if(entity instanceof IEntityItem && world.getBlockState(otherPos) == starLight) {
+
                             var otherEntityItem as IEntityItem = entity;
+
                             if(otherEntityItem.item.matches(recipeBox[3]) && isNull(nbt.needMaterial)) {
                                 entity.setDead();
                                 entityItem.setNBT({needMaterial : false});
@@ -100,9 +119,11 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     }
 
                     if(timer(nbt, seconds) && !isNull(nbt.needMaterial)) {
+
                         entityItem.setDead();
                         world.setBlockState(<blockstate:minecraft:air>, pos);
                         EventUtils.spawnItem(world, recipeBox[0], pos.getOffset(IFacing.up(), 1));
+
                         if(!isNull(nbt.playerName)) {
                             world.getPlayerByName(nbt.playerName.asString()).sendChat("合成完毕");
                         }

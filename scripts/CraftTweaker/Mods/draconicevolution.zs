@@ -32,9 +32,9 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ],
 
     <draconicevolution:wyvern_energy_core> : [
-        [<contenttweaker:cesium_tiny_dust_icu>, <contenttweaker:ingot_redstonedragon>, <contenttweaker:cesium_tiny_dust_icu>],
+        [<contenttweaker:cesium_tiny_dust_icr>, <contenttweaker:ingot_redstonedragon>, <contenttweaker:cesium_tiny_dust_icr>],
         [<enderio:item_basic_capacitor:2>, <mekanism:controlcircuit:3>, <enderio:item_basic_capacitor:2>],
-        [<contenttweaker:cesium_tiny_dust_icu>, <contenttweaker:ingot_redstonedragon>, <contenttweaker:cesium_tiny_dust_icu>]
+        [<contenttweaker:cesium_tiny_dust_icr>, <contenttweaker:ingot_redstonedragon>, <contenttweaker:cesium_tiny_dust_icr>]
     ]
 };
 

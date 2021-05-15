@@ -10,7 +10,7 @@ function registerMaterial(name as string, color as int) as Material {
     return MaterialSystem.getMaterialBuilder().setName(name).setColor(color).build();
 }
 
-var tinyDust as Part = MaterialSystem.getPartBuilder().setName("tiny_dust_icu").setPartType(MaterialSystem.getPartType("item")).setOreDictName("tinyDustIcu").build();
+var tinyDust as Part = MaterialSystem.getPartBuilder().setName("tiny_dust_icr").setPartType(MaterialSystem.getPartType("item")).setOreDictName("tinyDustIcr").build();
 
 static materialList as string[][int] = {
     0x8F8D07 : ["Cesium", "铯"],

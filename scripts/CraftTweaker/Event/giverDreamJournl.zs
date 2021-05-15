@@ -23,13 +23,13 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
 	var world as IWorld = player.world;
 	var item as IItemStack = event.stackCopy;
 	
-	if(!world.remote && !isNull(item)){
-		if(item.definition.id == "thaumcraft:crystal_essence" && isNull(player.data.PlayerPersisted.GiverDreamJournl)){
+	if(!world.remote && !isNull(item)) {
+		if(item.definition.id == "thaumcraft:crystal_essence" && isNull(player.data.PlayerPersisted.GiverDreamJournl)) {
 			var keyValue as string = item.tag.Aspects[0].key.asString();
 			var data as IData = fromJson('{"PlayerPersisted" : {"' + keyValue + '" : 1}}');
 			player.update(data);
 
-			for essence in crystal_essence{
+			for essence in crystal_essence {
 				var temp as IData = player.data.PlayerPersisted.memberGet(essence);
 				if(isNull(temp) || temp.asInt() == 0) return;
 			}

@@ -14,7 +14,7 @@ local("gas.titanium_tetrachloride_gas", "三氯化钛");
 local("gas.silicon_tetrachloride_gas", "三氯化硅");
 local("fluid.titanium_tetrachloride_gas", "液态三氯化钛");
 local("fluid.silicon_tetrachloride_gas", "液态三氯化硅");
-local("contenttweaker.part.tiny_dust_icu", "%s粉尘");
+local("contenttweaker.part.tiny_dust_icr", "%s粉尘");
 
 for materialName in materialList.values {
     local("base.material." + materialName[0].toLowerCase(), materialName[1]);

@@ -29,6 +29,7 @@ recipes.addShaped(StringHelper.getItemNameWithUnderline(<contenttweaker:becoming
     if(!player.world.remote) {
         var inventory as ICraftingInventory = cinfo.inventory;
         var item as IItemStack = inventory.getStack(4);
+        
         inventory.setStack(4, item.withTag({mana : item.tag.mana.asInt() - 1000}));
     }
 });
@@ -44,7 +45,7 @@ for material in materials {
     var nugget as IOreDictEntry = oreDict.get("nugget" ~ material);
     var densePlate as IOreDictEntry = oreDict.get("densePlate" ~ material);
     var smallDust as IOreDictEntry = oreDict.get("dustSmall" ~ material);
-    var tinyDust as IOreDictEntry = oreDict.get("tinyDustIcu" ~ material);
+    var tinyDust as IOreDictEntry = oreDict.get("tinyDustIcr" ~ material);
 
     recipes.addShapeless("block_" ~ materialNew ~ "_to_ingot", ingot.firstItem * 9, [block]);
     recipes.addShapeless("ingot_" ~ materialNew ~ "_to_nugget", nugget.firstItem * 9, [ingot]);

@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
@@ -29,7 +29,6 @@ events.onBlockPlace(function(event as BlockPlaceEvent) {
 		if(block.definition.id == "minecraft:sapling" && block.meta == 0) {
 			var allInBlox as IBlockPos[] = getAllInBox(pos.add(1, 0, 1), pos.add(-1 as int, 0, -1 as int));
 			for b in allInBlox {
-				//print("y:" + b.x);
 				if(!isNull(world.getBlock(b))) {
 					if(world.getBlock(b).definition.id == "minecraft:cauldron") {
 						event.cancel();

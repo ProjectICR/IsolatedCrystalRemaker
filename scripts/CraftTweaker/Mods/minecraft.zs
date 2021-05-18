@@ -46,8 +46,6 @@ recipes.addShaped("recipe_shares_time", <minecraft:shears>, [
     }
 });
 
-<minecraft:sapling>.addTooltip("§a你知道吗：橡树树苗非常讨厌在炼药锅的附近。");
-
 mods.integrateddynamics.Squeezer.removeRecipesWithOutput(null, <liquid:lava>);
 mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(null, <liquid:lava>);
 

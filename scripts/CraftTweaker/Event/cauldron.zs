@@ -30,7 +30,7 @@ events.onBlockPlace(function(event as BlockPlaceEvent) {
 			var allInBlox as IBlockPos[] = getAllInBox(pos.add(1, 0, 1), pos.add(-1 as int, 0, -1 as int));
 			for b in allInBlox {
 				if(!isNull(world.getBlock(b))) {
-					if(world.getBlock(b).definition.id == "minecraft:cauldron") {
+					if(world.getBlock(b).definition.id == "minecraft:cauldron" && !isNull(world.getBlock(b).data.state.color) && world.getBlock(b).data.state.color.asInt() == 163839983) {
 						event.cancel();
 					}
 				}

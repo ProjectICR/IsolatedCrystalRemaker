@@ -91,7 +91,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 });
 
 events.onPlayerRespawn(function(event as PlayerRespawnEvent){
-	if(!isNull(event.player.data.PlayerPersisted.handHeldTable) && event.player.data.PlayerPersisted.handHeldTable.asBool() == true){
+	if(!isNull(event.player.data.PlayerPersisted.handHeldTable) && event.player.data.PlayerPersisted.handHeldTable.asBool()){
 		event.player.update({PlayerPersisted : {handHeldTable : false as bool}});
 		event.player.give(<minecraft:apple> * 5);
 	}

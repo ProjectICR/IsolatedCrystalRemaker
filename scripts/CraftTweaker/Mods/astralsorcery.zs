@@ -1,8 +1,14 @@
+#loader crafttweaker
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
 import mods.inworldcrafting.FluidToItem;
+import mods.astralsorcery.Altar;
+
 
 FluidToItem.transform(<astralsorcery:blockmarble>, <fluid:astralsorcery.liquidstarlight>, [<minecraft:stone>], false);
 
-mods.astralsorcery.Altar.addAttunementAltarRecipe("custom:altar/starmetal", <astralsorcery:itemcraftingcomponent:1> * 2, 500, 60, [
+Altar.addAttunementAltarRecipe("custom:altar/starmetal", <astralsorcery:itemcraftingcomponent:1> * 2, 500, 60, [
     null, null ,null,
     null, <astralsorcery:blockcustomore:1>, null,
     null, null, null,

@@ -10,8 +10,8 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.entity.IEntityEquipmentSlot;
 
-var tileEntityForStarLight as TileEntity = VanillaFactory.createActualTileEntity(0);
-tileEntityForStarLight.onTick = function(tileEntity, world, pos) {
+var teSL as TileEntity = VanillaFactory.createActualTileEntity(0);
+teSL.onTick = function(tileEntity, world, pos) {
     var data as IData = tileEntity.data;
 
     if(isNull(data.worldTime)) tileEntity.updateCustomData({worldTime : 0});
@@ -24,10 +24,10 @@ tileEntityForStarLight.onTick = function(tileEntity, world, pos) {
         }
     }
 };
-tileEntityForStarLight.register();
+teSL.register();
 
 var starLight as Block = VanillaFactory.createExpandBlock("becoming_starlight_block", <blockmaterial:leaves>);
-starLight.tileEntity = tileEntityForStarLight;
+starLight.tileEntity = teSL;
 starLight.onBlockActivated = function(world, pos, state, player, hand, facing, blockHit) {
     var mainHand as IEntityEquipmentSlot = IEntityEquipmentSlot.mainHand();
     var mainHandItem as IItemStack = player.getItemInSlot(mainHand);

@@ -4,9 +4,9 @@ import crafttweaker.item.IIngredient;
 
 import scripts.grassUtils.RecipeUtils;
 
-var blood_orb as IItemStack = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
+var bloodOrb as IItemStack = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <draconicevolution:draconic_core> : [
         [<bloodmagic:item_demon_crystal>, <botania:manaresource:8>, <bloodmagic:item_demon_crystal>],
         [<bloodmagic:lava_crystal>, <ore:blockElectrum>, <bloodmagic:lava_crystal>],
@@ -21,7 +21,7 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
 
     <draconicevolution:awakened_core> : [
         [<mekanism:ingot>, <contenttweaker:block_nether_star>, <mekanism:ingot>],
-        [blood_orb, <draconicevolution:draconic_block>, blood_orb],
+        [bloodOrb, <draconicevolution:draconic_block>, bloodOrb],
         [<draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>]
     ],
 
@@ -38,6 +38,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }

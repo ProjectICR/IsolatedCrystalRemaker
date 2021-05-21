@@ -27,7 +27,7 @@ var pureFluix as IItemStack = <appliedenergistics2:material:12>;
 //镀钛陨石块
 var titaniumSky as IItemStack = <contenttweaker:block_titanium_sky>;
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <appliedenergistics2:drive> : [
         [stainlessTitanium, <minecraft:chest>, stainlessTitanium],
         [<ore:crystalFluix>, <contenttweaker:integrated_core_usb>, <ore:crystalFluix>],
@@ -173,6 +173,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }

@@ -4,6 +4,12 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.damage.IDamageSource;
 
+import mods.thermalexpansion.Compactor;
+import mods.integrateddynamics.MechanicalSqueezer;
+import mods.integrateddynamics.Squeezer;
+import mods.immersiveengineering.MetalPress;
+import mods.tconstruct.Casting;
+
 import scripts.grassUtils.RecipeUtils;
 
 var ShapedRecipes as IIngredient[][][IItemStack] = {
@@ -46,15 +52,15 @@ recipes.addShaped("recipe_shares_time", <minecraft:shears>, [
     }
 });
 
-mods.integrateddynamics.Squeezer.removeRecipesWithOutput(null, <liquid:lava>);
-mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(null, <liquid:lava>);
+Squeezer.removeRecipesWithOutput(null, <liquid:lava>);
+MechanicalSqueezer.removeRecipesWithOutput(null, <liquid:lava>);
 
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:netherrack>, <ore:cobblestone>, <fluid:lava>, 500, true, 400);
 
 //烈焰棒合成
-mods.integrateddynamics.MechanicalSqueezer.addRecipe(<minecraft:blaze_powder> * 9, <minecraft:blaze_rod>, null, 200);
+MechanicalSqueezer.addRecipe(<minecraft:blaze_powder> * 9, <minecraft:blaze_rod>, null, 200);
 
-mods.immersiveengineering.MetalPress.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder>, <immersiveengineering:mold:2>, 1500, 3);
+MetalPress.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder>, <immersiveengineering:mold:2>, 1500, 3);
 
-mods.thermalexpansion.Compactor.removePressRecipe(<minecraft:blaze_powder>);
-mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, 800);
+Compactor.removePressRecipe(<minecraft:blaze_powder>);
+Compactor.addStorageRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, 800);

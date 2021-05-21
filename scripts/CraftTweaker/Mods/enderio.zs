@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 
 import scripts.grassUtils.RecipeUtils;
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <enderio:item_basic_capacitor> : [
         [<ore:dustIron>, <ore:nuggetCopper>, <ore:dustRedstone>],
         [<ore:nuggetCopper>, <ore:ingotLead>, <ore:nuggetCopper>],
@@ -36,7 +36,7 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
 

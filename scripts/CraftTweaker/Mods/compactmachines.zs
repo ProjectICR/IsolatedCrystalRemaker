@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 
 import scripts.grassUtils.RecipeUtils;
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <compactmachines3:fieldprojector> : [
         [null, <astralsorcery:blockstarlightinfuser>, null],
         [null, <ore:enderpearl>, null],
@@ -18,6 +18,6 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }

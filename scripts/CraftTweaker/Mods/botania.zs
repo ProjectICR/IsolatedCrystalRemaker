@@ -2,16 +2,19 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+import mods.botania.Apothecary;
+import mods.botania.ManaInfusion;
+
 import scripts.grassUtils.RecipeUtils;
 
 function apothecaryRecipeTweak(output as IItemStack, input as IIngredient[]) {
-    mods.botania.Apothecary.removeRecipe(output);
-    mods.botania.Apothecary.addRecipe(output, input);
+    Apothecary.removeRecipe(output);
+    Apothecary.addRecipe(output, input);
 }
 
 var livingrock as IItemStack = <botania:livingrock>;
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <botania:runealtar> : [
         [null, <minecraft:blaze_rod>, null],
         [livingrock, livingrock, livingrock],
@@ -37,7 +40,7 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-var ShapelessRecipes as IIngredient[][][IItemStack] = {
+var shapelessRecipes as IIngredient[][][IItemStack] = {
     <botania:manaresource:12> : [
         [<botania:manaresource:16>, <botania:manaresource:8>, <ore:blockSignalum>, <ore:ingotEnderium>, <ore:ingotEnderium>, <botania:felpumpkin>]
     ],
@@ -47,15 +50,15 @@ var ShapelessRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
 
-for output, inputBox in ShapelessRecipes {
+for output, inputBox in shapelessRecipes {
     RecipeUtils.recipeTweak(false, output, inputBox);
 }
 
-mods.botania.ManaInfusion.addAlchemy(<minecraft:double_plant>, <botania:petal:4> * 4, 150);
+ManaInfusion.addAlchemy(<minecraft:double_plant>, <botania:petal:4> * 4, 150);
 
 apothecaryRecipeTweak(<botania:specialflower>.withTag({type: "endoflame"}), 
     [<ore:petalRed>, <ore:petalLightGray>, <ore:powderMana>, <ore:petalLightGray>, <ore:petalLightGray>]

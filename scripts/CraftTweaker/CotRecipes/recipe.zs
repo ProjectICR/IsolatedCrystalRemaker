@@ -3,8 +3,12 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.ICraftingInventory;
+import mods.ic2;
+
 
 import scripts.grassUtils.StringHelper;
+import scripts.grassUtils.RecipeUtils.createCross;
+import scripts.grassUtils.RecipeUtils.createFull3;
 
 var materials as int[string] = {
     "Cesium" : 3000,
@@ -61,44 +65,25 @@ for material in materials {
         [ingot]
     ]);
 
-    recipes.addShaped("ingot_" ~ materialNew ~ "_to_block", block.firstItem, [
-        [ingot, ingot, ingot],
-        [ingot, ingot, ingot],
-        [ingot, ingot, ingot]
-    ]);
-
-    recipes.addShaped("nugget_" ~ materialNew ~ "_to_ingot", ingot.firstItem, [
-        [nugget, nugget, nugget],
-        [nugget, nugget, nugget],
-        [nugget, nugget, nugget]
-    ]);
-
-    recipes.addShaped("small_dust" ~ materialNew ~ "_to_dust", dust.firstItem, [
-        [smallDust, smallDust, smallDust],
-        [smallDust, smallDust, smallDust],
-        [smallDust, smallDust, smallDust]
-    ]);
-
+    recipes.addShaped("ingot_" ~ materialNew ~ "_to_block", block.firstItem, createFull3(ingot));
+    recipes.addShaped("nugget_" ~ materialNew ~ "_to_ingot", ingot.firstItem, createFull3(nugget));
+    recipes.addShaped("small_dust" ~ materialNew ~ "_to_dust", dust.firstItem, createFull3(smallDust));
     recipes.addShaped("tiny_dust" ~ materialNew ~ "_to_small_dust", smallDust.firstItem, [
         [null, tinyDust, null],
         [tinyDust, tinyDust, tinyDust],
         [null, tinyDust, null]
     ]);
 
-    recipes.addShaped("ingot_" ~ materialNew ~ "_to_gear", gear.firstItem, [
-        [null, ingot, null],
-        [ingot, null, ingot],
-        [null, ingot, null]
-    ]);
+    recipes.addShaped("ingot_" ~ materialNew ~ "_to_gear", gear.firstItem, createCross(null, ingot));
 
     furnace.addRecipe(ingot.firstItem, dust);
-    mods.ic2.Macerator.addRecipe(dust.firstItem, ingot);
+    ic2.Macerator.addRecipe(dust.firstItem, ingot);
     mods.mekanism.crusher.addRecipe(ingot, dust.firstItem);
     mods.extrautils2.Crusher.add(dust.firstItem, ingot.firstItem);
     mods.enderio.SagMill.addRecipe([dust.firstItem], [100], ingot);
     mods.appliedenergistics2.Grinder.addRecipe(dust.firstItem, ingot, 1);
 
-    mods.ic2.MetalFormer.addRollingRecipe(plate.firstItem, ingot);
-    mods.ic2.BlockCutter.addRecipe(plate.firstItem * 9, block, 1);
-    mods.ic2.Compressor.addRecipe(densePlate.firstItem, plate * 9);
+    ic2.MetalFormer.addRollingRecipe(plate.firstItem, ingot);
+    ic2.BlockCutter.addRecipe(plate.firstItem * 9, block, 1);
+    ic2.Compressor.addRecipe(densePlate.firstItem, plate * 9);
 }

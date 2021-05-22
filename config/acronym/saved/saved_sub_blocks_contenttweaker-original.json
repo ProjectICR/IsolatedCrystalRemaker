@@ -1,5 +1,16 @@
 {
   "savedSubBlockNames": {
-    "0": {}
+    "0": {
+      "0": "zirconium_block",
+      "1": "soldertin_block",
+      "2": "germanium_block",
+      "3": "indium_block",
+      "4": "adamantium_block",
+      "5": "beryllium_block",
+      "6": "titanium_block",
+      "7": "berylliumaluminumalloy_block",
+      "8": "stainlesstitanium_block",
+      "9": "cesium_block"
+    }
   }
 }

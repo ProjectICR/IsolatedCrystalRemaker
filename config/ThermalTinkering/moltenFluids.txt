@@ -27,10 +27,10 @@ lead                                              (tconstruct:molten_lead)      
 silver                                            (tconstruct:molten_silver)                                                       = ÈÛÈÚÒø
 electrum                                          (tconstruct:molten_electrum)                                                     = ÈÛÈÚçúçê½ğ
 steel                                             (tconstruct:molten_steel)                                                        = ÈÛÈÚ¸Ö
-constantan                                        (immersiveengineering:molten_constantan)                                         = ÈÛÈÚ¿µÍ­
 xu_evil_metal                                     ([no block])                                                                     = ¶ñÄ§¹à×¢Ìú
 xu_enchanted_metal                                ([no block])                                                                     = ¸½Ä§½ğÊô
 xu_demonic_metal                                  ([no block])                                                                     = ÈÛÈÚ¶ñÄ§½ğÊô
+constantan                                        (immersiveengineering:molten_constantan)                                         = ÈÛÈÚ¿µÍ­
 soulium                                           (mysticalagradditions:molten_soulium)                                            = ÈÛÈÚÀë»ê
 base_essence                                      (mysticalagradditions:molten_base_essence)                                       = ÈÛÈÚ»ù´¡¾«»ª
 inferium                                          (mysticalagradditions:molten_inferium)                                           = ÈÛÈÚÏÂ¼¶¾«»ª

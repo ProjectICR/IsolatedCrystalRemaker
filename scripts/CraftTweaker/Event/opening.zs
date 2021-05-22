@@ -27,14 +27,13 @@ static aqua_ as IBlockState[IBlockState] = {
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	var player as IPlayer = event.player;
-	var world as IWorld = player.world;
 	var block as IBlock = event.block;
 
 	if(!event.isPlayer || event.silkTouch || player.isFake()) return;
 
-	if(!world.remote) {
+	if(!player.world.remote) {
 		if(block.definition.id == "minecraft:glass") {
-			var random as int = world.random.nextInt(1, 3);
+			var random as int = player.world.random.nextInt(1, 3);
 			event.drops = [<contenttweaker:glass_fragment> * random];
 		}
 	}

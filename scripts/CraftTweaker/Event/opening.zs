@@ -35,8 +35,8 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 
 	if(!event.isPlayer || event.silkTouch || player.isFake()) return;
 
-	if(!world.remote){
-		if(block.definition.id == "minecraft:glass"){
+	if(!world.remote) {
+		if(block.definition.id == "minecraft:glass") {
 			var random as int = world.random.nextInt(1, 3);
 			event.drops = [<contenttweaker:glass_fragment> * random];
 		}

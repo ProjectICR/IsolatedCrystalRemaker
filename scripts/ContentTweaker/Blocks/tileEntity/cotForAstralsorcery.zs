@@ -26,7 +26,7 @@ teSL.onTick = function(tileEntity, world, pos) {
 };
 teSL.register();
 
-var starLight as Block = VanillaFactory.createExpandBlock("becoming_starlight_block", <blockmaterial:leaves>);
+var starLight as Block = VanillaFactory.createExpandBlock("ambient_block", <blockmaterial:leaves>);
 starLight.tileEntity = teSL;
 starLight.onBlockActivated = function(world, pos, state, player, hand, facing, blockHit) {
     var mainHand as IEntityEquipmentSlot = IEntityEquipmentSlot.mainHand();

@@ -1,2 +1,7 @@
+#Gas
 gas.titanium_tetrachloride_gas=三氯化钛
 gas.silicon_tetrachloride_gas=三氯化硅
+
+#Fluid
+fluid.titanium_tetrachloride_gas=液态三氯化钛
+fluid.silicon_tetrachloride_gas=液态三氯化硅

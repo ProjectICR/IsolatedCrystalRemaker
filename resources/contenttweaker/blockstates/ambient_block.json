@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/block_glass_five",
-      "particle": "contenttweaker:blocks/block_glass_five"
+      "texture": "contenttweaker:blocks/ambient_block",
+      "particle": "contenttweaker:blocks/ambient_block"
     },
     "model": "base:storage",
     "uvlock": true,

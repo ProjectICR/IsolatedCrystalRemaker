@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/block_titanium_sky",
-      "particle": "contenttweaker:blocks/block_titanium_sky"
+      "texture": "contenttweaker:blocks/dead_leaves",
+      "particle": "contenttweaker:blocks/dead_leaves"
     },
     "model": "base:storage",
     "uvlock": true,

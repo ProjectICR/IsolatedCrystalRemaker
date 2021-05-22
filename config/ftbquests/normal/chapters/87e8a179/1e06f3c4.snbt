@@ -9,10 +9,10 @@
 		"1a6e2c0c"
 	],
 	tasks: [{
-		uid: "96df060d",
+		uid: "07105cd8",
 		type: "item",
 		items: [{
-			item: "contenttweaker:becoming_starlight_block"
+			item: "contenttweaker:ambient_block"
 		}]
 	}]
 }

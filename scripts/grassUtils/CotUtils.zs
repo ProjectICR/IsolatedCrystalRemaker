@@ -15,7 +15,7 @@ import scripts.grassUtils.classes.MaterialSystemHelper.MaterialSystemHelper;
 import scripts.grassUtils.LoggerCot as Logger;
 
 static enumRarityLevel as string[] = ["COMMON", "UNCOMMON", "RARE", "EPIC"];
-static tab as CreativeTab = null;
+static tab as CreativeTab = <creativetab:materials.base>;
 
 function addNormalItem(name as string) {
     Logger.sendInfo("Adding item " ~ name);

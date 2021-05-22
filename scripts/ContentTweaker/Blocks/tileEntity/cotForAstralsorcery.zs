@@ -15,7 +15,7 @@ teSL.onTick = function(tileEntity, world, pos) {
     var data as IData = tileEntity.data;
 
     if(isNull(data.worldTime)) tileEntity.updateCustomData({worldTime : 0});
-    if(!world.remote && !world.dayTime && !isNull(data.manaCapacity)) {
+    if(!world.remote && !world.dayTime && !isNull(data.hasManaCapacity) && data.hasManaCapacity.asBool()) {
 
         tileEntity.updateCustomData({worldTime : (data.worldTime.asInt() + 1)});
 
@@ -38,10 +38,10 @@ starLight.onBlockActivated = function(world, pos, state, player, hand, facing, b
 
         if(!world.remote && manaCapacity >= 10000 && isNull(tile.data.manaCapacity)) {
             if(!isNull(mainHandItem.tag.creative)) {
-                tile.updateCustomData({manaCapacity : 10000});
+                tile.updateCustomData({hasManaCapacity : true});
             } else {
                 mainHandItem.mutable().withTag({mana : (manaCapacity - 10000)});
-                tile.updateCustomData({manaCapacity : 10000});
+                tile.updateCustomData({hasManaCapacity : true});
             }
             return true;
         }

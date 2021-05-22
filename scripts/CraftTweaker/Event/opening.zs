@@ -25,9 +25,6 @@ static aqua_ as IBlockState[IBlockState] = {
 	<blockstate:minecraft:sapling> : <blockstate:minecraft:deadbush>,
 };
 
-// 测试用，RL配置好后换成RL
-game.setLocalization("death.attack.handHeldTable", "小哥，要不要苹果？");
-
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	var player as IPlayer = event.player;
 	var world as IWorld = player.world;

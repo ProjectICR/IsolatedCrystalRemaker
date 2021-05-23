@@ -1,2 +1,17 @@
+#事件
 icr.crafttweaker.event.lava=你已经用铁和燧石右键过烈焰网啦, 不能再次右键了。
+
+#伤害
 death.attack.handHeldTable=小哥, 要不要苹果?
+
+#机器
+tile.casting_oven.name=铸铁炉
+tile.casting_furnace.name=铸造炉
+tile.forging_hammer_machine.name=锻造锤
+tile.essences_materializer.name=元素实体化器
+
+#JEI 配方
+requious.jei.recipe.casting_oven=铸铁炉
+requious.jei.recipe.casting_furnace=铸造炉
+requious.jei.recipe.forging_hammer_machine=锻造锤
+requious.jei.recipe.essences_materializer=元素实体化器

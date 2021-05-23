@@ -16,4 +16,3 @@ $ cat .gitignore
 #configs
 config/AE2Stuff/readme.txt
 scripts/.zsrc
-config/

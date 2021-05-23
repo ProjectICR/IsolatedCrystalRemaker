@@ -21,10 +21,8 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
         if(offHandItem.definition.id == "minecraft:flint") {
             if(rightBlock.definition.id == "botania:blazeblock") {
                 if(isNull(playerData.rightBlazeblock)) {
-
                     world.setBlockState(<blockstate:lava>, event.position);
                 } else {
-
                     player.sendChat(game.localize("icr.crafttweaker.event.lava"));
                 }
 

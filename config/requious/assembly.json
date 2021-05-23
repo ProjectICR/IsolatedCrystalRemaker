@@ -76,5 +76,105 @@
       "y2": 1.0,
       "z2": 1.0
     }
-  }
+  },
+  {
+    "placeType": "Any",
+    "layerType": "Cutout",
+    "hasGUI": true,
+    "resourceName": "casting_oven",
+    "model": "requious:assembly_block",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+    },
+    {
+      "placeType": "Any",
+      "layerType": "Cutout",
+      "hasGUI": true,
+      "resourceName": "casting_furnace",
+      "model": "requious:assembly_block",
+      "colors": [
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 255
+        }
+      ],
+      "hardness": 5.0,
+      "blastResistance": 5.0,
+      "aabb": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "z1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "z2": 1.0
+      }
+    },
+    {
+      "placeType": "Any",
+      "layerType": "Cutout",
+      "hasGUI": true,
+      "resourceName": "forging_hammer_machine",
+      "model": "requious:assembly_block",
+      "colors": [
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 255
+        }
+      ],
+      "hardness": 5.0,
+      "blastResistance": 5.0,
+      "aabb": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "z1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "z2": 1.0
+      }
+    },
+    {
+      "placeType": "Any",
+      "layerType": "Cutout",
+      "hasGUI": true,
+      "resourceName": "essences_materializer",
+      "model": "requious:assembly_block",
+      "colors": [
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 255
+        }
+      ],
+      "hardness": 5.0,
+      "blastResistance": 5.0,
+      "aabb": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "z1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "z2": 1.0
+      }
+    }
 ]

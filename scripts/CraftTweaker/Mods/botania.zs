@@ -7,6 +7,7 @@ import mods.botania.ManaInfusion;
 
 import scripts.grassUtils.RecipeUtils;
 
+
 function apothecaryRecipeTweak(output as IItemStack, input as IIngredient[]) {
     Apothecary.removeRecipe(output);
     Apothecary.addRecipe(output, input);
@@ -39,6 +40,7 @@ var shapelessRecipes as IIngredient[][][IItemStack] = {
         [<botania:manaresource:16>, <botania:manaresource:8>, <ore:blockSignalum>, <ore:ingotEnderium>, <ore:ingotEnderium>, <botania:felpumpkin>]
     ]
 };
+
 
 for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);

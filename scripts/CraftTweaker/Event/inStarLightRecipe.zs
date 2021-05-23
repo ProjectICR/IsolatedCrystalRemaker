@@ -11,7 +11,9 @@ import crafttweaker.entity.IEntityItem;
 import crafttweaker.event.ItemTossEvent;
 import crafttweaker.event.WorldTickEvent;
 
+
 import mods.ctutils.utils.Math;
+
 
 import scripts.grassUtils.EventUtils;
 
@@ -49,14 +51,11 @@ events.onWorldTick(function(event as WorldTickEvent) {
             for seconds, recipeBox in oneItemRecipe {
                 if(world.getBlockState(pos) == starLight && entityItem.item.matches(recipeBox[1])) {
                     if(entityItem.item.matches(<minecraft:stone>)) {
-
                         return;
                     }
                     if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
-
                         entityItem.setNBT({time : 0});
                     } else {
-
                         entityItem.setNBT({time : nbt.ForgeData.time.asInt() + 1});
                     }
 
@@ -71,7 +70,6 @@ events.onWorldTick(function(event as WorldTickEvent) {
                             var playerName as string = nbt.playerName.asString();
 
                             if(recipeBox[0].matches(<astralsorcery:blockaltar>)) {
-
                                 server.commandManager.executeCommand(server, "astralsorcery research " ~ playerName ~ " BASIC_CRAFT");
                             }
                             world.getPlayerByName(playerName).sendChat("合成完毕");

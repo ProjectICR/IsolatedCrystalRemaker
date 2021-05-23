@@ -12,7 +12,8 @@ import mods.tconstruct.Casting;
 
 import scripts.grassUtils.RecipeUtils;
 
-var ShapedRecipes as IIngredient[][][IItemStack] = {
+
+var shapedRecipes as IIngredient[][][IItemStack] = {
     <minecraft:gravel> : [
         [<ore:pebble>, <ore:cobblestone>],
         [<ore:cobblestone>, <ore:pebble>]
@@ -24,7 +25,8 @@ var ShapedRecipes as IIngredient[][][IItemStack] = {
     ]
 };
 
-for output, inputBox in ShapedRecipes {
+
+for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
 

@@ -1,17 +1,19 @@
+#priority 98
+#loader crafttweaker
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
+
 import mods.requious.Assembly;
 import mods.requious.SlotVisual;
 import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
 
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.liquid.ILiquidStack;
+import scripts.CraftTweaker.mods.requious.casting_oven.allFace;
 
 static em as Assembly = <assembly:essences_materializer>;
 
 static crystal as IItemStack = <thaumcraft:crystal_essence>;
-
-static allFace as ComponentFace = ComponentFace.all();
 
 em.setDurationSlot(6, 2).setGroup("time").setVisual(SlotVisual.arrowRight());
 em.setItemSlot(0, 1, allFace, 64).setGroup("input").setAccess(true, false);
@@ -35,12 +37,15 @@ em.setJEIDurationSlot(6, 2, "time", SlotVisual.arrowRight());
 
 function addEMRecipe(output as IItemStack, input as IIngredient[], seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
+
         container.addItemOutput("output", output);
     });
 
     for i, item in input {
+
         recipe.requireItem("input", item);
         if(i == input.length - 1) {
+
             recipe.requireDuration("time", (seconds * 20));
         }
     }
@@ -51,12 +56,15 @@ function addEMRecipe(output as IItemStack, input as IIngredient[], seconds as in
 
 function addEMLiquidRecipe(output as ILiquidStack, input as IIngredient[], seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
+
         container.addFluidOutput("output", output * 1000);
     });
 
     for i, liquid in input {
+
         recipe.requireItem("input", liquid);
         if(i == input.length - 1) {
+
             recipe.requireDuration("time", (seconds * 20));
         }
     }

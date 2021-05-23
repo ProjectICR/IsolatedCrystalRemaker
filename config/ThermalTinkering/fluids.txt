@@ -148,7 +148,7 @@ etchacid                                          (pneumaticcraft:fluid.etchacid
 plastic                                           (pneumaticcraft:fluid.plastic)                                                   = “∫Ã¨À‹¡œ
 oil                                               (pneumaticcraft:fluid.oil)                                                       = ‘≠”Õ
 lpg                                               (pneumaticcraft:fluid.lpg)                                                       = “∫ªØ Ø”Õ∆¯£®LPG£©
-fuel                                              (pneumaticcraft:fluid.fuel)                                                      = »º”Õ
+fuel                                              (pneumaticcraft:fluid.fuel)                                                      = ∆˚”Õ
 kerosene                                          (pneumaticcraft:fluid.kerosene)                                                  = √∫”Õ
 diesel                                            (pneumaticcraft:fluid.diesel)                                                    = ≤Ò”Õ
 lubricant                                         (pneumaticcraft:fluid.lubricant)                                                 = »Ûª¨”Õ

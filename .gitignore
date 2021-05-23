@@ -1,18 +1,12 @@
-$ cat .gitignore
-#Whitelist
-/*
+!/.minecraft/patchouli_books
+!/.minecraft/resources
+!/.minecraft/scripts
+/.minecraftscripts/nc_script_addons
+!/.minecraft/structures
 
-#Folders
-!/config/
-!/patchouli_books
-!/resources
-!/scripts
-!/structures
-
-#repo stuff
-!/.gitignore
-!/README.md
-
-#configs
-config/AE2Stuff/readme.txt
-scripts/.zsrc
+/instance.cfg
+/mmc-pack.json
+!/modlist.html
+!/manifest.json
+/icon.png
+.minecraft/mods/

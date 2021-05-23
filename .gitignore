@@ -12,6 +12,9 @@ $ cat .gitignore
 #Files
 !/.gitignore
 !/README.md
+!/build.sh
+!/modlist.html
+!/manifest.json
 
 #configs
 config/AE2Stuff/readme.txt

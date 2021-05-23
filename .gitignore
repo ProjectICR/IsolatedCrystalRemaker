@@ -12,11 +12,6 @@ $ cat .gitignore
 #repo stuff
 !/.gitignore
 !/README.md
-!/build.sh
-/instance.cfg
-/mmc-pack.json
-!/modlist.html
-!/manifest.json
 
 #configs
 config/AE2Stuff/readme.txt

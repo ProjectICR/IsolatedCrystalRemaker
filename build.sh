@@ -3,7 +3,7 @@
 #!/bin/sh -x
 
 
-BUILD=Herodotus
+BUILD=IsolatedCrystalRemaker
 DATE="$(TZ='Asia/Shanghai' date +%Y-%m-%d_%H-%M-%S-%N)"
 #VERSION=1.0
 #VERSION=$"(echo r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"

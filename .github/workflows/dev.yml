@@ -9,9 +9,9 @@ name: dev
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,6 +35,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
         # Artifact name
-          name: Herodotus-dev
+          name: IsolatedCrystalRemaker-dev
         # A file, directory or wildcard pattern that describes what to upload
           path: artifacts

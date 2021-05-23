@@ -9,10 +9,12 @@ $ cat .gitignore
 !/scripts
 !/structures
 
-#Files
+#repo stuff
 !/.gitignore
 !/README.md
 !/build.sh
+/instance.cfg
+/mmc-pack.json
 !/modlist.html
 !/manifest.json
 

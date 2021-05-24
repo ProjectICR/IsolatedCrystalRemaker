@@ -8,7 +8,7 @@ import mods.requious.SlotVisual;
 import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
 
-import scripts.CraftTweaker.mods.requious.casting_oven.allFace;
+import scripts.CraftTweaker.Mods.requious.casting_oven.allFace;
 
 static castFurnce as Assembly = <assembly:casting_furnace>;
 

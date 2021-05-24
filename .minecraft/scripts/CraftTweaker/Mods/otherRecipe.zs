@@ -3,7 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 import scripts.grassUtils.RecipeUtils;
-import scripts.CraftTweaker.mods.requious.essences_materializer.crystal;
+import scripts.CraftTweaker.Mods.requious.essences_materializer.crystal;
 
 
 var shapedRecipes as IIngredient[][][IItemStack] = {

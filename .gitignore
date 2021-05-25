@@ -28,3 +28,6 @@
 !/modlist.html
 !/manifest.json
 !/.minecraft/icon.png
+
+#white list
+/.minecraft/scripts/.zsrc

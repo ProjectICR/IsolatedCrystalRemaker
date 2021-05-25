@@ -1,16 +1,12 @@
-#priority 99
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-import mods.requious.Assembly;
 import mods.requious.SlotVisual;
-import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
 
-static casting as Assembly = <assembly:casting_oven>;
-
-static allFace as ComponentFace = ComponentFace.all();
+import scripts.CraftTweaker.Mods.static_variable.allFace;
+import scripts.CraftTweaker.Mods.static_variable.casting;
 
 casting.setDurationSlot(5, 2).setGroup("time").setVisual(SlotVisual.arrowRight());
 casting.setItemSlot(3, 2, allFace, 64).setGroup("input").setAccess(true, false);

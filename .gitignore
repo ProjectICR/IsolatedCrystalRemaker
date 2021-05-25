@@ -1,8 +1,6 @@
 !/.minecraft/patchouli_books
 !/.minecraft/resources
 !/.minecraft/scripts
-/.minecraftscripts/nc_script_addons
-!/.minecraft/structures
 
 /instance.cfg
 /mmc-pack.json
@@ -10,3 +8,18 @@
 !/manifest.json
 /icon.png
 .minecraft/mods/
+.minecraft/local/
+.minecraft/logs/
+.minecraft/saves/
+.minecraft/resourcepacks/
+.minecraft/screenshots/
+.minecraft/backups/
+.minecraft/.mixin.out/
+.minecraft/usernamecache.json
+.minecraft/usercache.json
+.minecraft/randomtweaker.prop
+.minecraft/patchouli_data.json
+.minecraft/options.txt
+.minecraft/icon.png
+.minecraft/crafttweaker.log
+.minecraft/BotaniaVars.dat

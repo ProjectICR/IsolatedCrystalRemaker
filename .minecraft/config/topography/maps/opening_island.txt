@@ -1,0 +1,4 @@
+setSpawnStructure("opening_island", 75)
+addBiomes("minecraft:plains")
+
+disableNetherPortal()

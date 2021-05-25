@@ -1,4 +1,3 @@
-#priority 98
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -6,14 +5,11 @@ import crafttweaker.liquid.ILiquidStack;
 
 import mods.requious.Assembly;
 import mods.requious.SlotVisual;
-import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
 
-import scripts.CraftTweaker.mods.requious.casting_oven.allFace;
-
-static em as Assembly = <assembly:essences_materializer>;
-
-static crystal as IItemStack = <thaumcraft:crystal_essence>;
+import scripts.CraftTweaker.Mods.static_variable.allFace;
+import scripts.CraftTweaker.Mods.static_variable.crystal;
+import scripts.CraftTweaker.Mods.static_variable.em;
 
 em.setDurationSlot(6, 2).setGroup("time").setVisual(SlotVisual.arrowRight());
 em.setItemSlot(0, 1, allFace, 64).setGroup("input").setAccess(true, false);

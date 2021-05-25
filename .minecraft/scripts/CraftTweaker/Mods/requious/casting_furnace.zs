@@ -5,14 +5,8 @@ import crafttweaker.item.IIngredient;
 import mods.requious.SlotVisual;
 import mods.requious.AssemblyRecipe;
 
-<<<<<<< HEAD
 import scripts.CraftTweaker.Mods.static_variable.allFace;
 import scripts.CraftTweaker.Mods.static_variable.castFurnce;
-=======
-import scripts.CraftTweaker.Mods.requious.casting_oven.allFace;
-
-static castFurnce as Assembly = <assembly:casting_furnace>;
->>>>>>> 82b6b63f7794a90c768d1abf2ae4de805753f4b6
 
 castFurnce.setDurationSlot(4, 2).setGroup("time").setVisual(SlotVisual.arrowUp());
 castFurnce.setItemSlot(4, 3, allFace, 64).setGroup("input").setAccess(true, false);

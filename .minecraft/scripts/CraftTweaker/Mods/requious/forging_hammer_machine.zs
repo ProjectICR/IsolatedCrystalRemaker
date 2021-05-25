@@ -5,8 +5,14 @@ import crafttweaker.item.IIngredient;
 import mods.requious.SlotVisual;
 import mods.requious.AssemblyRecipe;
 
+<<<<<<< HEAD
 import scripts.CraftTweaker.Mods.static_variable.allFace;
 import scripts.CraftTweaker.Mods.static_variable.fhm;
+=======
+import scripts.CraftTweaker.Mods.requious.casting_oven.allFace;
+
+static fhm as Assembly = <assembly:forging_hammer_machine>;
+>>>>>>> 82b6b63f7794a90c768d1abf2ae4de805753f4b6
 
 fhm.setDurationSlot(4, 2).setGroup("time").setVisual(SlotVisual.arrowDown());
 fhm.setItemSlot(4, 1, allFace, 64).setGroup("input").setAccess(true, false);

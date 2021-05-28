@@ -19,6 +19,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
 		var block as IBlock = world.getBlock(pos);
 
 		if(!isNull(block.data) && !isNull(block.data.subTileName) && block.data.subTileName == "hydroangeas"){
+			world.performExplosion(null, pos.x, pos.y, pos.z, 1, true, true);
 			world.performExplosion(null, pos.x, pos.y, pos.z, 3, true, true);
 			event.player.sendChat(game.localize("icr.thaumometer.explode"));
 			event.cancel();

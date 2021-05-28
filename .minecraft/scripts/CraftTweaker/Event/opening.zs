@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
@@ -31,9 +31,9 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 
 	if(!event.isPlayer || event.silkTouch || player.isFake()) return;
 
-	if(!player.world.remote) {
+	if(!event.world.remote) {
 		if(block.definition.id == "minecraft:glass") {
-			var random as int = player.world.random.nextInt(1, 3);
+			var random as int = event.world.random.nextInt(1, 3);
 			event.drops = [<contenttweaker:glass_fragment> * random];
 		}
 	}

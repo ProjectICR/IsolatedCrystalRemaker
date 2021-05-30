@@ -6,8 +6,6 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;
 
-import mods.randomtweaker.IMouse;
-
 import crafttweaker.event.PlayerRightClickItemEvent;
 
 events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
@@ -15,7 +13,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
 	var world as IWorld = event.world;
 
 	if (!world.remote && item.definition.id == "thaumcraft:thaumometer"){
-		var pos as IBlockPos = IMouse.getMouseHitBlockPos();
+		var pos as IBlockPos = event.player.getRayTrace(6.0, 1.0f).blockPos;
 		var block as IBlock = world.getBlock(pos);
 
 		if(!isNull(block.data) && !isNull(block.data.subTileName) && block.data.subTileName == "hydroangeas"){

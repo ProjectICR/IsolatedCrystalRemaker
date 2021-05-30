@@ -25,8 +25,12 @@ var hotIngotList as string[int] = {
 var partList as string[] = ["ingot", "dust", "nugget", "plate", "rod", "gear", "dense_plate", "small_dust", "block"];
 
 var materialSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(0);
+
+var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
+
 materialSystem.registerNormalPart("tiny_dust_icr", "item", false);
 
+hotSystem.registerNormalPart("hot_ingot", "item", false);
 
 for part in partList {
     materialSystem.addPart(part);
@@ -36,14 +40,10 @@ for color, name in materialList {
     materialSystem.registerMaterial(name, color);
 }
 
-materialSystem.registerAllMaterialParts();
-
-
-var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
-hotSystem.registerNormalPart("hot_ingot", "item", false);
-
 for color, name in hotIngotList {
     hotSystem.registerMaterial(name, color);
 }
+
+materialSystem.registerAllMaterialParts();
 
 hotSystem.registerAllMaterialParts();

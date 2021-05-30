@@ -19,7 +19,6 @@ fhm.setJEIDurationSlot(4, 2, "time", SlotVisual.arrowDown());
 
 function addFHMRecipe(output as IItemStack, input as IIngredient, energy as int, seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container){
-
         container.addItemOutput("output", output);
     }).requireItem("input", input)
     .requireEnergy("energy", energy)

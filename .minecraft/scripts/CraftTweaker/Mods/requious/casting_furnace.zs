@@ -18,7 +18,6 @@ castFurnce.setJEIDurationSlot(4, 2, "time", SlotVisual.arrowUp());
 
 function addCFRecipe(output as IItemStack, input as IIngredient, seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
-
         container.addItemOutput("output", output);
     }).requireItem("input", input)
     .requireDuration("time", (seconds * 20));

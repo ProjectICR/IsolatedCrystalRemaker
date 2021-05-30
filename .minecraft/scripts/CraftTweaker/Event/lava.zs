@@ -5,6 +5,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
 import crafttweaker.entity.IEntityEquipmentSlot;
+
 import crafttweaker.event.PlayerInteractBlockEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {

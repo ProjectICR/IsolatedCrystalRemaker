@@ -33,15 +33,13 @@ em.setJEIDurationSlot(6, 2, "time", SlotVisual.arrowRight());
 
 function addEMRecipe(output as IItemStack, input as IIngredient[], seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
-
         container.addItemOutput("output", output);
     });
 
     for i, item in input {
-
         recipe.requireItem("input", item);
-        if(i == input.length - 1) {
 
+        if(i == input.length - 1) {
             recipe.requireDuration("time", (seconds * 20));
         }
     }
@@ -52,15 +50,13 @@ function addEMRecipe(output as IItemStack, input as IIngredient[], seconds as in
 
 function addEMLiquidRecipe(output as ILiquidStack, input as IIngredient[], seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
-
         container.addFluidOutput("output", output * 1000);
     });
 
     for i, liquid in input {
-
         recipe.requireItem("input", liquid);
-        if(i == input.length - 1) {
 
+        if(i == input.length - 1) {
             recipe.requireDuration("time", (seconds * 20));
         }
     }

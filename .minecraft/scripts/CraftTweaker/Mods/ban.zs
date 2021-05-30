@@ -1,6 +1,7 @@
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 
+
 var banList as IItemStack[] = [
     //appliedenergistics2 Mod
     <appliedenergistics2:material:39>,

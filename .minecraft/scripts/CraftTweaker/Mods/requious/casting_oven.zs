@@ -22,15 +22,13 @@ casting.setJEIDurationSlot(5, 2, "time", SlotVisual.arrowRight());
 
 function addCORecipe(output as IItemStack, input as IIngredient[], energy as int, seconds as int) {
     var recipe as AssemblyRecipe = AssemblyRecipe.create(function(container) {
-
         container.addItemOutput("output", output);
     });
 
     for i, item in input {
-
         recipe.requireItem("input", item);
+        
         if(i == input.length - 1) {
-
             recipe.requireEnergy("energy", energy).requireDuration("time", (seconds * 20));
         }
     }

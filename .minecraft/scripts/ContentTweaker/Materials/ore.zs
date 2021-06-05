@@ -18,19 +18,20 @@ var materialList as string[int] = {
 };
 
 var hotIngotList as string[int] = {
-    0x727682 : "Hotcastediron",
-    0x595050 : "Hotwroughtiron"
+    0x727682 : "Castediron",
+    0x595050 : "Wroughtiron"
 };
 
 var partList as string[] = ["ingot", "dust", "nugget", "plate", "rod", "gear", "dense_plate", "small_dust", "block"];
 
 var materialSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(0);
-
-var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
-
 materialSystem.registerNormalPart("tiny_dust_icr", "item", false);
 
+var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
+hotSystem.addPart(partList[3]);
 hotSystem.registerNormalPart("hot_ingot", "item", false);
+hotSystem.registerNormalPart("hot_plate", "item", false);
+hotSystem.registerNormalPart("quenched_plate", "item", false);
 
 for part in partList {
     materialSystem.addPart(part);

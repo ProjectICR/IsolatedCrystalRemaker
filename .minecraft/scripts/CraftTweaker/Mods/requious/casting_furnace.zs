@@ -26,4 +26,4 @@ function addCFRecipe(output as IItemStack, input as IIngredient, seconds as int)
     castFurnce.addJEIRecipe(recipe);
 }
 
-addCFRecipe(<contenttweaker:hotcastediron_hot_ingot> * 8, <contenttweaker:pig_iron_billet>, 5);
+addCFRecipe(<contenttweaker:castediron_hot_ingot> * 8, <contenttweaker:pig_iron_billet>, 5);

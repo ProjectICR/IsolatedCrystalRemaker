@@ -53,6 +53,11 @@ for material, energy in materials {
     recipes.addShapeless("ingot_" ~ materialNew ~ "_to_nugget", nugget.firstItem * 9, [ingot]);
     recipes.addShapeless("dust_" ~ materialNew ~ "_to_small_dust", smallDust.firstItem * 9, [dust]);
 
+    recipes.addShaped("ingot_" ~ materialNew ~ "_to_block", block.firstItem, createFull3(ingot));
+    recipes.addShaped("nugget_" ~ materialNew ~ "_to_ingot", ingot.firstItem, createFull3(nugget));
+    recipes.addShaped("ingot_" ~ materialNew ~ "_to_gear", gear.firstItem, createCross(null, ingot));
+    recipes.addShaped("small_dust" ~ materialNew ~ "_to_dust", dust.firstItem, createFull3(smallDust));
+
     recipes.addShaped("ingot_" ~ materialNew ~ "_to_plate", plate.firstItem, [
         [ingot, <ic2:forge_hammer>|<immersiveengineering:tool>],
         [ingot]
@@ -62,11 +67,6 @@ for material, energy in materials {
         [ingot],
         [ingot]
     ]);
-
-    recipes.addShaped("ingot_" ~ materialNew ~ "_to_block", block.firstItem, createFull3(ingot));
-    recipes.addShaped("nugget_" ~ materialNew ~ "_to_ingot", ingot.firstItem, createFull3(nugget));
-    recipes.addShaped("ingot_" ~ materialNew ~ "_to_gear", gear.firstItem, createCross(null, ingot));
-    recipes.addShaped("small_dust" ~ materialNew ~ "_to_dust", dust.firstItem, createFull3(smallDust));
 
     recipes.addShaped("tiny_dust" ~ materialNew ~ "_to_small_dust", smallDust.firstItem, [
         [null, tinyDust, null],

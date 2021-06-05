@@ -28,9 +28,9 @@ teSL.onTick = function(tileEntity, world, pos) {
 };
 teSL.register();
 
-var starLight as Block = VanillaFactory.createExpandBlock("ambient_block", <blockmaterial:leaves>);
-starLight.tileEntity = teSL;
-starLight.onBlockActivated = function(world, pos, state, player, hand, facing, blockHit) {
+var ambient as Block = VanillaFactory.createExpandBlock("ambient_block", <blockmaterial:leaves>);
+ambient.tileEntity = teSL;
+ambient.onBlockActivated = function(world, pos, state, player, hand, facing, blockHit) {
     var mainHand as IEntityEquipmentSlot = IEntityEquipmentSlot.mainHand();
     var mainHandItem as IItemStack = player.getItemInSlot(mainHand);
 
@@ -51,4 +51,4 @@ starLight.onBlockActivated = function(world, pos, state, player, hand, facing, b
     }
     return false;
 };
-starLight.register();
+ambient.register();

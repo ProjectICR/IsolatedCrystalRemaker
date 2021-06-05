@@ -7,10 +7,7 @@
 !/.gtihub
 !/docs
 !/artifacts
-!/runners
-!/LICENSE
 !/README.md
-!/CHANGELOG
 !/build.sh
 !/icon.png
 !/.gitignore
@@ -19,7 +16,6 @@
 /.minecraft/scripts/.zsrc
 !/.minecraft/resources
 !/.minecraft/scripts
-/.minecraft/scripts/nc_script_addons/*
 !/.minecraft/structures
 
 #pack stuff

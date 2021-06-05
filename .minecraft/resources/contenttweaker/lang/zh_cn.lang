@@ -1,20 +1,22 @@
-# Block
+# 方块
 tile.contenttweaker.glass.name=光学玻璃
 tile.contenttweaker.quartz_sand.name=石英砂
 tile.contenttweaker.dead_leaves.name=枯萎的树叶
 tile.contenttweaker.ambient_block.name=云墨方块
 
-#Item
+# 物品
 item.contenttweaker.puresi.name=高纯硅
 item.contenttweaker.crystalsi.name=单晶硅
 item.contenttweaker.glass_fragment.name=玻璃碎片
 item.contenttweaker.pig_iron_billet.name=生铁铁呸
 
-# Part
+# 部件
+contenttweaker.part.hot_ingot=热%s锭
+contenttweaker.part.hot_plate=热%s板
 contenttweaker.part.tiny_dust_icr=%s粉尘
-contenttweaker.part.hot_ingot=%s锭
+contenttweaker.part.quenched_plate=淬火%s板
 
-#Material
+# 材料
 base.material.cesium=铯
 base.material.indium=铟
 base.material.titanium=钛
@@ -22,8 +24,8 @@ base.material.germanium=锗
 base.material.beryllium=铍
 base.material.zirconium=锆
 base.material.soldertin=焊锡
-base.material.hotcastediron=热铸铁
+base.material.castediron=铸铁
 base.material.adamantium=艾德曼合金
-base.material.hotwroughtiron=热锻铁
+base.material.wroughtiron=锻铁
 base.material.stainlesstitanium=防锈钛
 base.material.berylliumaluminumalloy=铍铝合金

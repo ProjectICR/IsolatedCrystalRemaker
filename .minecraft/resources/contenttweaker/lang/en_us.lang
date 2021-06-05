@@ -4,17 +4,19 @@ tile.contenttweaker.quartz_sand.name=Quartz Sand
 tile.contenttweaker.dead_leaves.name=Withered Leaves
 tile.contenttweaker.ambient_block.name=Ambient Block
 
-#Item
+# Item
 item.contenttweaker.puresi.name=High-curity Silicon
 item.contenttweaker.glass_fragment.name=Glass Fragment
 item.contenttweaker.pig_iron_billet.name=Pig Iron Billet
 item.contenttweaker.crystalsi.name=Mono-crystalline Silicon
 
 # Part
-contenttweaker.part.hot_ingot=%s Ingot
 contenttweaker.part.tiny_dust_icr=%s Dust
+contenttweaker.part.hot_ingot=Hot %s Ingot
+contenttweaker.part.hot_plate=Hot %s Plate
+contenttweaker.part.quenched_plate=Quenched %s Plate
 
-#Material
+# Material
 base.material.cesium=Cesium
 base.material.indium=Indium
 base.material.titanium=Titanium
@@ -24,7 +26,7 @@ base.material.zirconium=Zirconium
 base.material.soldertin=Solder Tin
 base.material.adamantium=Adamantium
 base.material.pigironbillet=Pig Iron Billet
-base.material.hotcastediron=Hot Casted Iron
-base.material.hotwroughtiron=Hot Wrought Iron
+base.material.castediron=Casted Iron
+base.material.wroughtiron=Wrought Iron
 base.material.stainlesstitanium=Stainless Titanium
 base.material.berylliumaluminumalloy=Beryllium Aluminum Alloy

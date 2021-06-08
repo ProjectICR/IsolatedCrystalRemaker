@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "contenttweaker:items/hot_plate"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "contenttweaker:items/hot_plate",
+        "layer1": "contenttweaker:items/hot_plate_overlay"
+    }
 }

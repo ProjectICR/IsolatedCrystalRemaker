@@ -7,6 +7,7 @@ tile.contenttweaker.ambient_block.name=云墨方块
 # 物品
 item.contenttweaker.puresi.name=高纯硅
 item.contenttweaker.crystalsi.name=单晶硅
+item.contenttweaker.middle_item.name=中间产物
 item.contenttweaker.glass_fragment.name=玻璃碎片
 item.contenttweaker.pig_iron_billet.name=生铁铁呸
 

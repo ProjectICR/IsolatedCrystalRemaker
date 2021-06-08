@@ -6,6 +6,7 @@ tile.contenttweaker.ambient_block.name=Ambient Block
 
 # Item
 item.contenttweaker.puresi.name=High-curity Silicon
+item.contenttweaker.middle_item.name=
 item.contenttweaker.glass_fragment.name=Glass Fragment
 item.contenttweaker.pig_iron_billet.name=Pig Iron Billet
 item.contenttweaker.crystalsi.name=Mono-crystalline Silicon

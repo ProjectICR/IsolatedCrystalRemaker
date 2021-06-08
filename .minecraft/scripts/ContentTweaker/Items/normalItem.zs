@@ -5,6 +5,7 @@ import scripts.grassUtils.CotUtils;
 var registerItems as string[] = [
     "puresi",
     "crystalsi",
+    "middle_item",
 	"glass_fragment",
     "pig_iron_billet"
 ];

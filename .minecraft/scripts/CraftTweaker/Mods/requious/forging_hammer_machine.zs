@@ -29,4 +29,5 @@ function addFHMRecipe(output as IItemStack, input as IIngredient, energy as int,
 }
 
 addFHMRecipe(<contenttweaker:wroughtiron_hot_ingot> * 5, <contenttweaker:pig_iron_billet>, 5000, 5);
-addFHMRecipe(<contenttweaker:wroughtiron_hot_plate>, <ore:hotIngotWroughtiron>, 6000, 6);
+addFHMRecipe(<contenttweaker:wroughtiron_hot_plate>, <ore:hotIngotWroughtiron>, 4000, 6);
+addFHMRecipe(<contenttweaker:castediron_hot_plate>, <ore:hotIngotCastediron>, 4000, 6);

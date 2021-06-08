@@ -1,0 +1,18 @@
+{
+	title: "花肥",
+	x: 0.0d,
+	y: -2.5d,
+	text: [
+		"用这个东西可以产出植物魔法的花哦"
+	],
+	dependencies: [
+		"c1ba172c"
+	],
+	tasks: [{
+		uid: "e8536770",
+		type: "item",
+		items: [{
+			item: "botania:fertilizer"
+		}]
+	}]
+}

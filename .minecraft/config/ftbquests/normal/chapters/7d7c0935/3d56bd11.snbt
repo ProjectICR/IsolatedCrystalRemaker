@@ -1,0 +1,19 @@
+{
+	title: "大理石",
+	x: 14.0d,
+	y: -2.5d,
+	text: [
+		"将石头扔进星能液中获得大理石"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "6e0dbf95",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble"
+		}],
+		count: 64L
+	}]
+}

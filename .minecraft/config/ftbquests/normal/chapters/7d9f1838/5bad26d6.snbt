@@ -1,0 +1,20 @@
+{
+	title: "刷石机",
+	x: 16.0d,
+	y: 1.0d,
+	text: [
+		"水和岩浆放到一起会产生奇妙的化学反应，从而产生圆石"
+	],
+	dependencies: [
+		"cd78b371",
+		"dd8d0a17"
+	],
+	tasks: [{
+		uid: "a2314dd8",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 64L
+	}]
+}

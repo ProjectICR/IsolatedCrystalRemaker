@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 7.5d,
+	text: [
+		"你可以用笔与墨右键木桌来获得研究台",
+		"PS：羽毛可以用一个风之碎片和一个火之碎片在元素实体化器中获得"
+	],
+	dependencies: [
+		"580ec536"
+	],
+	tasks: [{
+		uid: "b46e7aa0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:research_table"
+		}]
+	}]
+}

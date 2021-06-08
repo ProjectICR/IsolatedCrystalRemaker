@@ -1,0 +1,21 @@
+{
+	title: "真正的“无中生有”",
+	x: 5.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"89916bec"
+	],
+	tasks: [{
+		uid: "7baa1c52",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechid"
+			}
+		}]
+	}]
+}

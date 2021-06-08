@@ -1,0 +1,19 @@
+{
+	title: "Ragnarok！",
+	x: 8.0d,
+	y: -1.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2eb6fb07",
+		"b1c9d070"
+	],
+	tasks: [{
+		uid: "7abe38da",
+		type: "item",
+		items: [{
+			item: "minecraft:furnace"
+		}]
+	}]
+}

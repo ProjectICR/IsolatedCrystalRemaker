@@ -1,0 +1,12 @@
+{
+	x: -1.5d,
+	y: 6.0d,
+	text: [
+		"万一出裂缝了神仙也救不了你"
+	],
+	tasks: [{
+		uid: "ae17db07",
+		type: "checkmark",
+		title: "不太建议在家里玩神秘"
+	}]
+}

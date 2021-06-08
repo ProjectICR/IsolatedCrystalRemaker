@@ -1,0 +1,24 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	dependencies: [
+		"d483544d"
+	],
+	tasks: [{
+		uid: "7c1ddbb9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ceramics:clay_bucket",
+			tag: {
+				fluids: {
+					FluidName: "water",
+					Amount: 1000
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

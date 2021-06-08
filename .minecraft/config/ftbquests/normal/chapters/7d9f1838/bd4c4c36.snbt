@@ -1,0 +1,25 @@
+{
+	title: "风之碎片",
+	x: 1.5d,
+	y: 1.0d,
+	text: [
+		"使用玻璃碎片右键石头即可获得风之碎片",
+		"PS：该合成仅可使用20次"
+	],
+	dependencies: [
+		"de6bb808"
+	],
+	tasks: [{
+		uid: "effc8920",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		}]
+	}]
+}

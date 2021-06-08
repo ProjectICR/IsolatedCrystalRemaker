@@ -1,0 +1,19 @@
+{
+	title: "骨粉",
+	x: -2.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"714c4dda"
+	],
+	tasks: [{
+		uid: "9a4d9c24",
+		type: "item",
+		items: [{
+			item: "minecraft:dye 1 15"
+		}],
+		count: 12L
+	}]
+}

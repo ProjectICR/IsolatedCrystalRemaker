@@ -1,0 +1,24 @@
+{
+	x: 13.5d,
+	y: 2.0d,
+	dependencies: [
+		"d483544d"
+	],
+	tasks: [{
+		uid: "21cbd2e1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ceramics:clay_bucket",
+			tag: {
+				fluids: {
+					FluidName: "lava",
+					Amount: 1000
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

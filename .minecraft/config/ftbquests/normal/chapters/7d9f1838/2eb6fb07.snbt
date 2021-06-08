@@ -1,0 +1,18 @@
+{
+	title: "盖亚！",
+	x: 6.0d,
+	y: -1.5d,
+	text: [
+		"你可以使用两个地之碎片在元素实体化器中合成一块圆石"
+	],
+	dependencies: [
+		"c04d66ab"
+	],
+	tasks: [{
+		uid: "84e6d9b3",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

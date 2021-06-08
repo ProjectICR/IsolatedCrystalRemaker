@@ -1,0 +1,21 @@
+{
+	title: "小心扎手",
+	x: -0.5d,
+	y: -0.5d,
+	text: [
+		"来，做一个熊孩子吧，现在到了你打碎玻璃的时候了！"
+	],
+	tasks: [{
+		uid: "a54106e8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:glass_fragment"
+		}]
+	}],
+	rewards: [{
+		uid: "4f38a677",
+		type: "item",
+		item: "minecraft:apple",
+		count: 4
+	}]
+}

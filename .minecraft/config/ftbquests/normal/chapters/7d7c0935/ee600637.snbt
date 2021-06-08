@@ -1,0 +1,17 @@
+{
+	x: 8.0d,
+	y: 7.5d,
+	text: [
+		"你可以用世界盐右键工作台来获得奥术工作台"
+	],
+	dependencies: [
+		"580ec536"
+	],
+	tasks: [{
+		uid: "a2e46efd",
+		type: "item",
+		items: [{
+			item: "thaumcraft:arcane_workbench"
+		}]
+	}]
+}

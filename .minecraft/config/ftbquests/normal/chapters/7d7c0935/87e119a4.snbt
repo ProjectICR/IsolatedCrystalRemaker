@@ -1,0 +1,17 @@
+{
+	x: 14.0d,
+	y: 4.0d,
+	text: [
+		"你可以把铁矿石和红石扔进星能液中，获得星辉矿石"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "6ced890e",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore 1 1"
+		}]
+	}]
+}

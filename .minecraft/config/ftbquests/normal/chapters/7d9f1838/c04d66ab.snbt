@@ -1,0 +1,20 @@
+{
+	title: "元素实体化",
+	x: 4.0d,
+	y: -0.5d,
+	text: [
+		"没错，这个机器可以提取出碎片中的源质使其变成具有实际意义的东西"
+	],
+	dependencies: [
+		"574301ce",
+		"bd4c4c36",
+		"40f374fc"
+	],
+	tasks: [{
+		uid: "0688cf59",
+		type: "item",
+		items: [{
+			item: "requious:essences_materializer"
+		}]
+	}]
+}

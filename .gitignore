@@ -3,6 +3,9 @@
 !/.minecraft
 /.minecraft/*
 
+#configs
+!/.minecraft/config/
+
 #repo stuff
 !/.gtihub
 !/docs

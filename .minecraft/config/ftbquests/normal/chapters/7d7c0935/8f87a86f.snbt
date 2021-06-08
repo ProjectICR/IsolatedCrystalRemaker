@@ -1,0 +1,18 @@
+{
+	title: "染色工艺",
+	x: 5.0d,
+	y: 3.0d,
+	text: [
+		"你可以用各类颜色的染料去给玻璃碎片染色获得各类碎片"
+	],
+	dependencies: [
+		"310b07ca"
+	],
+	tasks: [{
+		uid: "649bb5ef",
+		type: "item",
+		items: [{
+			item: "minecraft:cauldron"
+		}]
+	}]
+}

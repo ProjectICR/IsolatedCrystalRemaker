@@ -1,0 +1,21 @@
+{
+	x: 14.0d,
+	y: -0.5d,
+	text: [
+		"你可以把工作台扔进星能液里获得星辉工作台"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "4f20b50f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar"
+		}],
+		ignore_nbt: 1b
+	}]
+}

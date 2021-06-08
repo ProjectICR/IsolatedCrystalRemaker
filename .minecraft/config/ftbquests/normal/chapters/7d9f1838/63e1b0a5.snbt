@@ -1,0 +1,18 @@
+{
+	title: "生命的希望",
+	x: 6.0d,
+	y: 0.5d,
+	text: [
+		"在元素实体化器中使用一个地之碎片和一个风之碎片即可获得一颗树苗"
+	],
+	dependencies: [
+		"c04d66ab"
+	],
+	tasks: [{
+		uid: "6118f42a",
+		type: "item",
+		items: [{
+			item: "minecraft:sapling"
+		}]
+	}]
+}

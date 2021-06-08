@@ -1,0 +1,12 @@
+{
+	title: "真正的“无中生有”",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "orechid"
+		}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

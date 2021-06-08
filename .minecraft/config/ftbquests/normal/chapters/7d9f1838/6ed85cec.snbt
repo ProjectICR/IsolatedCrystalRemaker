@@ -1,0 +1,25 @@
+{
+	title: "水之碎片",
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"用玻璃碎片右键树叶即可获得水之碎片",
+		"PS：该合成仅可使用10次"
+	],
+	dependencies: [
+		"63e1b0a5"
+	],
+	tasks: [{
+		uid: "14757eb0",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			}
+		}]
+	}]
+}

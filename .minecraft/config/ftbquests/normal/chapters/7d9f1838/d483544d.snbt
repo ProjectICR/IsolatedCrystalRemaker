@@ -1,0 +1,19 @@
+{
+	title: "请注意仔细看任务简介，否则就要从零开始喽（笑）",
+	x: 11.0d,
+	y: 1.0d,
+	text: [
+		"PS：请务必先做水的任务再做岩浆任务，否则你会因为粘土不够而导致卡任务线（也卡了科技线）"
+	],
+	dependencies: [
+		"d6b2860a",
+		"23a71319"
+	],
+	tasks: [{
+		uid: "a58caebe",
+		type: "item",
+		items: [{
+			item: "ceramics:clay_bucket"
+		}]
+	}]
+}

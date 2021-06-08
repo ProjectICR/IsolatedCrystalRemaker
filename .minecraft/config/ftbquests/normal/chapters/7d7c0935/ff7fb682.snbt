@@ -1,0 +1,18 @@
+{
+	title: "能量转换",
+	x: 11.5d,
+	y: 0.0d,
+	text: [
+		"你可以使用魔力石板在这个方块上右键一下，它会消耗你10000mana并给你一桶星能液"
+	],
+	dependencies: [
+		"82114c92"
+	],
+	tasks: [{
+		uid: "2fabcf37",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ambient_block"
+		}]
+	}]
+}

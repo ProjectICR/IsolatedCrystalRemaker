@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: 7.5d,
+	text: [
+		"你可以用世界盐右键书架来获得魔导手册",
+		"PS：纸可以通过挤压树叶获得纸浆然后用匠魂晾干架晾干获得"
+	],
+	dependencies: [
+		"580ec536"
+	],
+	tasks: [{
+		uid: "50101f77",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumonomicon"
+		}],
+		ignore_nbt: 1b
+	}]
+}

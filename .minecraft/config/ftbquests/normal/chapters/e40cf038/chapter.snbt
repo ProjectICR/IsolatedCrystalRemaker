@@ -1,7 +1,0 @@
-{
-	title: "数据化处理",
-	icon: "appliedenergistics2:controller",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

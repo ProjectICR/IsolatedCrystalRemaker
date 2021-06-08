@@ -6,7 +6,6 @@
 #repo stuff
 !/.gtihub
 !/docs
-!/artifacts
 !/README.md
 !/build.sh
 !/icon.png
@@ -24,6 +23,3 @@
 !/modlist.html
 !/manifest.json
 !/.minecraft/icon.png
-
-#white list
-/.minecraft/scripts/.zsrc

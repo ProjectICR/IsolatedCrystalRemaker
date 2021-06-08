@@ -1,7 +1,0 @@
-{
-	title: "材料革命",
-	icon: "minecraft:iron_ingot",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

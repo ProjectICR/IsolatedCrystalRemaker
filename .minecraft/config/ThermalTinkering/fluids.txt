@@ -113,7 +113,7 @@ uranium                                           (immersiveengineering:molten_u
 bloodbronze                                       ([no block])                                                                     = Molten Blood Bronze
 bio.ethanol                                       (forestry:fluid.bio.ethanol)                                                     = ““¥º
 biomass                                           (forestry:fluid.biomass)                                                         = …˙ŒÔ÷ 
-glass                                             (forestry:fluid.glass)                                                           = “∫Ã¨≤£¡ß
+glass                                             (forestry:fluid.glass)                                                           = ≤£¡ß
 for.honey                                         (forestry:fluid.for.honey)                                                       = ∑‰√€
 ice                                               (forestry:fluid.ice)                                                             = ÀÈ±˘
 juice                                             (forestry:fluid.juice)                                                           = π˚÷≠

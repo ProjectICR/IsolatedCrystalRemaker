@@ -7,5 +7,5 @@ printDocumentation(false)
 setAsDefaultWorldType()
 
 //Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
-icrOpening = registerPreset("This is the beginning of the reset version of Isolated Crystal, the extremely humble island", "images/opening_island", "Start sky island")
-icrOpening.registerDimension(0, "maps/opening_island")
+opening_island = registerPreset("This is the beginning of the reset version of Isolated Crystal, the extremely humble island", "images/opening_island", "Start sky island")
+opening_island.registerDimension(0, "maps/opening_island")

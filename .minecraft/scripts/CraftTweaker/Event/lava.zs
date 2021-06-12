@@ -8,6 +8,7 @@ import crafttweaker.entity.IEntityEquipmentSlot;
 
 import crafttweaker.event.PlayerInteractBlockEvent;
 
+
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
     var world as IWorld = event.world;
     var player as IPlayer = event.player;

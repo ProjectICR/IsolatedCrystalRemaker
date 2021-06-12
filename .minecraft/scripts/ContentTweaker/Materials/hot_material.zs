@@ -11,8 +11,10 @@ var hotIngotList as string[int] = {
 
 var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
 hotSystem.addPart("plate");
-hotSystem.registerNormalPart("hot_ingot", "item", false);
+hotSystem.addPart("ingot");
+hotSystem.registerNormalPart("rotor", "item", false);
 hotSystem.registerNormalPart("hot_plate", "item", true);
+hotSystem.registerNormalPart("hot_ingot", "item", false);
 hotSystem.registerNormalPart("quenched_plate", "item", true);
 
 for color, name in hotIngotList {

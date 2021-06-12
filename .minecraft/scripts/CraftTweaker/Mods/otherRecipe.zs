@@ -3,8 +3,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 import scripts.grassUtils.RecipeUtils;
-import scripts.CraftTweaker.Mods.static_variable.crystal;
 
+
+var crystal as IItemStack = <thaumcraft:crystal_essence>;
 
 var shapedRecipes as IIngredient[][][IItemStack] = {
     <requious:essences_materializer> : [

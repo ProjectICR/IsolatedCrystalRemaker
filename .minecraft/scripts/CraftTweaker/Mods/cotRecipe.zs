@@ -4,7 +4,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.ICraftingInventory;
 
-import scripts.grassUtils.StringHelper;
+import scripts.grassUtils.StringHelper.getItemNameWithUnderline;
 import scripts.grassUtils.RecipeUtils.createCross;
 import scripts.grassUtils.RecipeUtils.createFull3;
 
@@ -21,7 +21,13 @@ var materials as int[string] = {
     "Berylliumaluminumalloy" : 4500
 };
 
-recipes.addShaped(StringHelper.getItemNameWithUnderline(<contenttweaker:ambient_block>), <contenttweaker:ambient_block>, [
+static ingotToPlate as string[] = [
+    "Castediron",
+    "Wroughtiron",
+];
+
+
+recipes.addShaped(getItemNameWithUnderline(<contenttweaker:ambient_block>), <contenttweaker:ambient_block>, [
     [<ore:livingrock>, null, <ore:livingrock>],
     [<ore:ingotManasteel>, <botania:manatablet>.withTag({mana: 1000}, false).marked("manatablet").reuse() , <ore:ingotManasteel>],
     [<ore:livingwood>, null, <ore:livingwood>]
@@ -35,6 +41,20 @@ recipes.addShaped(StringHelper.getItemNameWithUnderline(<contenttweaker:ambient_
         inventory.setStack(4, item.withTag({mana : item.tag.mana.asInt() - 1000}));
     }
 });
+
+
+for oreName in ingotToPlate {
+    var plate as IOreDictEntry = oreDict.get("plate" ~ oreName);
+    var ingot as IOreDictEntry = oreDict.get("ingot" ~ oreName);
+    var rotor as IOreDictEntry = oreDict.get("rotor" ~ oreName);
+
+    recipes.addShaped(getItemNameWithUnderline(rotor.firstItem), rotor.firstItem, [
+        [null, plate, null],
+        [plate, ingot, plate],
+        [null, plate, null]
+    ]);
+}
+
 
 for material, energy in materials {
     var materialNew as string = material.toLowerCase();

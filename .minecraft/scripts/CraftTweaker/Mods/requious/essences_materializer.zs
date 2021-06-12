@@ -5,11 +5,12 @@ import crafttweaker.liquid.ILiquidStack;
 
 import mods.requious.Assembly;
 import mods.requious.SlotVisual;
+import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
 
-import scripts.CraftTweaker.Mods.static_variable.allFace;
-import scripts.CraftTweaker.Mods.static_variable.crystal;
-import scripts.CraftTweaker.Mods.static_variable.em;
+static allFace as ComponentFace = ComponentFace.all();
+static em as Assembly = <assembly:essences_materializer>;
+var crystal as IItemStack = <thaumcraft:crystal_essence>;
 
 em.setDurationSlot(6, 2).setGroup("time").setVisual(SlotVisual.arrowRight());
 em.setItemSlot(0, 1, allFace, 64).setGroup("input").setAccess(true, false);

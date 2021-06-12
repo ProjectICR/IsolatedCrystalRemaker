@@ -6,18 +6,20 @@ tile.contenttweaker.ambient_block.name=Ambient Block
 
 # Item
 item.contenttweaker.puresi.name=High-curity Silicon
-item.contenttweaker.middle_item.name=
+item.contenttweaker.middle_item.name=Middle Item
 item.contenttweaker.glass_fragment.name=Glass Fragment
 item.contenttweaker.pig_iron_billet.name=Pig Iron Billet
 item.contenttweaker.crystalsi.name=Mono-crystalline Silicon
 
 # Part
+contenttweaker.part.rotor=%s rotor
 contenttweaker.part.tiny_dust_icr=%s Dust
 contenttweaker.part.hot_ingot=Hot %s Ingot
 contenttweaker.part.hot_plate=Hot %s Plate
 contenttweaker.part.quenched_plate=Quenched %s Plate
 
 # Material
+base.material.steel=Steel
 base.material.cesium=Cesium
 base.material.indium=Indium
 base.material.titanium=Titanium

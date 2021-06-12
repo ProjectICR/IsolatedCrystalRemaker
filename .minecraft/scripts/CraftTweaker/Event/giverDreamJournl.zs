@@ -9,10 +9,10 @@ import crafttweaker.util.Position3f;
 import crafttweaker.block.IBlockState;
 import crafttweaker.entity.IEntityItem;
 
-import mods.ctintegration.data.DataUtil.fromJson;
-
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerItemPickupEvent;
+
+import mods.ctintegration.data.DataUtil.fromJson;
 
 
 static crystal_essence as string[] = ["aer", "terra", "ignis", "aqua", "ordo", "perditio"];

@@ -12,6 +12,7 @@ item.contenttweaker.glass_fragment.name=玻璃碎片
 item.contenttweaker.pig_iron_billet.name=生铁铁呸
 
 # 部件
+contenttweaker.part.rotor=%s转子
 contenttweaker.part.hot_ingot=热%s锭
 contenttweaker.part.hot_plate=热%s板
 contenttweaker.part.tiny_dust_icr=%s粉尘

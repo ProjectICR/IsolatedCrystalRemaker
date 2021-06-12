@@ -7,12 +7,13 @@ import crafttweaker.block.IBlockState;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;
 
-import mods.ctintegration.data.DataUtil.fromJson;
-
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
+
+import mods.ctintegration.data.DataUtil.fromJson;
+
 
 static data as IData = {PlayerPersisted : {Get : {aer : 0 as int, terra : 0 as int, ignis : 0 as int, aqua : 0 as int}}};
 static crystal_essence as IBlockState[][string] = {

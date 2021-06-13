@@ -18,7 +18,7 @@ teSL.onTick = function(tileEntity, world, pos) {
         tileEntity.updateCustomData({worldTime : 0});
     }
 
-    if(!world.remote && !world.dayTime && !isNull(data.hasManaCapacity) && data.hasManaCapacity.asBool()) {
+    if(!world.remote && !world.dayTime && !isNull(data.hasMana) && data.hasMana.asBool()) {
         tileEntity.updateCustomData({worldTime : (data.worldTime.asInt() + 1)});
 
         if(data.worldTime.asInt() != 0 && data.worldTime % 1200 == 0) {
@@ -36,15 +36,15 @@ ambient.onBlockActivated = function(world, pos, state, player, hand, facing, blo
 
     if(player.hasItemInSlot(mainHand) && mainHandItem.definition.id == "botania:manatablet" && !isNull(mainHandItem.tag.mana)) {
         var manaCapacity as int = mainHandItem.tag.mana.asInt();
+        var hasMana as IData = {hasMana : true as bool};
         var tile as TileEntityInGame = world.getCustomTileEntity(pos);
 
-        if(!world.remote && manaCapacity >= 10000 && isNull(tile.data.manaCapacity)) {
-            if(!isNull(mainHandItem.tag.creative)) {
-                tile.updateCustomData({hasManaCapacity : true});
+        if(!world.remote && manaCapacity >= 10000 && isNull(tile.data.hasMana)) {
+            if(!isNull(mainHandItem.tag.creative) || player.creative) {
+                tile.updateCustomData(hasMana);
             } else {
-                
                 mainHandItem.mutable().withTag({mana : (manaCapacity - 10000)});
-                tile.updateCustomData({hasManaCapacity : true});
+                tile.updateCustomData(hasMana);
             }
             return true;
         }

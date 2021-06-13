@@ -28,7 +28,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
                     player.sendChat(game.localize("icr.crafttweaker.event.lava"));
                 }
 
-                player.update(({PlayerPersisted : {rightBlazeblock: true}}));
+                player.update(({PlayerPersisted : {rightBlazeblock: true as bool}}));
                 offHandItem.mutable().shrink(1);
             }
 

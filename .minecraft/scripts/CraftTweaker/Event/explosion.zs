@@ -1,10 +1,10 @@
 #loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
-import crafttweaker.world.IWorld;
-import crafttweaker.world.IBlockPos;
-import crafttweaker.player.IPlayer;
 import crafttweaker.block.IBlock;
+import crafttweaker.world.IWorld;
+import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
+import crafttweaker.world.IBlockPos;
 
 import crafttweaker.event.PlayerRightClickItemEvent;
 

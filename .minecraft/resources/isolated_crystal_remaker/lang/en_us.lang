@@ -1,9 +1,7 @@
 #Event
 icr.crafttweaker.event.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
 icr.crafttweaker.event.thaumometer.explode=Wanna scan Hydroangeas? There's no way!
-
-#DamageSource
-death.attack.handHeldTable=Hey bro, want an apple?
+icr.crafttweaker.event.handHeldTable=Hey bro, want an apple?
 
 #Machine
 tile.essences_materializer.name=Essences Materializer

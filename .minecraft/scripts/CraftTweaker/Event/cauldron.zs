@@ -1,11 +1,11 @@
 #loader crafttweaker
 import crafttweaker.data.IData;
-import crafttweaker.world.IWorld;
-import crafttweaker.world.IBlockPos;
-import crafttweaker.player.IPlayer;
-import crafttweaker.block.IBlockState;
 import crafttweaker.block.IBlock;
+import crafttweaker.world.IWorld;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
 import crafttweaker.item.IItemStack;
+import crafttweaker.block.IBlockState;
 
 import crafttweaker.event.BlockPlaceEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;

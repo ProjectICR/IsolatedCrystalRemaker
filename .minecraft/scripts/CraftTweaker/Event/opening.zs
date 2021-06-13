@@ -1,11 +1,12 @@
 #loader crafttweaker
 import crafttweaker.data.IData;
-import crafttweaker.world.IWorld;
-import crafttweaker.world.IBlockPos;
-import crafttweaker.player.IPlayer;
-import crafttweaker.block.IBlockState;
 import crafttweaker.block.IBlock;
+import crafttweaker.world.IWorld;
+import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.block.IBlockState;
+import crafttweaker.damage.IDamageSource;
 
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -30,7 +31,7 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	var player as IPlayer = event.player;
 	var block as IBlock = event.block;
 
-	if(!event.isPlayer || event.silkTouch || player.isFake()) return;
+	if(!event.isPlayer || event.silkTouch) return;
 
 	if(!event.world.remote) {
 		if(block.definition.id == "minecraft:glass") {
@@ -44,10 +45,15 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 events.onPlayerCrafted(function(event as PlayerCraftedEvent){
 	var player as IPlayer = event.player;
 	var world as IWorld = player.world;
+	var heldItem as IItemStack = player.currentItem;
 
-	if(!world.remote && player.currentItem.definition.id == "extendedcrafting:handheld_table"){
-		player.attackEntityFrom(<damageSource:handHeldTable>, 10);
-		player.update({PlayerPersisted : {handHeldTable : true as bool}});
+	if(!world.remote && !isNull(heldItem)) {
+		var heldItemID as string = heldItem.definition.id;
+
+		if(heldItemID == "extendedcrafting:handheld_table" || heldItemID == "actuallyadditions:item_crafter_on_a_stick") {
+			player.attackEntityFrom(IDamageSource.createPlayerDamage(player), 10);
+			player.update({PlayerPersisted : {handHeldTable : true as bool}});
+		}
 	}
 });
 
@@ -93,8 +99,11 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 });
 
 events.onPlayerRespawn(function(event as PlayerRespawnEvent){
-	if(!isNull(event.player.data.PlayerPersisted.handHeldTable) && event.player.data.PlayerPersisted.handHeldTable.asBool()){
-		event.player.update({PlayerPersisted : {handHeldTable : false as bool}});
-		event.player.give(<minecraft:apple> * 5);
+	var player as IPlayer = event.player;
+
+	if(!isNull(player.data.PlayerPersisted.handHeldTable) && player.data.PlayerPersisted.handHeldTable.asBool()){
+		player.update({PlayerPersisted : {handHeldTable : false as bool}});
+		player.sendChat(game.localize("icr.crafttweaker.event.handHeldTable"));
+		player.give(<minecraft:apple> * 5);
 	}
 });

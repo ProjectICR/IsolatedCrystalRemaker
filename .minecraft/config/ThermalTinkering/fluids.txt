@@ -141,6 +141,7 @@ menrilresin                                       (integrateddynamics:block_menr
 liquidchorus                                      (integrateddynamics:block_liquid_chorus)                                         = 紫颂果汁
 titanium_tetrachloride_gas                        (mekatweaker:titanium_tetrachloride_gas)                                         = 液态三氯化钛
 silicon_tetrachloride_gas                         (mekatweaker:silicon_tetrachloride_gas)                                          = 液态三氯化硅
+carbon_monoxide_gas                               (mekatweaker:carbon_monoxide_gas)                                                = 液态一氧化碳
 soulium                                           (mysticalagradditions:molten_soulium)                                            = 熔融离魂
 base_essence                                      (mysticalagradditions:molten_base_essence)                                       = 熔融基础精华
 inferium                                          (mysticalagradditions:molten_inferium)                                           = 熔融下级精华

@@ -21,7 +21,7 @@ var materials as int[string] = {
     "Berylliumaluminumalloy" : 4500
 };
 
-static ingotToPlate as string[] = [
+static ingotToRotor as string[] = [
     "Castediron",
     "Wroughtiron",
 ];
@@ -43,7 +43,7 @@ recipes.addShaped(getItemNameWithUnderline(<contenttweaker:ambient_block>), <con
 });
 
 
-for oreName in ingotToPlate {
+for oreName in ingotToRotor {
     var plate as IOreDictEntry = oreDict.get("plate" ~ oreName);
     var ingot as IOreDictEntry = oreDict.get("ingot" ~ oreName);
     var rotor as IOreDictEntry = oreDict.get("rotor" ~ oreName);

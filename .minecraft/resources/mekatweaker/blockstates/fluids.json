@@ -8,6 +8,10 @@
 		"silicon_tetrachloride_gas" : {
 			"model": "forge:fluid",
 			"custom": { "fluid": "silicon_tetrachloride_gas" }
+		},
+		"carbon_monoxide_gas" : {
+			"model": "forge:fluid",
+			"custom": { "fluid": "carbon_monoxide_gas"}
 		}
 	}
 }

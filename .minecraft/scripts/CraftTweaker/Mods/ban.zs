@@ -2,7 +2,7 @@
 import crafttweaker.item.IItemStack;
 
 
-var banList as IItemStack[] = [
+var onlyBanList as IItemStack[] = [
     //appliedenergistics2 Mod
     <appliedenergistics2:material:39>,
     <appliedenergistics2:material:15>,
@@ -24,8 +24,8 @@ var banList as IItemStack[] = [
     <storagedrawers:framingtable>
 ];
 
-for banItem in banList {
-    recipes.remove(banItem);
+for onlyBanItem in onlyBanList {
+    recipes.remove(onlyBanItem);
 }
 
 furnace.remove(<astralsorcery:itemcraftingcomponent:1>);

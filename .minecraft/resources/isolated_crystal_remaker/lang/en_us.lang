@@ -1,17 +1,12 @@
 #Event
 icr.crafttweaker.event.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
+icr.crafttweaker.event.thaumometer.explode=Wanna scan Hydroangeas? There's no way!
 
 #DamageSource
 death.attack.handHeldTable=Hey bro, want an apple?
 
 #Machine
-tile.casting_oven.name=Casting Oven
-tile.casting_furnace.name=Casting Furnace
-tile.forging_hammer_machine.name=Forging Hammer Machine
 tile.essences_materializer.name=Essences Materializer
 
 #JEI Recipe
-requious.jei.recipe.casting_oven=Casting Oven
-requious.jei.recipe.casting_furnace=Casting Furnace
-requious.jei.recipe.forging_hammer_machine=Forging Hammer Machine
 requious.jei.recipe.essences_materializer=Essences Materializer

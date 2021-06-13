@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.modularmachinery.RecipeBuilder;
 
-import scripts.CraftTweaker.Mods.cotRecipe.ingotToPlate;
+import scripts.contenttweaker.recipes.recipe.ingotToRotor;
 import scripts.grassUtils.StringHelper.getItemNameWithUnderline;
 
 var machineName as string = "forging_hammer_machine";
@@ -15,7 +15,7 @@ RecipeBuilder.newBuilder("hot_wrought_iron", machineName, 400)
 .build();
 
 
-for oreName in ingotToPlate {
+for oreName in ingotToRotor {
     var ingot as IOreDictEntry = oreDict.get("hotIngot" ~ oreName);
     var plate as IOreDictEntry = oreDict.get("hotPlate" ~ oreName);
 

@@ -2,6 +2,7 @@
 #loader contenttweaker
 import scripts.grassUtils.CotUtils;
 
+
 var registerItems as string[] = [
     "puresi",
     "crystalsi",

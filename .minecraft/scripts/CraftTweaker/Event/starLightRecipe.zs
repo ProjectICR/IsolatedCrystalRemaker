@@ -27,12 +27,8 @@ function getBlockPos(entity as IEntity) as IBlockPos {
 
 static starLight as IBlockState = <blockstate:astralsorcery:fluidblockliquidstarlight>;
 
-var crystal as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag(
-    {astralsorcery : {crystalProperties : {collectiveCapability : 50, size : 200, fract : 0, purity : 50, sizeOverride : -1}}}
-);
-
 var oneItemRecipe as IItemStack[][int] = {
-    120 : [crystal, <minecraft:diamond>],
+    120 : [<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery : {crystalProperties : {collectiveCapability : 50, size : 200, fract : 0, purity : 50, sizeOverride : -1}}}), <minecraft:diamond>],
     30 : [<astralsorcery:blockaltar>, <avaritia:compressed_crafting_table>]
 };
 

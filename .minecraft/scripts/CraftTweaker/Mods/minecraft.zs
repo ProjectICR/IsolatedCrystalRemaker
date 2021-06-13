@@ -4,11 +4,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.damage.IDamageSource;
 
+import mods.tconstruct.Casting;
 import mods.thermalexpansion.Compactor;
-import mods.integrateddynamics.MechanicalSqueezer;
 import mods.integrateddynamics.Squeezer;
 import mods.immersiveengineering.MetalPress;
-import mods.tconstruct.Casting;
+import mods.integrateddynamics.MechanicalSqueezer;
 
 import scripts.grassUtils.RecipeUtils;
 

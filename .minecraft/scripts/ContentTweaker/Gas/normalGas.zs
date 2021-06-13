@@ -13,3 +13,9 @@ STGas.setIcon("blocks/gas/silicon_tetrachloride_gas");
 STGas.setNeedFluid(true);
 STGas.setNeedBucket(true);
 STGas.register();
+
+var CMGas as Gas = GasFactory.createGas("carbon_monoxide_gas");
+CMGas.setIcon("blocks/gas/carbon_monoxide_gas");
+CMGas.setNeedFluid(true);
+CMGas.setNeedBucket(true);
+CMGas.register();

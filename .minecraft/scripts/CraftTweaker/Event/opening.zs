@@ -35,6 +35,7 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	if(!event.world.remote) {
 		if(block.definition.id == "minecraft:glass") {
 			var random as int = event.world.random.nextInt(1, 3);
+			
 			event.drops = [<contenttweaker:glass_fragment> * random];
 		}
 	}
@@ -61,8 +62,10 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 		if(isNull(player.data.PlayerPersisted.Get)){
 			player.update(data);
 		}
+
 		for input, output in aqua_ {
 			var dataAqua as int = player.data.PlayerPersisted.Get.aqua.asInt();
+
 			if(block.definition.id == input.block.definition.id && player.data.PlayerPersisted.Get.aqua.asInt() < 10) {
 				item.mutable().shrink(1);
 				player.give(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
@@ -75,8 +78,10 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 			for output in outputs {
 				if(item.definition.id == "contenttweaker:glass_fragment" && isNull(item.tag.Aspects) && output.block.definition.id == block.definition.id){
 					var dataNow as int = player.data.PlayerPersisted.Get.memberGet(input).asInt();
+
 					if(dataNow < 20){
 						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + input + '" : ' + (dataNow + 1) + '}}}');
+
 						item.mutable().shrink(1);
 						player.give(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: input}]}));
 						player.update(dataModify);

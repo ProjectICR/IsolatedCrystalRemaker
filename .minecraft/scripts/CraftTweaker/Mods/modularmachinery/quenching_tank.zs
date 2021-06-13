@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.modularmachinery.RecipeBuilder;
 
-import scripts.CraftTweaker.Mods.cotRecipe.ingotToPlate;
+import scripts.contenttweaker.recipes.recipe.ingotToRotor;
 import scripts.grassUtils.StringHelper.getItemNameWithUnderline;
 
 var machineName as string = "quenching_tank";
@@ -20,7 +20,7 @@ RecipeBuilder.newBuilder("wrought_iron_plate", machineName, 200)
 .build();
 
 
-for oreName in ingotToPlate {
+for oreName in ingotToRotor {
     var ingot as IOreDictEntry = oreDict.get("hotIngot" ~ oreName);
     var qPlate as IOreDictEntry = oreDict.get("quenchedPlate" ~ oreName);
 

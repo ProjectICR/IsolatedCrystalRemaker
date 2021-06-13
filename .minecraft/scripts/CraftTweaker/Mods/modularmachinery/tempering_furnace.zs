@@ -3,13 +3,13 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.modularmachinery.RecipeBuilder;
 
-import scripts.CraftTweaker.Mods.cotRecipe.ingotToPlate;
+import scripts.contenttweaker.recipes.recipe.ingotToRotor;
 
 
 var machineName as string = "tempering_furnace";
 
 
-for oreName in ingotToPlate {
+for oreName in ingotToRotor {
     var oreNameNew as string = oreName.toLowerCase();
     var hotPlate as IOreDictEntry = oreDict.get("hotPlate" ~ oreName);
 

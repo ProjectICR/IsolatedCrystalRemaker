@@ -46,9 +46,11 @@ for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
 
+
 for output, inputBox in shapelessRecipes {
     RecipeUtils.recipeTweak(false, output, inputBox);
 }
+
 
 ManaInfusion.addAlchemy(<minecraft:double_plant>, <botania:petal:4> * 4, 150);
 

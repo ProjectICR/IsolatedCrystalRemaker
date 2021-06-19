@@ -1,3 +1,4 @@
+#priority -1
 #loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;

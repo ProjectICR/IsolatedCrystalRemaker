@@ -10,7 +10,7 @@ tile.essences_materializer.name=元素实体化器
 requious.jei.recipe.essences_materializer=元素实体化器
 
 # 元素实体化器的提示
-icr.tooltip.essences_materializer=需要注意 : 假设你先放入了 2 个 Terra 水晶碎片并一会才放入 Aqua 水晶碎片, 那么输出物将会是圆石而不是粘土块
+icr.tooltip.essences_materializer=摆放在机器里的物品需要与配方内物品的位置保持一致
 
 # 中间产物
 icr.tooltip.info.nothing=无

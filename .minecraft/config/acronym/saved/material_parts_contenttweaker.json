@@ -6,6 +6,8 @@
     "castediron_quenched_plate": 3,
     "beryllium_tiny_dust_icr": 38,
     "berylliumaluminumalloy_dense_plate": 35,
+    "steel_hot_ingot": 117,
+    "steel_rotor": 120,
     "cesium_rod": 73,
     "indium_block": 87,
     "berylliumaluminumalloy_gear": 34,
@@ -36,6 +38,7 @@
     "indium_plate": 82,
     "germanium_dust": 60,
     "indium_dust": 80,
+    "steel_quenched_plate": 118,
     "stainlesstitanium_block": 97,
     "beryllium_small_dust": 46,
     "adamantium_dense_plate": 105,
@@ -78,6 +81,7 @@
     "indium_dense_plate": 85,
     "cesium_gear": 74,
     "zirconium_plate": 12,
+    "steel_ingot": 119,
     "beryllium_dense_plate": 45,
     "stainlesstitanium_nugget": 91,
     "wroughtiron_hot_ingot": 5,
@@ -89,10 +93,11 @@
     "stainlesstitanium_tiny_dust_icr": 88,
     "zirconium_rod": 13,
     "beryllium_rod": 43,
-    "adamantium_small_dust": 106,
     "stainlesstitanium_small_dust": 96,
+    "adamantium_small_dust": 106,
     "zirconium_dust": 10,
     "indium_tiny_dust_icr": 78,
+    "steel_plate": 121,
     "soldertin_dust": 20,
     "castediron_rotor": 108,
     "germanium_rod": 63,
@@ -110,7 +115,8 @@
     "adamantium_tiny_dust_icr": 98,
     "wroughtiron_rotor": 109,
     "berylliumaluminumalloy_dust": 30,
+    "germanium_small_dust": 66,
     "cesium_block": 77,
-    "germanium_small_dust": 66
+    "steel_hot_plate": 116
   }
 }

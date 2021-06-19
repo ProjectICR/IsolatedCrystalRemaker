@@ -31,3 +31,5 @@ import scripts.grassUtils.GrassUtils;
 
     return GrassUtils.i18nValued("icr.tooltip.info.state", [GrassUtils.i18n("icr.tooltip.info.nothing")]);
 });
+
+<requious:essences_materializer>.addTooltip(GrassUtils.i18n("icr.tooltip.essences_materializer"));

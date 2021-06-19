@@ -1,13 +1,16 @@
-#Event
+# Event
 icr.text.info.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
 icr.text.info.explode=Wanna scan Hydroangeas? There's no way!
 icr.text.info.handHeldTable=Hey bro, want an apple?
 
-#Machine
+# Machine
 tile.essences_materializer.name=Essences Materializer
 
-#JEI Recipe
+# JEI Recipe
 requious.jei.recipe.essences_materializer=Essences Materializer
+
+# Tooltip of Essences Materializer
+icr.tooltip.essences_materializer=
 
 # Intermediate Product
 icr.tooltip.info.nothing=None

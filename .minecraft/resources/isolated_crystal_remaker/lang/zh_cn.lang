@@ -1,13 +1,16 @@
-#事件
+# 事件
 icr.text.info.lava=你已经用铁和燧石右键过烈焰网啦, 不能再次右键了。
 icr.text.info.explode=想扫水绣球? 门都没有!
 icr.text.info.handHeldTable=小哥, 要不要苹果?
 
-#机器
+# 机器
 tile.essences_materializer.name=元素实体化器
 
-#JEI 配方
+# JEI 配方
 requious.jei.recipe.essences_materializer=元素实体化器
+
+# 元素实体化器的提示
+icr.tooltip.essences_materializer=需要注意 : 假设你先放入了 2 个 Terra 水晶碎片并一会才放入 Aqua 水晶碎片, 那么输出物将会是圆石而不是粘土块
 
 # 中间产物
 icr.tooltip.info.nothing=无

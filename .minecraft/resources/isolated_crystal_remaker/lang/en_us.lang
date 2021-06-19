@@ -1,10 +1,17 @@
 #Event
-icr.crafttweaker.event.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
-icr.crafttweaker.event.thaumometer.explode=Wanna scan Hydroangeas? There's no way!
-icr.crafttweaker.event.handHeldTable=Hey bro, want an apple?
+icr.text.info.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
+icr.text.info.explode=Wanna scan Hydroangeas? There's no way!
+icr.text.info.handHeldTable=Hey bro, want an apple?
 
 #Machine
 tile.essences_materializer.name=Essences Materializer
 
 #JEI Recipe
 requious.jei.recipe.essences_materializer=Essences Materializer
+
+# Intermediate Product
+icr.tooltip.info.nothing=None
+icr.tooltip.info.state=State: %s
+icr.tooltip.info.only_quenching=Quenched
+icr.tooltip.info.only_tempering=Tempered
+icr.localization.intermediate_product=Intermediate Product of %s

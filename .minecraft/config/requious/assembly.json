@@ -153,11 +153,11 @@
       }
     },
     {
-      "placeType": "Any",
+      "placeType": "Up",
       "layerType": "Cutout",
       "hasGUI": true,
       "resourceName": "essences_materializer",
-      "model": "requious:assembly_block",
+      "model": "isolated_crystal_remaker:essences_materializer",
       "colors": [
         {
           "r": 255,
@@ -173,7 +173,7 @@
         "y1": 0.0,
         "z1": 0.0,
         "x2": 1.0,
-        "y2": 1.0,
+        "y2": 1.2,
         "z2": 1.0
       }
     }

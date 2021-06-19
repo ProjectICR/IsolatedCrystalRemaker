@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Run build.sh
-        run: bash build.sh
+        run: bash runners/build.sh
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2

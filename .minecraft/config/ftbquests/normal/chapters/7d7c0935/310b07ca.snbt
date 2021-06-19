@@ -2,9 +2,6 @@
 	title: "{icr.quests.310b07ca.title}",
 	x: 5.0d,
 	y: 0.0d,
-	text: [
-		"{herodotus.quests.310b07ca.text.1}"
-	],
 	dependencies: [
 		"89916bec"
 	],

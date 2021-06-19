@@ -1,9 +1,9 @@
 {
-	title: "盖亚！",
+	title: "{icr.quests.2eb6fb07.title}",
 	x: 6.0d,
 	y: -1.5d,
 	text: [
-		"你可以使用两个地之碎片在元素实体化器中合成一块圆石"
+		"{icr.quests.2eb6fb07.text.1}"
 	],
 	dependencies: [
 		"c04d66ab"

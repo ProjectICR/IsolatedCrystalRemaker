@@ -1,9 +1,9 @@
 {
-	title: "元素实体化",
+	title: "{icr.quests.c04d66ab.title}",
 	x: 4.0d,
 	y: -0.5d,
 	text: [
-		"没错，这个机器可以提取出碎片中的源质使其变成具有实际意义的东西"
+		"{icr.quests.c04d66ab.text.1}"
 	],
 	dependencies: [
 		"574301ce",

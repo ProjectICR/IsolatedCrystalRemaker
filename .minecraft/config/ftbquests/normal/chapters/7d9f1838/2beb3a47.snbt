@@ -1,9 +1,13 @@
 {
+	title: "{icr.quests.2beb3a47.title}",
 	x: -3.5d,
 	y: -0.5d,
+	text: [
+		""
+	],
 	tasks: [{
 		uid: "57e131c1",
 		type: "checkmark",
-		title: "匠魂除非必要否则没有任务，请好自为之"
+		title: "{icr.quests.2beb3a47.title}"
 	}]
 }

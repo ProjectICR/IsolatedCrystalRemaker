@@ -1,10 +1,10 @@
 {
-	title: "地之碎片",
+	title: "{icr.quests.574301ce.title}",
 	x: 1.5d,
 	y: -2.0d,
 	text: [
-		"用玻璃碎片右键草方块即可获得地之碎片",
-		"PS：该合成仅可使用20次"
+		"{icr.quests.574301ce.text.1}",
+		"{icr.quests.40f374fc.text.2}"
 	],
 	dependencies: [
 		"de6bb808"

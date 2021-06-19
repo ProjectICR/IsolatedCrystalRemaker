@@ -1,9 +1,9 @@
 {
-	title: "小心扎手",
+	title: "{icr.quests.de6bb808.title}",
 	x: -0.5d,
 	y: -0.5d,
 	text: [
-		"来，做一个熊孩子吧，现在到了你打碎玻璃的时候了！"
+		"{icr.quests.de6bb808.text.1}"
 	],
 	tasks: [{
 		uid: "a54106e8",

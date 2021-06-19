@@ -1,9 +1,9 @@
 {
-	title: "智慧的结晶",
+	title: "{icr.quests.b1c9d070.title}",
 	x: 8.0d,
 	y: 0.5d,
 	text: [
-		"你做出了工作台，这使你充满了决心并决定继续走下去"
+		"{icr.quests.b1c9d070.text.1}"
 	],
 	dependencies: [
 		"63e1b0a5"

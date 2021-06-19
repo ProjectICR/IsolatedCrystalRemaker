@@ -1,9 +1,8 @@
 {
-	title: "粘土块",
 	x: 6.0d,
 	y: 3.0d,
 	text: [
-		"在元素实体化器中使用一个地碎片和一个水碎片即可合成一个粘土块"
+		"{icr.quests.88d4d981.text.1}"
 	],
 	dependencies: [
 		"6ed85cec"

@@ -1,10 +1,10 @@
 {
-	title: "火之碎片",
+	title: "{icr.quests.40f374fc.title}",
 	x: 1.5d,
 	y: -0.5d,
 	text: [
-		"使用玻璃碎片右键火把即可获得火之碎片",
-		"PS：该合成仅可使用20次"
+		"{icr.quests.40f374fc.text.1}",
+		"{icr.quests.40f374fc.text.2}"
 	],
 	dependencies: [
 		"de6bb808"

@@ -1,9 +1,9 @@
 {
-	title: "刷石机",
+	title: "{icr.quests.5bad26d6.title}",
 	x: 16.0d,
 	y: 1.0d,
 	text: [
-		"水和岩浆放到一起会产生奇妙的化学反应，从而产生圆石"
+		"{icr.quests.5bad26d6.text.1}"
 	],
 	dependencies: [
 		"cd78b371",

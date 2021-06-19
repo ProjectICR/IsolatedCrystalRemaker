@@ -14,8 +14,31 @@ env:
   VERSION: 0.0.1
 
 jobs:
+  FTBQuestsProcessor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Run FTB Quests lang processor
+        run: python runners/ftbq_lang_processor.py
+
+      - name: Commit processor changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: friendlyhj
+          author_email: youyi580@qq.com
+          message: "ftbq lang processor changes (github action)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+
   CreateCursePack:
     runs-on: ubuntu-latest
+    needs: FTBQuestsProcessor
     steps:
       - uses: actions/checkout@v2
       

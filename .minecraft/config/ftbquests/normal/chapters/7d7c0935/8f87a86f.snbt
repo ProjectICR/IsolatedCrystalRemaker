@@ -1,9 +1,9 @@
 {
-	title: "染色工艺",
+	title: "{icr.quests.8f87a86f.title}",
 	x: 5.0d,
 	y: 3.0d,
 	text: [
-		"你可以用各类颜色的染料去给玻璃碎片染色获得各类碎片"
+		"{icr.quests.8f87a86f.text.1}"
 	],
 	dependencies: [
 		"310b07ca"

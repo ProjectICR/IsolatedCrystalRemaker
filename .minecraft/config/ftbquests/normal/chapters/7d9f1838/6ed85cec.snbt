@@ -1,10 +1,10 @@
 {
-	title: "水之碎片",
+	title: "{icr.quests.6ed85cec.title}",
 	x: 6.0d,
 	y: 2.0d,
 	text: [
-		"用玻璃碎片右键树叶即可获得水之碎片",
-		"PS：该合成仅可使用10次"
+		"{icr.quests.6ed85cec.text.1}",
+		"{icr.quests.6ed85cec.text.2}"
 	],
 	dependencies: [
 		"63e1b0a5"

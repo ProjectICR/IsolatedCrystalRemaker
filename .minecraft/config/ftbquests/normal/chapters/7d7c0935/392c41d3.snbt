@@ -1,9 +1,9 @@
 {
-	title: "花肥",
+	title: "{icr.quests.392c41d3.title}",
 	x: 0.0d,
 	y: -2.5d,
 	text: [
-		"用这个东西可以产出植物魔法的花哦"
+		"{icr.quests.392c41d3.text.1}"
 	],
 	dependencies: [
 		"c1ba172c"

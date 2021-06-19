@@ -2,8 +2,8 @@
 	x: 4.0d,
 	y: 7.5d,
 	text: [
-		"你可以用世界盐右键炼药锅获得坩埚",
-		"PS：不建议把用来染色的坩埚转化成坩埚"
+		"{icr.quests.fa57aa60.text.1}",
+		"{icr.quests.fa57aa60.text.2}"
 	],
 	dependencies: [
 		"580ec536"

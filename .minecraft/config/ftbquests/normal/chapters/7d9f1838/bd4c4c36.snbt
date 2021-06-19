@@ -1,10 +1,10 @@
 {
-	title: "风之碎片",
+	title: "{icr.quests.bd4c4c36.title}",
 	x: 1.5d,
 	y: 1.0d,
 	text: [
-		"使用玻璃碎片右键石头即可获得风之碎片",
-		"PS：该合成仅可使用20次"
+		"{icr.quests.bd4c4c36.text.1}",
+		"{icr.quests.40f374fc.text.2}"
 	],
 	dependencies: [
 		"de6bb808"

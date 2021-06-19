@@ -1,9 +1,9 @@
 {
-	title: "大理石",
+	title: "{icr.quests.3d56bd11.title}",
 	x: 14.0d,
 	y: -2.0d,
 	text: [
-		"将石头扔进星能液中获得大理石"
+		"{icr.quests.3d56bd11.text.1}"
 	],
 	dependencies: [
 		"ff7fb682"

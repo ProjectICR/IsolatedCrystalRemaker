@@ -2,7 +2,7 @@
 	x: 14.0d,
 	y: 0.0d,
 	text: [
-		"你可以把工作台扔进星能液里并等待 30s 后获得星辉工作台"
+		"{icr.quests.4d7dfefb.text.1}"
 	],
 	dependencies: [
 		"ff7fb682"

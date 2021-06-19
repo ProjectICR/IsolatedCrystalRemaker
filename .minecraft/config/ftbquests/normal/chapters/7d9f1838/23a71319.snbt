@@ -1,6 +1,10 @@
 {
+	title: "{icr.quests.23a71319.title}",
 	x: 9.0d,
 	y: 2.0d,
+	text: [
+		""
+	],
 	dependencies: [
 		"88d4d981"
 	],

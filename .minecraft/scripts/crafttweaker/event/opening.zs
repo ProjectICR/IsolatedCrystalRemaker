@@ -26,7 +26,7 @@ static crystal_essence as IBlockState[][string] = {
 	"ignis" : [<blockstate:minecraft:torch>]
 };
 static aqua_ as IBlockState[IBlockState] = {
-	<blockstate:minecraft:leaves>  : <blockstate:minecraft:bedrock>,
+	<blockstate:minecraft:leaves>  : <blockstate:contenttweaker:dead_leaves>,
 	<blockstate:minecraft:sapling> : <blockstate:minecraft:deadbush>,
 };
 

@@ -75,7 +75,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 		for input, output in aqua_ {
 			var dataAqua as int = player.data.PlayerPersisted.Get.aqua.asInt();
 
-			if(block.definition.id == input.block.definition.id && player.data.PlayerPersisted.Get.aqua.asInt() < 10) {
+			if(block.definition.id == input.block.definition.id && player.data.PlayerPersisted.Get.aqua.asInt() < 15) {
 				item.mutable().shrink(1);
 				player.give(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
 				player.update({PlayerPersisted : {Get : {aqua : (dataAqua + 1)}}});
@@ -88,7 +88,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 				if(item.definition.id == "contenttweaker:glass_fragment" && isNull(item.tag.Aspects) && output.block.definition.id == block.definition.id){
 					var dataNow as int = player.data.PlayerPersisted.Get.memberGet(input).asInt();
 
-					if(dataNow < 20){
+					if(dataNow < 25){
 						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + input + '" : ' + (dataNow + 1) + '}}}');
 
 						item.mutable().shrink(1);

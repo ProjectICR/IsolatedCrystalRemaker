@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 env:
   BUILD: IsolatedCrystalRemaker
-  VERSION: 0.2.1
+  VERSION: 2.1-Alpha
 
 jobs:
   FTBQuestsProcessor:
@@ -48,5 +48,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.BUILD }}-${{ env.VERSION }}.${{ github.run_number }}
+          name: ${{ env.BUILD }}-${{ env.VERSION }}-update${{ github.run_number }}
           path: artifacts

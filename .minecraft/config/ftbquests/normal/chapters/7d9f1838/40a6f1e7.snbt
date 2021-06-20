@@ -1,10 +1,10 @@
 {
-	title: "请好好使用魔力水晶碎片噢",
+	title: "{herodotus.quests.40a6f1e7.title}",
 	x: -2.0d,
 	y: -0.5d,
 	tasks: [{
 		uid: "cd8163db",
 		type: "checkmark",
-		title: "请好好使用魔力水晶碎片噢"
+		title: "{herodotus.quests.40a6f1e7.title}"
 	}]
 }

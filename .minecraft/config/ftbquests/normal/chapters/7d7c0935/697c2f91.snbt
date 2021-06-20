@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -5.5d,
+	dependencies: [
+		"60c893a4"
+	],
+	tasks: [{
+		uid: "ab85fff8",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	}]
+}

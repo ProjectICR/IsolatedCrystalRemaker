@@ -1,0 +1,20 @@
+# 事件
+icr.text.info.lava=你已经用铁和燧石右键过烈焰网啦, 不能再次右键了。
+icr.text.info.explode=想扫水绣球? 门都没有!
+icr.text.info.handHeldTable=小哥, 要不要苹果?
+
+# 机器
+tile.essences_materializer.name=元素实体化器
+
+# JEI 配方
+requious.jei.recipe.essences_materializer=元素实体化器
+
+# 元素实体化器的提示
+icr.tooltip.essences_materializer=摆放在机器里的物品需要与配方内物品的位置保持一致
+
+# 中间产物
+icr.tooltip.info.nothing=无
+icr.tooltip.info.state=状态 : %s
+icr.tooltip.info.only_quenching=已淬火
+icr.tooltip.info.only_tempering=已回火
+icr.localization.intermediate_product=%s的中间产物

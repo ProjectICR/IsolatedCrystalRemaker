@@ -1,0 +1,17 @@
+{
+	x: 14.0d,
+	y: 3.5d,
+	text: [
+		"{icr.quests.87e119a4.text.1}"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "6ced890e",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore 1 1"
+		}]
+	}]
+}

@@ -1,0 +1,12 @@
+{
+	title: "{icr.quests.7d7c0935.title}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "orechid"
+		}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,27 @@
+{
+	title: "{icr.quests.714c4dda.title}",
+	x: -4.5d,
+	y: -2.5d,
+	text: [
+		"{icr.quests.714c4dda.text.1}"
+	],
+	dependencies: [
+		"5bad26d6"
+	],
+	tasks: [{
+		uid: "9a03f9dc",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 64L
+	},
+	{
+		uid: "7e406f5f",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 64L
+	}]
+}

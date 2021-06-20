@@ -1,0 +1,25 @@
+{
+	title: "{icr.quests.bd4c4c36.title}",
+	x: 1.5d,
+	y: 1.0d,
+	text: [
+		"{icr.quests.bd4c4c36.text.1}",
+		"{icr.quests.40f374fc.text.2}"
+	],
+	dependencies: [
+		"de6bb808"
+	],
+	tasks: [{
+		uid: "effc8920",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		}]
+	}]
+}

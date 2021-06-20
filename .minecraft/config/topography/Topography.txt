@@ -1,0 +1,15 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Sets if the mod should print documentation.
+printDocumentation(false)
+
+//Sets the Topography WorldType as default
+setAsDefaultWorldType()
+
+//Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
+
+opening_island_en_us = registerPreset("Start sky island", "images/opening_island", "This is the beginning of the reset version of Isolated Crystal, the extremely humble island")
+opening_island_en_us.registerDimension(0, "maps/opening_island")
+
+opening_island_zh_cn = registerPreset("开局空岛", "images/opening_island", "重制版的异次元水晶 2, 全新的空岛")
+opening_island_zh_cn.registerDimension(0, "maps/opening_island")

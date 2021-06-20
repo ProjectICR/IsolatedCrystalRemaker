@@ -1,0 +1,19 @@
+{
+	title: "{icr.quests.d483544d.title}",
+	x: 11.0d,
+	y: 1.0d,
+	text: [
+		"{icr.quests.d483544d.text.1}"
+	],
+	dependencies: [
+		"d6b2860a",
+		"23a71319"
+	],
+	tasks: [{
+		uid: "a58caebe",
+		type: "item",
+		items: [{
+			item: "ceramics:clay_bucket"
+		}]
+	}]
+}

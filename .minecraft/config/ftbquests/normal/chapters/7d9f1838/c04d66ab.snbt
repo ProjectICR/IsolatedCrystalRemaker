@@ -1,0 +1,20 @@
+{
+	title: "{icr.quests.c04d66ab.title}",
+	x: 4.0d,
+	y: -0.5d,
+	text: [
+		"{icr.quests.c04d66ab.text.1}"
+	],
+	dependencies: [
+		"574301ce",
+		"bd4c4c36",
+		"40f374fc"
+	],
+	tasks: [{
+		uid: "0688cf59",
+		type: "item",
+		items: [{
+			item: "requious:essences_materializer"
+		}]
+	}]
+}

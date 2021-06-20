@@ -1,0 +1,25 @@
+{
+	title: "{icr.quests.6ed85cec.title}",
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"{icr.quests.6ed85cec.text.1}",
+		"{icr.quests.6ed85cec.text.2}"
+	],
+	dependencies: [
+		"63e1b0a5"
+	],
+	tasks: [{
+		uid: "14757eb0",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			}
+		}]
+	}]
+}

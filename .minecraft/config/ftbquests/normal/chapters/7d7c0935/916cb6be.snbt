@@ -1,0 +1,12 @@
+{
+	x: -1.5d,
+	y: 6.0d,
+	text: [
+		"{icr.quests.916cb6be.text.1}"
+	],
+	tasks: [{
+		uid: "ae17db07",
+		type: "checkmark",
+		title: "{icr.quests.916cb6be.text.2}"
+	}]
+}

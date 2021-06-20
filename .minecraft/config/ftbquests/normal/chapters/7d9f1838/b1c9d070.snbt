@@ -1,0 +1,18 @@
+{
+	title: "{icr.quests.b1c9d070.title}",
+	x: 8.0d,
+	y: 0.5d,
+	text: [
+		"{icr.quests.b1c9d070.text.1}"
+	],
+	dependencies: [
+		"63e1b0a5"
+	],
+	tasks: [{
+		uid: "56f494cb",
+		type: "item",
+		items: [{
+			item: "minecraft:crafting_table"
+		}]
+	}]
+}

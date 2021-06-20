@@ -1,0 +1,9 @@
+#气体
+gas.carbon_monoxide_gas=一氧化碳
+gas.titanium_tetrachloride_gas=三氯化钛
+gas.silicon_tetrachloride_gas=三氯化硅
+
+#液体
+fluid.carbon_monoxide_gas=液态一氧化碳
+fluid.titanium_tetrachloride_gas=液态三氯化钛
+fluid.silicon_tetrachloride_gas=液态三氯化硅

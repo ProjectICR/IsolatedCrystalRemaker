@@ -1,0 +1,18 @@
+{
+	x: 4.0d,
+	y: 7.5d,
+	text: [
+		"{icr.quests.fa57aa60.text.1}",
+		"{icr.quests.fa57aa60.text.2}"
+	],
+	dependencies: [
+		"580ec536"
+	],
+	tasks: [{
+		uid: "47d95464",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crucible"
+		}]
+	}]
+}

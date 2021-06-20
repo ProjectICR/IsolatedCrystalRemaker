@@ -1,0 +1,21 @@
+{
+	x: 14.0d,
+	y: 0.0d,
+	text: [
+		"{icr.quests.4d7dfefb.text.1}"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "4f20b50f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar"
+		}],
+		ignore_nbt: 1b
+	}]
+}

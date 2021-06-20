@@ -1,0 +1,25 @@
+{
+	title: "{icr.quests.40f374fc.title}",
+	x: 1.5d,
+	y: -0.5d,
+	text: [
+		"{icr.quests.40f374fc.text.1}",
+		"{icr.quests.40f374fc.text.2}"
+	],
+	dependencies: [
+		"de6bb808"
+	],
+	tasks: [{
+		uid: "007d397e",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			}
+		}]
+	}]
+}

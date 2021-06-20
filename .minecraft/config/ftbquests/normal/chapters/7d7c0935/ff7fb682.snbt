@@ -1,0 +1,18 @@
+{
+	title: "{icr.quests.ff7fb682.title}",
+	x: 11.5d,
+	y: 0.0d,
+	text: [
+		"{icr.quests.ff7fb682.text.1}"
+	],
+	dependencies: [
+		"82114c92"
+	],
+	tasks: [{
+		uid: "2fabcf37",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ambient_block"
+		}]
+	}]
+}

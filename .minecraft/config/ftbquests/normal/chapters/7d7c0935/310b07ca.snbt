@@ -1,0 +1,18 @@
+{
+	title: "{icr.quests.310b07ca.title}",
+	x: 5.0d,
+	y: 0.0d,
+	dependencies: [
+		"89916bec"
+	],
+	tasks: [{
+		uid: "7baa1c52",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechid"
+			}
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "{icr.quests.2eb6fb07.title}",
+	x: 6.0d,
+	y: -1.5d,
+	text: [
+		"{icr.quests.2eb6fb07.text.1}"
+	],
+	dependencies: [
+		"c04d66ab"
+	],
+	tasks: [{
+		uid: "84e6d9b3",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

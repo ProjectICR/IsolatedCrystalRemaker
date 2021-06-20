@@ -1,0 +1,18 @@
+{
+	title: "{icr.quests.8f87a86f.title}",
+	x: 5.0d,
+	y: 3.0d,
+	text: [
+		"{icr.quests.8f87a86f.text.1}"
+	],
+	dependencies: [
+		"310b07ca"
+	],
+	tasks: [{
+		uid: "649bb5ef",
+		type: "item",
+		items: [{
+			item: "minecraft:cauldron"
+		}]
+	}]
+}

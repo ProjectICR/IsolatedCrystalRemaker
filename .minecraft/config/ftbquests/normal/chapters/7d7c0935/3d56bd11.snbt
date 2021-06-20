@@ -1,0 +1,19 @@
+{
+	title: "{icr.quests.3d56bd11.title}",
+	x: 14.0d,
+	y: -2.0d,
+	text: [
+		"{icr.quests.3d56bd11.text.1}"
+	],
+	dependencies: [
+		"ff7fb682"
+	],
+	tasks: [{
+		uid: "6e0dbf95",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble"
+		}],
+		count: 64L
+	}]
+}

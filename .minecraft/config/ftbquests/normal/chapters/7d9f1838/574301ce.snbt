@@ -1,0 +1,25 @@
+{
+	title: "{icr.quests.574301ce.title}",
+	x: 1.5d,
+	y: -2.0d,
+	text: [
+		"{icr.quests.574301ce.text.1}",
+		"{icr.quests.40f374fc.text.2}"
+	],
+	dependencies: [
+		"de6bb808"
+	],
+	tasks: [{
+		uid: "5fec280f",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "terra"
+				}]
+			}
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	text: [
+		"{icr.quests.88d4d981.text.1}"
+	],
+	dependencies: [
+		"6ed85cec"
+	],
+	tasks: [{
+		uid: "9546377b",
+		type: "item",
+		items: [{
+			item: "minecraft:clay"
+		}]
+	}]
+}

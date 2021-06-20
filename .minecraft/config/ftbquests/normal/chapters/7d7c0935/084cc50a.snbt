@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 7.5d,
+	text: [
+		"{icr.quests.084cc50a.text.1}",
+		"{icr.quests.084cc50a.text.2}"
+	],
+	dependencies: [
+		"580ec536"
+	],
+	tasks: [{
+		uid: "b46e7aa0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:research_table"
+		}]
+	}]
+}

@@ -10,7 +10,7 @@ tile.essences_materializer.name=元素实体化器
 requious.jei.recipe.essences_materializer=元素实体化器
 
 # 元素实体化器的提示
-icr.tooltip.essences_materializer=摆放在机器里的物品需要与配方内物品的位置保持一致
+icr.tooltip.essences_materializer=摆放在机器里的物品的位置需要与配方内的物品的位置保持一致
 
 # 中间产物
 icr.tooltip.info.nothing=无

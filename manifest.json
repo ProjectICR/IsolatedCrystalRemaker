@@ -11,7 +11,8 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "IsolatedCrystalRemaker",
-  "author": "",
+  "version": "0.2.1",
+  "author": "alstorfo, superhelo, douzi, ikexing, liuseniubi, GBLodb, friendlyhj, skyraah",
   "files": [
     {
       "projectID": 285742,

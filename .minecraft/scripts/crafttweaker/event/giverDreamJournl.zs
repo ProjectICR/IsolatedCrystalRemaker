@@ -2,13 +2,8 @@
 #loader crafttweaker
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
-import crafttweaker.world.IFacing;
 import crafttweaker.player.IPlayer;
-import crafttweaker.world.IBlockPos;
 import crafttweaker.item.IItemStack;
-import crafttweaker.util.Position3f;
-import crafttweaker.block.IBlockState;
-import crafttweaker.entity.IEntityItem;
 
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerItemPickupEvent;

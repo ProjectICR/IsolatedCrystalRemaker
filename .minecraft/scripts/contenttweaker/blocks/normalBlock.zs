@@ -1,7 +1,6 @@
 #priority 100
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.DropHandler;
 import mods.contenttweaker.Block;
 
 

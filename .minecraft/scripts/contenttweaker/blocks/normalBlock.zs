@@ -5,15 +5,9 @@ import mods.contenttweaker.DropHandler;
 import mods.contenttweaker.Block;
 
 
-var dropHandler as DropHandler = function(drops, world, position, state, fortune) {
-    drops.clear();
-};
-
-
 var glass as Block = VanillaFactory.createBlock("glass", <blockmaterial:glass>);
 glass.creativeTab = <creativetab:materials.base>;
 glass.blockSoundType = <soundtype:glass>;
-glass.setDropHandler(dropHandler);
 glass.blockLayer = "CUTOUT";
 glass.blockHardness = 0.3;
 glass.fullBlock = false;
@@ -26,7 +20,6 @@ glass.register();
 var dLeaves as Block = VanillaFactory.createBlock("dead_leaves", <blockmaterial:leaves>);
 dLeaves.creativeTab = <creativetab:materials.base>;
 dLeaves.blockSoundType = <soundtype:plant>;
-dLeaves.setDropHandler(dropHandler);
 dLeaves.blockLayer = "TRANSLUCENT";
 dLeaves.blockHardness = 0.2;
 dLeaves.fullBlock = false;

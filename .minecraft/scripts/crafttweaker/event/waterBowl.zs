@@ -11,6 +11,7 @@ import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.event.PlayerRightClickItemEvent;
 
 
+/*
 events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
     var world as IWorld = event.world;
     var item as IItemStack = event.item;
@@ -24,4 +25,4 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
             player.setItemToSlot(IEntityEquipmentSlot.mainHand(), <contenttweaker:water_bowl>);
         }
     }
-});
+});*/

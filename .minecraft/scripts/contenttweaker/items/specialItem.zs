@@ -35,7 +35,7 @@ var bowl as Item = VanillaFactory.createItem("water_bowl");
 bowl.creativeTab = <creativetab:materials.base>;
 bowl.textureLocation = ResourceLocation.create("actuallyadditions:items/item_water_bowl");
 bowl.onItemUse = function(player, world, pos, hand, facing, blockHit) {
-    var blockData as IData = world.getBlock(pos.x, pos.y, pos.z).data;
+    var blockData as IData = world.getBlock(pos).data;
     var data as IData = {isMossy: 0 as byte, Size: 16, hasWater: 1 as byte, Items: [], id: "botania:altar", hasLava: 0 as byte};
 
     if(world.getBlockState(pos).block.definition.id == "botania:altar") {

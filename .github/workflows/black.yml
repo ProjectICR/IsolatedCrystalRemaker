@@ -30,8 +30,8 @@ jobs:
       - name: Commit processor changes
         uses: EndBug/add-and-commit@v7
         with:
-          author_name: friendlyhj
-          author_email: youyi580@qq.com
+          author_name: superhelo
+          author_email: xiaohaluo@qq.com
           message: "ftbq lang processor changes (github action)"
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}

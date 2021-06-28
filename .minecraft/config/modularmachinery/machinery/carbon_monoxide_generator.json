@@ -1,6 +1,6 @@
 {
     "registryname" : "carbon_monoxide_generator",
-    "localizedname" : "一氧化碳发生器",
+    "localizedname" : "icr.machine.carbon_monoxide_generator.name",
     "parts": [
         {
             "x" : 1,

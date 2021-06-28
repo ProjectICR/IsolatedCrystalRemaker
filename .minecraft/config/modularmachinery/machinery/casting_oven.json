@@ -1,6 +1,6 @@
 {
     "registryname" : "casting_oven",
-    "localizedname" : "铸铁炉",
+"localizedname" : "icr.machine.casting_oven.name",
     "parts": [
         {
             "x": -1,
@@ -55,7 +55,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -63,7 +63,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -71,7 +71,7 @@
             "y": -2,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -95,7 +95,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -103,7 +103,7 @@
             "y": -2,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -111,7 +111,7 @@
             "y": -2,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -119,7 +119,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -135,7 +135,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -167,7 +167,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -191,7 +191,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -199,7 +199,7 @@
             "y": -2,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -207,7 +207,7 @@
             "y": -2,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {
@@ -215,7 +215,7 @@
             "y": -2,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         }
     ]

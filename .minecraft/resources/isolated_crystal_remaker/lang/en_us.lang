@@ -18,3 +18,12 @@ icr.tooltip.info.state=State: %s
 icr.tooltip.info.only_quenching=Quenched
 icr.tooltip.info.only_tempering=Tempered
 icr.localization.intermediate_product=Intermediate Product of %s
+
+# Multi Block Macine
+modularmachinery.casting_oven=Casting Oven
+modularmachinery.blast_furnace=Blast Furnace
+modularmachinery.quenching_tank=Quenching Tank
+modularmachinery.casting_furnace=Casting Furnace
+modularmachinery.tempering_furnace=Tempering Furnace
+modularmachinery.forging_hammer_machine=Forging Hammer Machine
+modularmachinery.carbon_monoxide_generator=Carbon Monoxide Generator

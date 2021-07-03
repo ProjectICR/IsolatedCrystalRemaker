@@ -1,5 +1,5 @@
 #priority -1
-#loader crafttweaker
+#loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
@@ -17,6 +17,7 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import mods.ctintegration.data.DataUtil.fromJson;
 
 import scripts.grassUtils.GrassUtils;
+import scripts.grassUtils.EventUtils;
 
 
 static data as IData = {PlayerPersisted : {Get : {aer : 0 as int, terra : 0 as int, ignis : 0 as int, aqua : 0 as int}}};
@@ -32,15 +33,23 @@ static aqua_ as IBlockState[IBlockState] = {
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	var player as IPlayer = event.player;
-	var block as IBlock = event.block;
+	var blockName as string = event.block.definition.id;
 
 	if(!event.isPlayer || event.silkTouch) return;
 
 	if(!event.world.remote) {
-		if(block.definition.id == "minecraft:glass") {
+		if(blockName == "minecraft:glass") {
 			var random as int = event.world.random.nextInt(1, 3);
 			
 			event.drops = [<contenttweaker:glass_fragment> * random];
+		}
+
+		if(blockName == "contenttweaker:dead_leaves") {
+			var heldItem as IItemStack = player.currentItem;
+			
+			if(isNull(heldItem) || (!isNull(heldItem) && !(heldItem.definition.id has "shears"))) {
+				event.drops = [];
+			}
 		}
 	}
 });
@@ -77,7 +86,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 
 			if(block.definition.id == input.block.definition.id && player.data.PlayerPersisted.Get.aqua.asInt() < 15) {
 				item.mutable().shrink(1);
-				player.give(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
+				EventUtils.spawnItem(world, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), pos.up());
 				player.update({PlayerPersisted : {Get : {aqua : (dataAqua + 1)}}});
 				world.setBlockState(output, pos);
 			}
@@ -92,7 +101,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + input + '" : ' + (dataNow + 1) + '}}}');
 
 						item.mutable().shrink(1);
-						player.give(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: input}]}));
+						EventUtils.spawnItem(world, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: input}]}), pos.up());
 						player.update(dataModify);
 					}
 				}

@@ -1,11 +1,10 @@
 #priority -1
-#loader crafttweaker
+#loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
 
-import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerItemPickupEvent;
 
 import mods.ctintegration.data.DataUtil.fromJson;
@@ -34,4 +33,3 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
 		}
 	}
 });
-

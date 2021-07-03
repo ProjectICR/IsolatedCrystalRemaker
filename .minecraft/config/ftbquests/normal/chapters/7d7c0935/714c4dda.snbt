@@ -13,9 +13,6 @@
 		type: "item",
 		items: [{
 			item: "minecraft:cobblestone"
-		},
-		{
-			item: "minecraft:cobblestone"
 		}],
 		count: 64L
 	}]

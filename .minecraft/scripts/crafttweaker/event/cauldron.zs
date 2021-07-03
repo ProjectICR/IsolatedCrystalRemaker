@@ -1,5 +1,5 @@
 #priority -1
-#loader crafttweaker
+#loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
@@ -31,7 +31,7 @@ events.onBlockPlace(function(event as BlockPlaceEvent) {
 			var allInBlox as IBlockPos[] = IBlockPos.getAllInBox(pos.add(1, 0, 1), pos.add(-1 as int, 0, -1 as int));
 			for b in allInBlox {
 				if(!isNull(world.getBlock(b))) {
-					if(world.getBlock(b).definition.id == "minecraft:cauldron" && !isNull(world.getBlock(b).data.state.color) && world.getBlock(b).data.state.color.asInt() == 163839983) {
+					if(world.getBlock(b).definition.id == "minecraft:cauldron" && !isNull(world.getBlock(b).data.state.color) && world.getBlock(b).data.state.color.asInt() == 16383998) {
 						event.cancel();
 					}
 				}
@@ -48,7 +48,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 	var block as IBlock = world.getBlock(pos.x, pos.y, pos.z);
 	var blocks as IBlockState = world.getBlockState(pos);
 
-	if(!world.remote && !isNull(item) && block.definition.id == "minecraft:cauldron" && block.meta != 0) {
+	if(!world.remote && !isNull(item) && block.definition.id == "minecraft:cauldron" && block.meta != 0 && player.isSneaking) {
 		if(!isNull(block.data.state.color)) {
 			if(item.definition.id == "contenttweaker:glass_fragment") {
 				for color, name in aspects {
@@ -56,7 +56,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 						item.mutable().shrink(1);
 						player.give(itemUtils.getItem("thaumcraft:crystal_essence").withTag({Aspects: [{amount: 1, key: name}]}));
 						world.setBlockState((blocks.withProperty("level", toString(block.meta - 1))), pos);
-						break;	
+						break;
 					}
 				}
 			} else if(item.definition.id == "minecraft:sapling" && block.data.state.color.asInt() == 16383998 && block.meta == 3) {

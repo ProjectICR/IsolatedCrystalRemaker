@@ -20,6 +20,7 @@
 !/.minecraft/resources
 !/.minecraft/scripts
 !/.minecraft/structures
+!/.minecraft/oresources
 
 #pack stuff
 /instance.cfg

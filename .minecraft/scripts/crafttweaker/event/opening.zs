@@ -19,7 +19,6 @@ import mods.ctintegration.data.DataUtil.fromJson;
 import scripts.grassUtils.GrassUtils;
 import scripts.grassUtils.EventUtils;
 
-
 static data as IData = {PlayerPersisted : {Get : {aer : 0 as int, terra : 0 as int, ignis : 0 as int, aqua : 0 as int}}};
 static crystal_essence as IBlockState[][string] = {
 	"aer"   : [<blockstate:minecraft:stone>],
@@ -75,6 +74,19 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 	var item as IItemStack = event.item;
 	var block as IBlock = event.block;
 	var pos as IBlockPos = event.position;
+
+
+	if(!world.remote && !isNull(item)) {
+		var itemName as string = item.definition.id;
+		var blockName as string = block.definition.id;
+
+		if(itemName == "extendedcrafting:handheld_table" || itemName == "actuallyadditions:item_crafter_on_a_stick") {
+			if(blockName == "minecraft:crafting_table" || (blockName == "tconstruct:tooltables" && block.meta == 0)) {
+				event.cancellationResult =  "PASS";
+				event.cancel();
+			}
+		}
+	}
 
 	if(!world.remote && !isNull(item) && item.definition.id == "contenttweaker:glass_fragment") {
 		if(isNull(player.data.PlayerPersisted.Get)){

@@ -81,7 +81,7 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 		var blockName as string = block.definition.id;
 
 		if(itemName == "extendedcrafting:handheld_table" || itemName == "actuallyadditions:item_crafter_on_a_stick") {
-			if(blockName == "minecraft:crafting_table" || (blockName == "tconstruct:tooltables" && block.meta == 0)) {
+			if(blockName has "crafting_table" || (blockName == "tconstruct:tooltables" && block.meta == 0)) {
 				event.cancellationResult =  "PASS";
 				event.cancel();
 			}

@@ -2,6 +2,15 @@
 icr.text.info.lava=You have used Iron and Flint right click over the Blaze Mesh, can not be right clicked again.
 icr.text.info.explode=Wanna scan Hydroangeas? There's no way!
 icr.text.info.handHeldTable=Hey bro, want an apple?
+icr.text.info.crystal.aer=
+icr.text.info.crystal.terra=
+icr.text.info.crystal.ignis=
+icr.text.info.crystal.aqua=
+icr.text.info.crystal.ordo=
+icr.text.info.crystal.perditio=
+
+# damageSource
+death.attack.handHeldTable=Killed by a Crafting Table XD
 
 # Machine
 tile.essences_materializer.name=Essences Materializer

@@ -2,7 +2,15 @@
 icr.text.info.lava=你已经用铁和燧石右键过烈焰网啦, 不能再次右键了。
 icr.text.info.handHeldTable=小哥, 要不要苹果?
 icr.text.info.explode=想扫水绣球? 门都没有!
+icr.text.info.crystal.aer=
+icr.text.info.crystal.terra=
+icr.text.info.crystal.ignis=
+icr.text.info.crystal.aqua=
+icr.text.info.crystal.ordo=
+icr.text.info.crystal.perditio=
 
+# 伤害来源
+death.attack.handHeldTable=被工作台杀死啦
 
 # 机器
 tile.essences_materializer.name=元素实体化器

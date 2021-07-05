@@ -12,6 +12,7 @@ import crafttweaker.damage.IDamageSource;
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 
 import mods.ctintegration.data.DataUtil.fromJson;
@@ -29,6 +30,30 @@ static aqua_ as IBlockState[IBlockState] = {
 	<blockstate:minecraft:leaves>  : <blockstate:contenttweaker:dead_leaves>,
 	<blockstate:minecraft:sapling> : <blockstate:minecraft:deadbush>,
 };
+
+events.onPlayerCrafted(function(event as PlayerCraftedEvent){
+	var player as IPlayer = event.player;
+	var world as IWorld = player.world;
+	var heldItem as IItemStack = player.currentItem;
+
+	if(!world.remote && !isNull(heldItem)) {
+		var heldItemID as string = heldItem.definition.id;
+
+		if(heldItemID == "extendedcrafting:handheld_table" || heldItemID == "actuallyadditions:item_crafter_on_a_stick") {
+			player.attackEntityFrom(<damageSource:handHeldTable>, 10);
+		}
+	}
+});
+
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
+	if(event.entityLivingBase instanceof IPlayer) {
+		var player as IPlayer = event.entityLivingBase;
+		
+		if(!player.world.remote && event.damageSource.damageType == "handHeldTable") {
+			player.update({PlayerPersisted : {handHeldTable : true as bool}});
+		}
+	}
+});
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	var player as IPlayer = event.player;
@@ -49,21 +74,6 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 			if(isNull(heldItem) || (!isNull(heldItem) && !(heldItem.definition.id has "shears"))) {
 				event.drops = [];
 			}
-		}
-	}
-});
-
-events.onPlayerCrafted(function(event as PlayerCraftedEvent){
-	var player as IPlayer = event.player;
-	var world as IWorld = player.world;
-	var heldItem as IItemStack = player.currentItem;
-
-	if(!world.remote && !isNull(heldItem)) {
-		var heldItemID as string = heldItem.definition.id;
-
-		if(heldItemID == "extendedcrafting:handheld_table" || heldItemID == "actuallyadditions:item_crafter_on_a_stick") {
-			player.attackEntityFrom(IDamageSource.createPlayerDamage(player), 10);
-			player.update({PlayerPersisted : {handHeldTable : true as bool}});
 		}
 	}
 });
@@ -113,8 +123,8 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + input + '" : ' + (dataNow + 1) + '}}}');
 
 						item.mutable().shrink(1);
-						EventUtils.spawnItem(world, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: input}]}), pos.up());
 						player.update(dataModify);
+						EventUtils.spawnItem(world, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: input}]}), pos.up());
 					}
 				}
 			}
@@ -124,8 +134,9 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 
 events.onPlayerRespawn(function(event as PlayerRespawnEvent){
 	var player as IPlayer = event.player;
+	var playerData as IData = player.data.PlayerPersisted;
 
-	if(!isNull(player.data.PlayerPersisted.handHeldTable) && player.data.PlayerPersisted.handHeldTable.asBool()){
+	if(!isNull(playerData.handHeldTable) && playerData.handHeldTable.asBool()){
 		player.update({PlayerPersisted : {handHeldTable : false as bool}});
 		player.sendChat(GrassUtils.i18n("icr.text.info.handHeldTable"));
 		player.give(<minecraft:apple> * 5);

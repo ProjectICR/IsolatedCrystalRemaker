@@ -24,7 +24,7 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
 				if(isNull(temp) || !temp.asBool()) return;
 			}
 
-			giverDreamJournl(player);
+			player.giverDreamJournl();
 			player.update({PlayerPersisted : {GiverDreamJournl : true as bool}});
 		}
 	}

@@ -5,6 +5,7 @@ tile.contenttweaker.dead_leaves.name=Withered Leaves
 tile.contenttweaker.ambient_block.name=Ambient Block
 
 # Item
+item.contenttweaker.water_bowl.name=Water Bowl
 item.contenttweaker.puresi.name=High-curity Silicon
 item.contenttweaker.glass_fragment.name=Glass Fragment
 item.contenttweaker.pig_iron_billet.name=Pig Iron Billet

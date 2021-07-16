@@ -1,6 +1,6 @@
 {
     "registryname" : "forging_hammer_machine",
-    "localizedname" : "锻造锤",
+    "localizedname" : "icr.machine.forging_hammer_machine.name",
     "parts": [
         {
             "x": 0,
@@ -63,7 +63,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "ic2:refractory_bricks@0"
             ]
         },
         {

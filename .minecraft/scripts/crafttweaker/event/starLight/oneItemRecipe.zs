@@ -1,5 +1,5 @@
 #priority -1
-#loader crafttweaker
+#loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.item.IItemStack;
@@ -8,9 +8,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.event.WorldTickEvent;
 
 import scripts.grassUtils.EventUtils;
-import scripts.crafttweaker.event.starLight.starLight.timer;
-import scripts.crafttweaker.event.starLight.starLight.starLight;
-import scripts.crafttweaker.event.starLight.starLight.getBlockPos;
+import scripts.crafttweaker.event.starLight.starLight;
 
 
 var oneItemRecipe as IItemStack[][int] = {
@@ -25,31 +23,28 @@ events.onWorldTick(function(event as WorldTickEvent) {
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
             var nbt as IData = entityItem.nbt;
-            var pos as IBlockPos = getBlockPos(entityItem);
+            var item as IItemStack = entityItem.item;
+            var pos as IBlockPos = starLight.getBlockPos(entityItem);
 
             for seconds, recipeBox in oneItemRecipe {
-                if(world.getBlockState(pos) == starLight && entityItem.item.matches(recipeBox[1])) {
-
-                    if(entityItem.item.matches(<minecraft:stone>)) {
-                        return;
-                    }
+                if(world.getBlockState(pos) == starLight.blockFluid && starLight.equalItem(item, recipeBox[1]) && !starLight.equalItem(item, <minecraft:stone>)) {
 
                     if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
                         entityItem.setNBT({time : 0});
-                    } else {
+                    } else if(!isNull(nbt.ForgeData.time)) {
                         entityItem.setNBT({time : nbt.ForgeData.time.asInt() + 1});
                     }
 
-                    nbt = entityItem.nbt.ForgeData;
-                    if(timer(nbt, seconds)) {
-                        entityItem.setDead();
+                    nbt = nbt.ForgeData;
+                    if(starLight.timer(nbt, seconds)) {
+                        item.mutable().shrink(1);
                         world.setBlockState(<blockstate:minecraft:air>, pos);
-                        EventUtils.spawnItem(world, recipeBox[0], pos.add(0, 1, 0));
+                        EventUtils.spawnItem(world, recipeBox[0], pos.up());
 
                         if(!isNull(nbt.playerName)) {
                             var playerName as string = nbt.playerName.asString();
 
-                            if(recipeBox[0].matches(<astralsorcery:blockaltar>)) {
+                            if(starLight.equalItem(recipeBox[0], <astralsorcery:blockaltar>)) {
                                 server.commandManager.executeCommand(server, "astralsorcery research " ~ playerName ~ " BASIC_CRAFT");
                             }
 

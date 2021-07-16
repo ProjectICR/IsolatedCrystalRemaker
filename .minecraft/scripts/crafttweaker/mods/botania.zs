@@ -57,3 +57,7 @@ ManaInfusion.addAlchemy(<minecraft:double_plant>, <botania:petal:4> * 4, 150);
 apothecaryRecipeTweak(<botania:specialflower>.withTag({type: "endoflame"}), 
     [<ore:petalRed>, <ore:petalLightGray>, <ore:powderMana>, <ore:petalLightGray>, <ore:petalLightGray>]
 );
+
+apothecaryRecipeTweak(<botania:specialflower>.withTag({type: "orechid"}),
+    [<botania:petal:4>, <botania:petal:4>, <botania:petal:7>, <botania:petal:7>, <botania:petal:14>, <botania:petal:14>, <botania:petal:13>, <botania:petal:13>]
+);

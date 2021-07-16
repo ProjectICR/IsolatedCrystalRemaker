@@ -10,16 +10,16 @@ var hotList as int[string] = {
     "Wroughtiron" : 0x595050
 };
 
-var hotSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
-hotSystem.addPart("plate");
-hotSystem.addPart("ingot");
-hotSystem.registerNormalPart("rotor", "item", false);
-hotSystem.registerNormalPart("hot_plate", "item", true);
-hotSystem.registerNormalPart("hot_ingot", "item", false);
-hotSystem.registerNormalPart("quenched_plate", "item", true);
+var hotHelper as MaterialSystemHelper = CotUtils.getMaterialSystemHelper("hot_helper");
+hotHelper.addPart("plate");
+hotHelper.addPart("ingot");
+hotHelper.registerNormalPart("rotor", "item", false);
+hotHelper.registerNormalPart("hot_plate", "item", true);
+hotHelper.registerNormalPart("hot_ingot", "item", false);
+hotHelper.registerNormalPart("quenched_plate", "item", true);
 
 for name, color in hotList {
-    hotSystem.registerMaterial(name, color);
+    hotHelper.registerMaterial(name, color);
 }
 
-hotSystem.registerAllMaterialParts();
+hotHelper.registerAllMaterialParts();

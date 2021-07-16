@@ -19,15 +19,15 @@ var materialList as int[string] = {
 
 var partList as string[] = ["ingot", "dust", "nugget", "plate", "rod", "gear", "dense_plate", "small_dust", "block"];
 
-var materialSystem as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(0);
-materialSystem.registerNormalPart("tiny_dust_icr", "item", false);
+var oreHelper as MaterialSystemHelper = CotUtils.getMaterialSystemHelper("ore_helper");
+oreHelper.registerNormalPart("tiny_dust_icr", "item", false);
 
 for part in partList {
-    materialSystem.addPart(part);
+    oreHelper.addPart(part);
 }
 
 for name, color in materialList {
-    materialSystem.registerMaterial(name, color);
+    oreHelper.registerMaterial(name, color);
 }
 
-materialSystem.registerAllMaterialParts();
+oreHelper.registerAllMaterialParts();

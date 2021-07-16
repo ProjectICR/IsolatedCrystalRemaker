@@ -1,4 +1,4 @@
-#loader crafttweaker
+#loader crafttweaker reloadableevents
 #priority 30000
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -52,6 +52,18 @@ function createCrossWithCore(core as IIngredient, a as IIngredient, b as IIngred
     return [[a, b, a],
     [b, core, b],
     [a, b, a]];
+}
+
+function createLeftSlash(input as IIngredient) as IIngredient[][] {
+    return [[input, null, null],
+    [null, input, null],
+    [null, null, input]];
+}
+
+function createRightSlash(input as IIngredient) as IIngredient[][] {
+    return [[null, null, input],
+    [null, input, null],
+    [input, null, null]];
 }
 
 // 删除 ICraftingRecipe

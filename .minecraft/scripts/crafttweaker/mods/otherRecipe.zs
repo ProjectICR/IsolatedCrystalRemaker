@@ -24,7 +24,6 @@ for output, inputBox in shapedRecipes {
 }
 
 
-
 recipes.addShaped(getItemNameWithUnderline(<contenttweaker:ambient_block>), <contenttweaker:ambient_block>, [
     [<ore:livingrock>, null, <ore:livingrock>],
     [<ore:ingotManasteel>, <botania:manatablet>.withTag({mana: 1000}, false).marked("manatablet").reuse(), <ore:ingotManasteel>],
@@ -39,6 +38,7 @@ recipes.addShaped(getItemNameWithUnderline(<contenttweaker:ambient_block>), <con
         inventory.setStack(4, item.withTag({mana : item.tag.mana.asInt() - 1000}));
     }
 });
+
 
 Drying.addRecipe(<mekanism:ingot:4>, <ore:hotIngotSteel>, 1800);
 Drying.addRecipe(<thermalfoundation:material:352>, <ore:hotPlateSteel>, 1800);

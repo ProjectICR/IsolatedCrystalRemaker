@@ -9,7 +9,7 @@ import crafttweaker.entity.IEntityItem;
 import crafttweaker.event.WorldTickEvent;
 
 import scripts.grassUtils.EventUtils;
-import scripts.crafttweaker.event.starLight.starLight;
+import scripts.crafttweaker.util.starLightUtils;
 
 
 var twoItemRecipe as IItemStack[][int] = {
@@ -19,44 +19,46 @@ var twoItemRecipe as IItemStack[][int] = {
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
+    var totalTime as long = world.worldInfo.worldTotalTime;
 
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
-            var nbt as IData = entityItem.nbt;
-            var pos as IBlockPos = starLight.getBlockPos(entityItem);
             var item as IItemStack = entityItem.item;
+            var nbt as IData = entityItem.nbt.ForgeData;
+            var pos as IBlockPos = starLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in twoItemRecipe {
-                if(world.getBlockState(pos) == starLight.blockFluid && starLight.equalItem(item, recipeBox[2])) {
+                if(world.getBlockState(pos) == starLightUtils.getFluid() && recipeBox[2].matches(item)) {
 
-                    if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
-                        entityItem.setNBT({time : 0});
-                    } else if(!isNull(nbt.ForgeData.needMaterial)) {
-                        entityItem.setNBT({time : nbt.ForgeData.time.asInt() + 1});
-                    }
+                    if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
+                        entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});
+                    } else if(totalTime >= nbt.time.asLong() && !isNull(nbt.needMaterial) && !nbt.needMaterial.asBool()) {
 
-                    nbt = nbt.ForgeData;
-                    for entity in world.getEntitiesInArea(pos.asPosition3f()) {
-                        var otherPos as IBlockPos = starLight.getBlockPos(entity);
-
-                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == starLight.blockFluid) {
-                            var OEI as IEntityItem = entity;
-
-                            if(starLight.equalItem(OEI.item, recipeBox[3]) && isNull(nbt.needMaterial)) {
-                                OEI.item.mutable().shrink(1);
-                                entityItem.setNBT({needMaterial : false});
-                                EventUtils.spawnItem(world, recipeBox[1], otherPos.up());
-                            }
+                        if(item.amount >= 1) {
+                            entityItem.setNBT({time : 0});
+                            entityItem.setNBT({needMaterial : true});
                         }
-                    }
-
-                    if(starLight.timer(nbt, seconds)) {
-                        item.mutable().shrink(1);
-                        world.setBlockState(<blockstate:minecraft:air>, pos);
-                        EventUtils.spawnItem(world, recipeBox[0], pos.up());
 
                         if(!isNull(nbt.playerName)) {
                             world.getPlayerByName(nbt.playerName.asString()).sendChat("合成完毕");
+                        }
+
+                        item.mutable().shrink(1);
+                        world.setBlockState(<blockstate:minecraft:air>, pos);
+                        EventUtils.spawnItem(world, recipeBox[0], pos.up());
+                    }
+
+                    for entity in world.getEntitiesInArea(pos.asPosition3f()) {
+                        var otherPos as IBlockPos = starLightUtils.getBlockPosByEntity(entity);
+
+                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == starLightUtils.getFluid()) {
+                            var otherItem as IEntityItem = entity;
+
+                            if(recipeBox[3].matches(otherItem.item) && (isNull(nbt.needMaterial) || !isNull(nbt.needMaterial) && nbt.needMaterial.asBool())) {
+                                otherItem.item.mutable().shrink(1);
+                                entityItem.setNBT({needMaterial : false});
+                                EventUtils.spawnItem(world, recipeBox[1], otherPos.up());
+                            }
                         }
                     }
                 }

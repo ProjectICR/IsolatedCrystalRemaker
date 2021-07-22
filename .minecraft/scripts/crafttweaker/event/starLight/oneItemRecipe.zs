@@ -8,48 +8,49 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.event.WorldTickEvent;
 
 import scripts.grassUtils.EventUtils;
-import scripts.crafttweaker.event.starLight.starLight;
+import scripts.crafttweaker.util.starLightUtils;
 
 
 var oneItemRecipe as IItemStack[][int] = {
     120 : [<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery : {crystalProperties : {collectiveCapability : 50, size : 200, fract : 0, purity : 50, sizeOverride : -1}}}), <minecraft:diamond>],
-    30 : [<astralsorcery:blockaltar>, <avaritia:compressed_crafting_table>]
+    5 : [<astralsorcery:blockaltar>, <avaritia:compressed_crafting_table>]
 };
 
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
+    var totalTime as long = world.worldInfo.worldTotalTime;
 
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
-            var nbt as IData = entityItem.nbt;
             var item as IItemStack = entityItem.item;
-            var pos as IBlockPos = starLight.getBlockPos(entityItem);
+            var nbt as IData = entityItem.nbt.ForgeData;
+            var pos as IBlockPos = starLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in oneItemRecipe {
-                if(world.getBlockState(pos) == starLight.blockFluid && starLight.equalItem(item, recipeBox[1]) && !starLight.equalItem(item, <minecraft:stone>)) {
+                if(world.getBlockState(pos) == starLightUtils.getFluid() && recipeBox[1].matches(item) && !<minecraft:stone>.matches(item)) {
 
-                    if(isNull(nbt.ForgeData) || isNull(nbt.ForgeData.time)) {
-                        entityItem.setNBT({time : 0});
-                    } else if(!isNull(nbt.ForgeData.time)) {
-                        entityItem.setNBT({time : nbt.ForgeData.time.asInt() + 1});
-                    }
+                    if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
+                        entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});
+                    } else if(totalTime >= nbt.time.asLong()) {
 
-                    nbt = nbt.ForgeData;
-                    if(starLight.timer(nbt, seconds)) {
-                        item.mutable().shrink(1);
-                        world.setBlockState(<blockstate:minecraft:air>, pos);
-                        EventUtils.spawnItem(world, recipeBox[0], pos.up());
+                        if(item.amount >= 1) {
+                            entityItem.setNBT({time : 0});
+                        }
 
                         if(!isNull(nbt.playerName)) {
                             var playerName as string = nbt.playerName.asString();
 
-                            if(starLight.equalItem(recipeBox[0], <astralsorcery:blockaltar>)) {
+                            world.getPlayerByName(playerName).sendChat("合成完毕");
+
+                            if(recipeBox[0].matches(<astralsorcery:blockaltar>)) {
                                 server.commandManager.executeCommand(server, "astralsorcery research " ~ playerName ~ " BASIC_CRAFT");
                             }
+                        }
 
-                            world.getPlayerByName(playerName).sendChat("合成完毕");
-                        }           
+                        item.mutable().shrink(1);
+                        world.setBlockState(<blockstate:minecraft:air>, pos);
+                        EventUtils.spawnItem(world, recipeBox[0], pos.up());
                     }
                 }
             }

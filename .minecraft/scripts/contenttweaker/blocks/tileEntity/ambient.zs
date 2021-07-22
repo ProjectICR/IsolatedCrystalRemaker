@@ -19,9 +19,9 @@ teSL.onTick = function(tileEntity, world, pos) {
     }
 
     if(!world.remote && !world.dayTime && !isNull(data.hasMana) && data.hasMana.asBool()) {
-        tileEntity.updateCustomData({worldTime : (data.worldTime.asInt() + 1)});
+        tileEntity.updateCustomData({worldTime : data.worldTime.asInt() + 1});
 
-        if(data.worldTime.asInt() != 0 && data.worldTime % 1200 == 0) {
+        if(data.worldTime.asInt() != 0 && data.worldTime >= 1200) {
             world.setBlockState(<block:astralsorcery:fluidblockliquidstarlight>, pos);
         }
     }
@@ -31,21 +31,20 @@ teSL.register();
 var ambient as Block = VanillaFactory.createExpandBlock("ambient_block", <blockmaterial:leaves>);
 ambient.tileEntity = teSL;
 ambient.onBlockActivated = function(world, pos, state, player, hand, facing, blockHit) {
-    var mainHand as IEntityEquipmentSlot = IEntityEquipmentSlot.mainHand();
-    var mainHandItem as IItemStack = player.getItemInSlot(mainHand);
+    var activeHand as IEntityEquipmentSlot = player.activeHand;
+    var mainHandItem as IItemStack = player.getItemInSlot(activeHand);
+    var mana as IData = mainHandItem.tag.mana;
 
-    if(player.hasItemInSlot(mainHand) && mainHandItem.definition.id == "botania:manatablet" && !isNull(mainHandItem.tag.mana)) {
-        var manaCapacity as int = mainHandItem.tag.mana.asInt();
-        var hasMana as IData = {hasMana : true as bool};
+    if(player.hasItemInSlot(activeHand) && mainHandItem.definition.id == "botania:manatablet" && !isNull(mana)) {
+        var manaCapacity as int = mana.asInt();
         var tile as TileEntityInGame = world.getCustomTileEntity(pos);
 
         if(!world.remote && manaCapacity >= 10000 && isNull(tile.data.hasMana)) {
-            if(!isNull(mainHandItem.tag.creative) || player.creative) {
-                tile.updateCustomData(hasMana);
-            } else {
-                mainHandItem.mutable().withTag({mana : (manaCapacity - 10000)});
-                tile.updateCustomData(hasMana);
+            if(isNull(mainHandItem.tag.creative) || !player.creative) {
+                mainHandItem.mutable().updateTag({mana : manaCapacity - 10000});
             }
+
+            tile.updateCustomData({hasMana : true as bool});
             return true;
         }
     }

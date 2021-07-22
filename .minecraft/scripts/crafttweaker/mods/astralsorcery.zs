@@ -1,10 +1,10 @@
+#priority 5
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 import mods.astralsorcery.Altar;
 import mods.inworldcrafting.FluidToItem;
-
 
 FluidToItem.transform(<astralsorcery:blockmarble>, <fluid:astralsorcery.liquidstarlight>, [<minecraft:stone>], false);
 

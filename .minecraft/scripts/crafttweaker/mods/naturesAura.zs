@@ -1,3 +1,4 @@
+#priority 5
 #loader crafttweaker
 import mods.naturesaura.Altar;
 import mods.naturesaura.TreeRitual;

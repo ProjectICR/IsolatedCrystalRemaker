@@ -1,5 +1,4 @@
 #priority -1
-#
 #loader crafttweaker reloadableevents
 import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;

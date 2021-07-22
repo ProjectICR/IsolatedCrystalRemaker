@@ -159,6 +159,8 @@ fuel                                              (pneumaticcraft:fluid.fuel)   
 kerosene                                          (pneumaticcraft:fluid.kerosene)                                                  = 煤油
 diesel                                            (pneumaticcraft:fluid.diesel)                                                    = 柴油
 lubricant                                         (pneumaticcraft:fluid.lubricant)                                                 = 润滑油
+matter_plasma                                     (matteroverdrive:matter_plasma)                                                  = 等离子物质
+molten_tritanium                                  (matteroverdrive:molten_tritanium)                                               = 熔融三钛合金
 nutrient_distillation                             (enderio:block_fluid_nutrient_distillation)                                      = 营养精华液
 ender_distillation                                (enderio:block_fluid_ender_distillation)                                         = 深渊露水
 vapor_of_levity                                   (enderio:block_fluid_vapor_of_levity)                                            = 轻盈之气
@@ -191,3 +193,4 @@ draconium                                         (jaopca:fluid_moltendraconium)
 mithril                                           (jaopca:fluid_moltenmithril)                                                     = 熔融秘银
 osmium                                            (jaopca:fluid_moltenosmium)                                                      = 熔融锇
 titanium                                          (jaopca:fluid_moltentitanium)                                                    = 熔融钛
+tritanium                                         (jaopca:fluid_moltentritanium)                                                   = 熔融Tritanium

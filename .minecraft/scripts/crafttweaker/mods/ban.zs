@@ -1,3 +1,4 @@
+#priority 10
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 

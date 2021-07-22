@@ -1,3 +1,4 @@
+#priority 5
 #loader crafttweaker
 import mods.thaumcraft.Crucible;
 

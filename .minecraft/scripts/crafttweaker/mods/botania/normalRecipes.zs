@@ -3,16 +3,11 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-import mods.botania.Apothecary;
+
 import mods.botania.ManaInfusion;
 
 import scripts.grassUtils.RecipeUtils;
 
-
-function apothecaryRecipeTweak(output as IItemStack, input as IIngredient[]) {
-    Apothecary.removeRecipe(output);
-    Apothecary.addRecipe(output, input);
-}
 
 var livingrock as IItemStack = <botania:livingrock>;
 
@@ -51,14 +46,3 @@ for output, inputBox in shapedRecipes {
 for output, inputBox in shapelessRecipes {
     RecipeUtils.recipeTweak(false, output, inputBox);
 }
-
-
-ManaInfusion.addAlchemy(<minecraft:double_plant>, <botania:petal:4> * 4, 150);
-
-apothecaryRecipeTweak(<botania:specialflower>.withTag({type: "endoflame"}), 
-    [<ore:petalRed>, <ore:petalLightGray>, <ore:powderMana>, <ore:petalLightGray>, <ore:petalLightGray>]
-);
-
-apothecaryRecipeTweak(<botania:specialflower>.withTag({type: "orechid"}),
-    [<botania:petal:4>, <botania:petal:4>, <botania:petal:7>, <botania:petal:7>, <botania:petal:14>, <botania:petal:14>, <botania:petal:13>, <botania:petal:13>]
-);

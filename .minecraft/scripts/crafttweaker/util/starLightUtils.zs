@@ -2,7 +2,6 @@
 #loader crafttweaker reloadableevents
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntity;
-import crafttweaker.util.Position3f;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlockState;
 
@@ -25,5 +24,5 @@ function getFluid() as IBlockState {
 }
 
 function getBlockPosByEntity(entity as IEntity) as IBlockPos {
-    return Position3f.create(Math.floor(entity.x), Math.floor(entity.y), Math.floor(entity.z)).asBlockPos();
+    return IBlockPos.create(Math.floor(entity.x), Math.floor(entity.y), Math.floor(entity.z));
 }

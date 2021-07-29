@@ -22,7 +22,7 @@ for material in materials {
     .build();
 }
 
-RecipeBuilder.newBuilder("type_steel_2", machineName, 400)
+RecipeBuilder.newBuilder("quenching_tempering_steel", machineName, 400)
 .addItemInput(<contenttweaker:intermediate_product>.withTag({type : "steel_ingot" as string} + isQuenching))
 .addItemOutput(<contenttweaker:intermediate_product>.withTag({type : "steel_ingot" as string} + isQuenching + isTempering))
 .build();

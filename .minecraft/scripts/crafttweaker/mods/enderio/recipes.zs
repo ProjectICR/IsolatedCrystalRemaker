@@ -42,5 +42,3 @@ var shapedRecipes as IIngredient[][][IItemStack] = {
 for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
-
-<ore:blockGlassHardened>.remove(<enderio:block_fused_quartz>);

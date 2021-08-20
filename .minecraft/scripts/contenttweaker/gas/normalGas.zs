@@ -1,3 +1,4 @@
+#priority 100
 #loader mekatweaker
 import mods.mekatweaker.GasFactory;
 import mods.mekatweaker.Gas;

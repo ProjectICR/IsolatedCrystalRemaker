@@ -5,9 +5,18 @@
 
 #configs
 !/.minecraft/config/
+/.minecraft/config/jei/bookmarks.ini
+/.minecraft/config/jei/worldSettings.cfg
+/.minecraft/config/InvTweaks/InvTweaks.cfg
+/.minecraft/config/astralsorcery/amulet_enchantments.cfg
+/.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
+/.minecraft/config/AppliedEnergistics2/items.csv
+/.minecraft/config/AppliedEnergistics2/VersionChecker.cfg
+/.minecraft/config/thaumicjei_itemstack_aspects.json
+/.minecraft/config/splash.properties
 
 #repo stuff
-!/.gtihub
+!/.github
 !/docs
 !/README.md
 !/build.sh
@@ -21,6 +30,7 @@
 !/.minecraft/scripts
 !/.minecraft/structures
 !/.minecraft/oresources
+!/.minecraft/mods/randomtweaker*.jar
 
 #pack stuff
 /instance.cfg

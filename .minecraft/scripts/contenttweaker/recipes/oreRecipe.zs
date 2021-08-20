@@ -1,7 +1,17 @@
+#priority 5
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+
+import mods.ic2.Macerator;
+import mods.ic2.MetalFormer;
+import mods.ic2.BlockCutter;
+import mods.enderio.SagMill;
+import mods.mekanism.crusher;
+import mods.extrautils2.Crusher;
+import mods.thermalexpansion.Compactor;
+import mods.appliedenergistics2.Grinder;
 
 import scripts.grassUtils.RecipeUtils.createCross;
 import scripts.grassUtils.RecipeUtils.createFull3;
@@ -59,13 +69,13 @@ for material, energy in materials {
     ]);
 
     furnace.addRecipe(ingot.firstItem, dust);
-    mods.ic2.Macerator.addRecipe(dust.firstItem, ingot);
-    mods.mekanism.crusher.addRecipe(ingot, dust.firstItem);
-    mods.extrautils2.Crusher.add(dust.firstItem, ingot.firstItem);
-    mods.enderio.SagMill.addRecipe([dust.firstItem], [100], ingot);
-    mods.appliedenergistics2.Grinder.addRecipe(dust.firstItem, ingot, 1);
+    Macerator.addRecipe(dust.firstItem, ingot);
+    crusher.addRecipe(ingot, dust.firstItem);
+    Crusher.add(dust.firstItem, ingot.firstItem);
+    SagMill.addRecipe([dust.firstItem], [100], ingot);
+    Grinder.addRecipe(dust.firstItem, ingot, 1);
 
-    mods.ic2.MetalFormer.addRollingRecipe(plate.firstItem, ingot);
-    mods.ic2.BlockCutter.addRecipe(plate.firstItem * 9, block, 1);
-    mods.thermalexpansion.Compactor.addPressRecipe(densePlate.firstItem, plate.firstItem * 9, energy);
+    MetalFormer.addRollingRecipe(plate.firstItem, ingot);
+    BlockCutter.addRecipe(plate.firstItem * 9, block, 1);
+    Compactor.addPressRecipe(densePlate.firstItem, plate.firstItem * 9, energy);
 }

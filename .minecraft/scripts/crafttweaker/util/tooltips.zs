@@ -1,4 +1,4 @@
-#priority 20
+#priority 10
 #loader crafttweaker
 import crafttweaker.data.IData;
 

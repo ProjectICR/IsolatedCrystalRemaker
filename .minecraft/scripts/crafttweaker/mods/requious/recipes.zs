@@ -1,9 +1,11 @@
+#priority 5
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 
 import mods.requious.AssemblyRecipe;
 
-import scripts.crafttweaker.mods.requious.essences_materializer.em;
+import scripts.grassUtils.RecipeUtils;
+import scripts.crafttweaker.mods.requious.essencesMaterializer.em;
 
 
 function addRecipe(recipes as AssemblyRecipe[]) {
@@ -46,13 +48,10 @@ var lava as AssemblyRecipe = AssemblyRecipe.create(function(container) {
 }).requireItem("input2", getCrystal("ignis") * 8)
 .requireDuration("time", 100);
 
-var recipes as AssemblyRecipe[] = [
-    stone, 
-    sapling, 
-    clay,
-    water, 
-    lava
-];
+addRecipe([stone, sapling, clay,water, lava] as AssemblyRecipe[]);
 
-
-addRecipe(recipes);
+RecipeUtils.recipeTweak(true, <requious:essences_materializer>, [
+    [getCrystal("aer"), getCrystal("ignis"), getCrystal("aer")],
+    [getCrystal("ignis"), null, getCrystal("ignis")],
+    [getCrystal("terra"), getCrystal("ignis"), getCrystal("terra")]
+]);

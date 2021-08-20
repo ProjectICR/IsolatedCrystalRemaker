@@ -1,3 +1,4 @@
+#priority 5
 #loader crafttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -41,5 +42,3 @@ var shapedRecipes as IIngredient[][][IItemStack] = {
 for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
 }
-
-<ore:blockGlassHardened>.remove(<enderio:block_fused_quartz>);

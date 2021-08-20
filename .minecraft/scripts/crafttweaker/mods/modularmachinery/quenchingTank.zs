@@ -30,7 +30,7 @@ for material in materials {
     .build();
 }
 
-RecipeBuilder.newBuilder("type_steel_1", machineName, 600)
+RecipeBuilder.newBuilder("quenching_steel", machineName, 600)
 .addItemInput(<ore:hotIngotSteel>)
 .addItemOutput(<contenttweaker:intermediate_product>.withTag({type : "steel_ingot" as string} + isQuenching))
 .build();

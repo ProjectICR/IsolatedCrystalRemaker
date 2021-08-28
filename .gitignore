@@ -30,7 +30,7 @@
 !/.minecraft/scripts
 !/.minecraft/structures
 !/.minecraft/oresources
-!/.minecraft/mods/randomtweaker*.jar
+!/.minecraft/mods/icrutils*.jar
 
 #pack stuff
 /instance.cfg

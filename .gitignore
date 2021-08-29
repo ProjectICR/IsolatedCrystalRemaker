@@ -1,4 +1,6 @@
 #Whitelist
+/*
+!/.minecraft
 /.minecraft/*
 
 #configs

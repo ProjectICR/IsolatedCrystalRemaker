@@ -1,6 +1,4 @@
 #Whitelist
-/*
-!/.minecraft
 /.minecraft/*
 
 #configs
@@ -14,23 +12,20 @@
 /.minecraft/config/AppliedEnergistics2/VersionChecker.cfg
 /.minecraft/config/thaumicjei_itemstack_aspects.json
 /.minecraft/config/splash.properties
+/.minecraft/config/ThermalTinkering/fluids.txt
+/.minecraft/config/IC2.ini
 
 #repo stuff
 !/.github
-!/docs
 !/README.md
-!/build.sh
-!/icon.png
-!/.gitignore
 !/runners
 
 #other stuff
 /.minecraft/scripts/.zsrc
 !/.minecraft/resources
 !/.minecraft/scripts
-!/.minecraft/structures
 !/.minecraft/oresources
-!/.minecraft/mods/icrutils*.jar
+!/.minecraft/patchouli_books
 
 #pack stuff
 /instance.cfg
@@ -38,3 +33,6 @@
 !/modlist.html
 !/manifest.json
 !/.minecraft/icon.png
+
+#utils mod
+!/.minecraft/mods/icrutils-1.0.jar

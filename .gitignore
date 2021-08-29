@@ -39,4 +39,4 @@
 #utils mod
 !/.minecraft/mods
 /.minecraft/mods/*
-!/.minecraft/mods/icrutils-1.0.jar
+!/.minecraft/mods/icrutils*.jar

@@ -1,14 +1,12 @@
 #loader contenttweaker
 #priority 29998
-import crafttweaker.text.ITextComponent;
-
 import scripts.grassUtils.LoggerCot as Logger;
 
 static pi as double = 3.14159265358979324;
 static e as double =  2.71828182845904524;
 
 function i18n(key as string) as string {
-    return ITextComponent.fromTranslation(key);
+    return game.localize(key);
 }
 
 function i18nValued(key as string, values as string[]) as string {

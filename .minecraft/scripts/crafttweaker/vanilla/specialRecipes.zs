@@ -10,7 +10,7 @@ recipes.addShaped("recipe_shares_time", <minecraft:shears>, [
 ], function(out, ins, cInfo) {
     var data as IData = cInfo.player.data.PlayerPersisted;
 
-    return cInfo.player.health > 19.5 && (isNull(data) || (isNull(data.shares_time) || !isNull(data.shares_time) && data.shares_time.asInt() <= 3)) ? out : null;
+    return cInfo.player.health > 19.5 && (isNull(data) || (isNull(data.shares_time) || (!isNull(data.shares_time) && data.shares_time.asInt() <= 3))) ? out : null;
 }, function(out, cInfo, player) {
     var data as IData = player.data.PlayerPersisted;
 

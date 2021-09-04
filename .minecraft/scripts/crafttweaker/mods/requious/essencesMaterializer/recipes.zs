@@ -29,7 +29,7 @@ var mutton as AssemblyRecipe = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output", <minecraft:mutton> * 2);
 }).requireItem("input1", getCrystal("victus"))
 .requireItem("input2", getCrystal("terra"))
-.requireDuration("time", 100);
+.requireDuration("time", 200);
 
 var water as AssemblyRecipe = AssemblyRecipe.create(function(container) {
     container.addFluidOutput("output", <liquid:water> * 1000);

@@ -5,8 +5,8 @@ import mods.requious.SlotVisual;
 import mods.requious.ComponentFace;
 
 
-var allFace as ComponentFace = ComponentFace.all();
 var itemSlotVisual as SlotVisual = SlotVisual.itemSlot();
+var allFace as ComponentFace = ComponentFace.all();
 static ef as Assembly = <assembly:essences_fusion>;
 
 ef.setItemSlot(2, 2, allFace, 64)

@@ -176,5 +176,55 @@
         "y2": 1.2,
         "z2": 1.0
       }
+    },
+    {
+      "placeType": "Up",
+      "layerType": "Cutout",
+      "hasGUI": true,
+      "resourceName": "essences_fusion",
+      "model" : "isolated_crystal_remaker:essences_fusion",
+      "colors": [
+        {
+          "r": 151,
+          "g": 255,
+          "b": 255,
+          "a": 255
+        }
+      ],
+      "hardness": 5.0,
+      "blastResistance": 5.0,
+      "aabb": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "z1": 0.0,
+        "x2": 1.0,
+        "y2": 1.5,
+        "z2": 1.0
+      }
+    },
+    {
+      "placeType": "Up",
+      "layerType": "Cutout",
+      "hasGUI": false,
+      "resourceName": "fusion_table",
+      "model" : "isolated_crystal_remaker:fusion_table",
+      "colors": [
+        {
+          "r": 151,
+          "g": 255,
+          "b": 255,
+          "a": 255
+        }
+      ],
+      "hardness": 5.0,
+      "blastResistance": 5.0,
+      "aabb": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "z1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "z2": 1.0
+      }
     }
 ]

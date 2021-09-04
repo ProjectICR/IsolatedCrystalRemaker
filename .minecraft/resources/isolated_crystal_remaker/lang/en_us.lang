@@ -14,12 +14,13 @@ death.attack.handHeldTable=Killed by a Crafting Table XD
 
 # Machine
 tile.essences_materializer.name=Essences Materializer
+tile.essences_fusion.name=Essences Fusion
+tile.fusion_table.name=Fusion Table
 
 # JEI Recipe
 requious.jei.recipe.essences_materializer=Essences Materializer
-
-# Tooltip of Essences Materializer
-icr.tooltip.essences_materializer=
+requious.jei.recipe.essences_fusion=Essences Fusion
+requious.jei.recipe.fusion_table=Fusion Table
 
 # Intermediate Product
 icr.tooltip.info.nothing=None

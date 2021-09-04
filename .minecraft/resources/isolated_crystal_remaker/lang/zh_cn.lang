@@ -14,12 +14,13 @@ death.attack.handHeldTable=被工作台杀死啦
 
 # 机器
 tile.essences_materializer.name=元素实体化器
+tile.essences_fusion.name=元素融合器
+tile.fusion_table.name=融合台
 
 # JEI 配方
 requious.jei.recipe.essences_materializer=元素实体化器
-
-# 元素实体化器的提示
-icr.tooltip.essences_materializer=摆放在机器里的物品的位置需要与配方内的物品的位置保持一致
+requious.jei.recipe.essences_fusion=元素融合器
+requious.jei.recipe.fusion_table=融合台
 
 # 中间产物
 icr.tooltip.info.nothing=无

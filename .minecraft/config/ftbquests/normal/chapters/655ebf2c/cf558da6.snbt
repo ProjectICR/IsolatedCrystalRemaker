@@ -1,0 +1,66 @@
+{
+	title: "step three:淬火",
+	x: 6.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"4312413c"
+	],
+	tasks: [{
+		uid: "46c57c28",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:quenching_tank"
+			}
+		}]
+	},
+	{
+		uid: "140aa0c5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "cfb6c317",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}]
+	},
+	{
+		uid: "d7692c11",
+		type: "item",
+		items: [{
+			item: "ic2:refractory_bricks"
+		}],
+		count: 23L
+	},
+	{
+		uid: "427455d5",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_slab 1 4"
+		}],
+		count: 20L
+	},
+	{
+		uid: "b2dc6a89",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch 1 1"
+		}]
+	},
+	{
+		uid: "0b8a6831",
+		type: "item",
+		items: [{
+			item: "minecraft:glass"
+		}],
+		count: 2L
+	}]
+}

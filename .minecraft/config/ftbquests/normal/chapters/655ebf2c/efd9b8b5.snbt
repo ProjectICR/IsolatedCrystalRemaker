@@ -1,0 +1,67 @@
+{
+	title: "step one：煅烧铁矿石",
+	x: 0.5d,
+	y: -1.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"69c62f46"
+	],
+	tasks: [{
+		uid: "865e93d0",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:casting_oven"
+			}
+		}]
+	},
+	{
+		uid: "c41db0f2",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "1c530f9b",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_slab 1 4"
+		}],
+		count: 8L
+	},
+	{
+		uid: "f94dd0a5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "50db7dd0",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "79eed7e9",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 1"
+		}]
+	},
+	{
+		uid: "3099da88",
+		type: "item",
+		items: [{
+			item: "ic2:refractory_bricks"
+		}],
+		count: 14L
+	}]
+}

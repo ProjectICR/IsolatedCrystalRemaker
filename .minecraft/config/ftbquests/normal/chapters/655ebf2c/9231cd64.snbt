@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: -1.0d,
+	dependencies: [
+		"2d19ac55"
+	],
+	tasks: [{
+		uid: "66fd527f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:wroughtiron_plate"
+		}]
+	}]
+}

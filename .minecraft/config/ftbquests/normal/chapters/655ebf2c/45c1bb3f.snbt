@@ -1,0 +1,79 @@
+{
+	title: "step two：锤锻",
+	x: 2.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"efd9b8b5"
+	],
+	tasks: [{
+		uid: "1ca60975",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:forging_hammer_machine"
+			}
+		}]
+	},
+	{
+		uid: "a83fea54",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "fa1cac1b",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}]
+	},
+	{
+		uid: "167863ea",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_slab 1 4"
+		}]
+	},
+	{
+		uid: "9bbb9b1a",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 1"
+		}]
+	},
+	{
+		uid: "a9771a71",
+		type: "item",
+		items: [{
+			item: "minecraft:brick_stairs"
+		}],
+		count: 4L
+	},
+	{
+		uid: "7a4a81d0",
+		type: "item",
+		items: [{
+			item: "ic2:refractory_bricks"
+		}]
+	},
+	{
+		uid: "b15b73fb",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing"
+		}],
+		count: 2L
+	},
+	{
+		uid: "eebf4cd7",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
+	}]
+}

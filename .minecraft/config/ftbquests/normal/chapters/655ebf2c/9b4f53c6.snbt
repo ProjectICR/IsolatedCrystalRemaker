@@ -1,0 +1,21 @@
+{
+	title: "一氧化碳的来源",
+	x: 12.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9231cd64"
+	],
+	tasks: [{
+		uid: "93f53939",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:carbon_monoxide_generator"
+			}
+		}]
+	}]
+}

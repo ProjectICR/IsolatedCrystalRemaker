@@ -1,0 +1,66 @@
+{
+	title: "step four:回火",
+	x: 8.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"cf558da6"
+	],
+	tasks: [{
+		uid: "80b0b206",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:tempering_furnace"
+			}
+		}]
+	},
+	{
+		uid: "12e00654",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "35ae12c3",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_slab 1 4"
+		}],
+		count: 4L
+	},
+	{
+		uid: "3b5effe7",
+		type: "item",
+		items: [{
+			item: "ic2:refractory_bricks"
+		}],
+		count: 16L
+	},
+	{
+		uid: "7e960f8f",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "91e99672",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 2"
+		}]
+	},
+	{
+		uid: "f8caa0d5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 1"
+		}]
+	}]
+}

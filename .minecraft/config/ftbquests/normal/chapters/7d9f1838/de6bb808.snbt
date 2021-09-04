@@ -13,9 +13,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "4f38a677",
+		uid: "e3cf124f",
 		type: "item",
 		item: "minecraft:apple",
-		count: 4
+		count: 16
 	}]
 }

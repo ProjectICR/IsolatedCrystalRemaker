@@ -1,0 +1,25 @@
+{
+	title: "模块化多方块",
+	x: -1.5d,
+	y: -1.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"310b07ca"
+	],
+	tasks: [{
+		uid: "356dd63f",
+		type: "item",
+		items: [{
+			item: "modularmachinery:itemmodularium"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "36e97d0a",
+		type: "item",
+		item: "modularmachinery:itemmodularium",
+		count: 32
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "高炉",
+	x: 12.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9231cd64"
+	],
+	tasks: [{
+		uid: "c1839230",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:blast_furnace"
+			}
+		}]
+	}]
+}

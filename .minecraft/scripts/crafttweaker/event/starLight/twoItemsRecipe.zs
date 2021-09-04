@@ -9,7 +9,7 @@ import crafttweaker.entity.IEntityItem;
 import crafttweaker.event.WorldTickEvent;
 
 import scripts.grassUtils.EventUtils;
-import scripts.crafttweaker.util.starLightUtils;
+import scripts.crafttweaker.util.StarLightUtils;
 
 
 var twoItemRecipe as IItemStack[][int] = {
@@ -25,10 +25,10 @@ events.onWorldTick(function(event as WorldTickEvent) {
         for entityItem in world.getEntityItems() {
             var item as IItemStack = entityItem.item;
             var nbt as IData = entityItem.nbt.ForgeData;
-            var pos as IBlockPos = starLightUtils.getBlockPosByEntity(entityItem);
+            var pos as IBlockPos = StarLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in twoItemRecipe {
-                if(world.getBlockState(pos) == starLightUtils.getFluid() && recipeBox[2].matches(item)) {
+                if(world.getBlockState(pos) == StarLightUtils.getFluid() && recipeBox[2].matches(item)) {
 
                     if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
                         entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});
@@ -49,9 +49,9 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     }
 
                     for entity in world.getEntitiesInArea(pos.asPosition3f()) {
-                        var otherPos as IBlockPos = starLightUtils.getBlockPosByEntity(entity);
+                        var otherPos as IBlockPos = StarLightUtils.getBlockPosByEntity(entity);
 
-                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == starLightUtils.getFluid()) {
+                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == StarLightUtils.getFluid()) {
                             var otherItem as IEntityItem = entity;
 
                             if(recipeBox[3].matches(otherItem.item) && (isNull(nbt.needMaterial) || !isNull(nbt.needMaterial) && nbt.needMaterial.asBool())) {

@@ -8,7 +8,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.event.WorldTickEvent;
 
 import scripts.grassUtils.EventUtils;
-import scripts.crafttweaker.util.starLightUtils;
+import scripts.crafttweaker.util.StarLightUtils;
 
 
 var oneItemRecipe as IItemStack[][int] = {
@@ -25,10 +25,10 @@ events.onWorldTick(function(event as WorldTickEvent) {
         for entityItem in world.getEntityItems() {
             var item as IItemStack = entityItem.item;
             var nbt as IData = entityItem.nbt.ForgeData;
-            var pos as IBlockPos = starLightUtils.getBlockPosByEntity(entityItem);
+            var pos as IBlockPos = StarLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in oneItemRecipe {
-                if(world.getBlockState(pos) == starLightUtils.getFluid() && recipeBox[1].matches(item) && !<minecraft:stone>.matches(item)) {
+                if(world.getBlockState(pos) == StarLightUtils.getFluid() && recipeBox[1].matches(item) && !<minecraft:stone>.matches(item)) {
 
                     if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
                         entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});

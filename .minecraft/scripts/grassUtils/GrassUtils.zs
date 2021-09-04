@@ -1,5 +1,7 @@
 #priority 29998
 #loader crafttweaker reloadableevents
+import crafttweaker.text.ITextComponent;
+
 import scripts.grassUtils.RecipeUtils;
 import scripts.grassUtils.Logger;
 
@@ -10,8 +12,8 @@ function loggerRecipes() {
     Logger.sendInfo("Have Tweaked " ~ RecipeUtils.tweakedRecipesAmount ~ " recipes!");
 }
 
-function i18n(key as string) as string{
-    return game.localize(key);
+function i18n(key as string) as string {
+    return ITextComponent.fromTranslation(key);
 }
 
 function i18nValued(key as string, values as string[]) as string {

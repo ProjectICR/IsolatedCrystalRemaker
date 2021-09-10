@@ -3,6 +3,7 @@
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
 import crafttweaker.util.IRandom;
+import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityLivingBase;
 
 import crafttweaker.event.EntityLivingDeathDropsEvent;
@@ -15,7 +16,7 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     var amount as int = random.nextInt(1, 4);
     var nbt as IData = entity.nbt.ForgeData;
 
-    if(!world.remote && !isNull(entity.definition) && entity.definition.id == "minecraft:sheep" && !isNull(nbt) && !isNull(nbt.fusion)) {
+    if(!world.remote && !entity instanceof IPlayer && !isNull(nbt) && !isNull(nbt.fusion)) {
         event.drops = [<minecraft:bone>.withAmount(amount).createEntityItem(world, entity.position3f)];
         
         if(random.nextDouble() > 0.75) {

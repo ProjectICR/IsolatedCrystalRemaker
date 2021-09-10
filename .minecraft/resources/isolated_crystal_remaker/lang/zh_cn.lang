@@ -9,6 +9,9 @@ icr.text.info.crystal.aqua=
 icr.text.info.crystal.ordo=
 icr.text.info.crystal.perditio=
 
+#信息
+icr.recipe.info.sheep=将生成一只羊
+
 # 伤害来源
 death.attack.handHeldTable=被工作台杀死啦
 

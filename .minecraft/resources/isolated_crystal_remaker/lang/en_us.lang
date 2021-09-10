@@ -9,6 +9,9 @@ icr.text.info.crystal.aqua=
 icr.text.info.crystal.ordo=
 icr.text.info.crystal.perditio=
 
+# Info
+icr.recipe.info.sheep=Will Spawn sheep
+
 # damageSource
 death.attack.handHeldTable=Killed by a Crafting Table XD
 

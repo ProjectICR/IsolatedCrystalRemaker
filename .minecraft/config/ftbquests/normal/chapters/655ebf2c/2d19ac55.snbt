@@ -1,9 +1,9 @@
 {
-	title: "step four:回火",
+	title: "{icr.quests.2d19ac55.title}",
 	x: 8.5d,
 	y: -2.5d,
 	text: [
-		""
+		"{icr.quests.2d19ac55.text.1}"
 	],
 	dependencies: [
 		"cf558da6"

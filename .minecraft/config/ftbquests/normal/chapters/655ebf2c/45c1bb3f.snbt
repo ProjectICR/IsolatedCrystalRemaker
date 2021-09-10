@@ -1,9 +1,9 @@
 {
-	title: "step two：锤锻",
+	title: "{icr.quests.45c1bb3f.title}",
 	x: 2.5d,
 	y: -2.5d,
 	text: [
-		""
+		"{icr.quests.45c1bb3f.text.1}"
 	],
 	dependencies: [
 		"efd9b8b5"

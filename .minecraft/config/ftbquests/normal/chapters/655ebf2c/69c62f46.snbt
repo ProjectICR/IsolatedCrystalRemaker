@@ -1,9 +1,9 @@
 {
-	title: "模块化多方块",
+	title: "{icr.quests.69c62f46.title}",
 	x: -1.5d,
 	y: -1.5d,
 	text: [
-		""
+		"{icr.quests.69c62f46.text.1}"
 	],
 	dependencies: [
 		"310b07ca"

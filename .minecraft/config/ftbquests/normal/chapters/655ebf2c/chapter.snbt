@@ -1,5 +1,5 @@
 {
-	title: "大炼钢铁",
+	title: "{icr.quests.655ebf2c.title}",
 	icon: "thermalfoundation:material 1 160",
 	always_invisible: false,
 	group: 0,

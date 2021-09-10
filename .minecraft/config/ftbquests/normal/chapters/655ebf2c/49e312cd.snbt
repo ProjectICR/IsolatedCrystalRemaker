@@ -1,9 +1,9 @@
 {
-	title: "高炉",
+	title: "{icr.quests.49e312cd.title}",
 	x: 12.0d,
 	y: -1.0d,
 	text: [
-		""
+		"{icr.quests.49e312cd.text.1}"
 	],
 	dependencies: [
 		"9231cd64"

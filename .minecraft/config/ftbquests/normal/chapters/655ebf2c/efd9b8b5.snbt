@@ -1,9 +1,9 @@
 {
-	title: "step one：煅烧铁矿石",
+	title: "{icr.quests.efd9b8b5.title}",
 	x: 0.5d,
 	y: -1.5d,
 	text: [
-		""
+		"{icr.quests.efd9b8b5.text.1}"
 	],
 	dependencies: [
 		"69c62f46"

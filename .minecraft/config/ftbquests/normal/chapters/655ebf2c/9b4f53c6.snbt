@@ -1,9 +1,9 @@
 {
-	title: "一氧化碳的来源",
+	title: "{icr.quests.9b4f53c6.title}",
 	x: 12.0d,
 	y: 1.0d,
 	text: [
-		""
+		"{icr.quests.9b4f53c6.text.1}"
 	],
 	dependencies: [
 		"9231cd64"

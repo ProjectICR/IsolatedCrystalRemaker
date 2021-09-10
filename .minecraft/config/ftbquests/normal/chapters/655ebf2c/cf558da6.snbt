@@ -1,9 +1,9 @@
 {
-	title: "step three:淬火",
+	title: "{icr.quests.cf558da6.title}",
 	x: 6.5d,
 	y: -2.5d,
 	text: [
-		""
+		"{icr.quests.cf558da6.text.1}"
 	],
 	dependencies: [
 		"4312413c"

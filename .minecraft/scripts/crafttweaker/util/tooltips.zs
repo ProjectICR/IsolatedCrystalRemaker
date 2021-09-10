@@ -2,6 +2,8 @@
 #loader crafttweaker
 import crafttweaker.data.IData;
 
+import mods.jei.JEI;
+
 import scripts.grassUtils.GrassUtils;
 
 
@@ -31,3 +33,5 @@ import scripts.grassUtils.GrassUtils;
 
     return GrassUtils.i18nValued("icr.tooltip.info.state", [GrassUtils.i18n("icr.tooltip.info.nothing")]);
 });
+
+JEI.addDescription(<requious:fusion_table>, GrassUtils.i18n("icr.recipe.info.sheep"));

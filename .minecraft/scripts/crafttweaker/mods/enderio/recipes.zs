@@ -35,10 +35,20 @@ var shapedRecipes as IIngredient[][][IItemStack] = {
         [<ore:gemDiamond>, <openblocks:imaginary>.withTag({Uses: 10.0 as float, Mode: 0}), <ore:gemDiamond>],
         [<enderio:item_alloy_ingot>, <enderio:item_material:1>, <enderio:item_alloy_ingot>],
         [<thermalfoundation:material:290>, <thermalfoundation:material:513>, <thermalfoundation:material:290>]
+    ],
+};
+
+var shapelessRecipes as IIngredient[][IItemStack] = {
+    <enderio:item_material:46> : [
+        <botania:pestleandmortar>, <ore:treeLeaves>
     ]
 };
 
 
 for output, inputBox in shapedRecipes {
     RecipeUtils.recipeTweak(true, output, inputBox);
+}
+
+for output, inputBox in shapelessRecipes {
+
 }

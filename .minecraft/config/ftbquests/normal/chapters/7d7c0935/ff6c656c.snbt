@@ -1,9 +1,9 @@
 {
-	title: "元素融合",
+	title: "{icr.quests.ff6c656c.title}",
 	x: -13.5d,
 	y: -4.0d,
 	text: [
-		""
+		"{icr.quests.ff6c656c.text.1}"
 	],
 	tasks: [{
 		uid: "5a70bf28",

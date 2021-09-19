@@ -1,9 +1,9 @@
 {
-	title: "融合！",
+	title: "{icr.quests.544159c8.title}",
 	x: -8.5d,
 	y: -2.5d,
 	text: [
-		""
+		"{icr.quests.544159c8.text.1}"
 	],
 	dependencies: [
 		"9b71d884"

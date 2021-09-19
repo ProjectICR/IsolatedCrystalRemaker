@@ -1,9 +1,9 @@
 {
-	title: "禁忌：人体炼成",
+	title: "{icr.quests.900beff1.title}",
 	x: -11.0d,
 	y: -4.0d,
 	text: [
-		""
+		"{icr.quests.900beff1.text.1}"
 	],
 	dependencies: [
 		"ff6c656c"

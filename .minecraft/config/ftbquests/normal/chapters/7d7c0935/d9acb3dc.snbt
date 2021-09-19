@@ -1,9 +1,9 @@
 {
-	title: "替罪羊",
+	title: "{icr.quests.d9acb3dc.title}",
 	x: -5.5d,
 	y: -2.5d,
 	text: [
-		""
+		"{icr.quests.d9acb3dc.text.1}"
 	],
 	dependencies: [
 		"544159c8"

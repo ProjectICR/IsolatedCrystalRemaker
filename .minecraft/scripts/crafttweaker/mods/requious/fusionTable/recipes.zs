@@ -80,7 +80,7 @@ function setEmptyToTile(world as IWorld, pos as IBlockPos) as bool {
         if(isNull(tile)) {
             return false;
         } else {
-            tile.setStackInInv(null);
+            tile.setStackInInventory(null);
         }
     }
     return true;

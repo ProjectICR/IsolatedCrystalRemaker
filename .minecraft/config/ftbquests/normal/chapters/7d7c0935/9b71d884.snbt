@@ -1,0 +1,14 @@
+{
+	x: -11.0d,
+	y: -2.5d,
+	dependencies: [
+		"900beff1"
+	],
+	tasks: [{
+		uid: "0e30cf64",
+		type: "item",
+		items: [{
+			item: "minecraft:mutton"
+		}]
+	}]
+}

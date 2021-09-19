@@ -1,0 +1,24 @@
+{
+	title: "禁忌：人体炼成",
+	x: -11.0d,
+	y: -4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"ff6c656c"
+	],
+	tasks: [{
+		uid: "33617443",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "victus"
+				}]
+			}
+		}]
+	}]
+}

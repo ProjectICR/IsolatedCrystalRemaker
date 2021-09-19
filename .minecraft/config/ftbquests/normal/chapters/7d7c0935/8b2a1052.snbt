@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	dependencies: [
+		"73407557"
+	],
+	tasks: [{
+		uid: "bdb42333",
+		type: "item",
+		items: [{
+			item: "forestry:fertilizer_compound"
+		}]
+	}]
+}

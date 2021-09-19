@@ -1,0 +1,17 @@
+{
+	title: "替罪羊",
+	x: -5.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"544159c8"
+	],
+	tasks: [{
+		uid: "bf4b0f85",
+		type: "kill",
+		entity: "minecraft:sheep",
+		value: 1L
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "融合！",
+	x: -8.5d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9b71d884"
+	],
+	tasks: [{
+		uid: "24e4bfcd",
+		type: "item",
+		items: [{
+			item: "requious:fusion_table"
+		}]
+	}]
+}

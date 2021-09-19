@@ -23,8 +23,9 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
         if(isNull(playerData.FirstGet) || isNull(playerData.FirstGet.memberGet(key))) {
             var message as string = GrassUtils.i18n("icr.text.info.crystal." ~ key);
 
-            if(!isNull(message)) 
+            if(!isNull(message)) {
                 player.sendChat(message);
+            }
         }
 
         player.update(data);

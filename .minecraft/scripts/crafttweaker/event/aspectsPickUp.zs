@@ -21,9 +21,10 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
         var data as IData = fromJson('{"PlayerPersisted" : {FirstGet : {"' + key + '" : true}}}');
 
         if(isNull(playerData.FirstGet) || isNull(playerData.FirstGet.memberGet(key))) {
-            var message as string = GrassUtils.i18n("icr.text.info.crystal." ~ key);
+            var langkey as string = "icr.text.info.crystal." ~ key;
+            var message as string = GrassUtils.i18n(langkey);
 
-            if(!isNull(message)) {
+            if(!isNull(message) || message != "" || message == langkey) {
                 player.sendChat(message);
             }
         }

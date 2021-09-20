@@ -5,7 +5,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.block.IBlock;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
-import crafttweaker.damage.IDamageSource;
+import crafttweaker.recipes.ICraftingInventory;
 
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -20,27 +20,27 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent){
 	var player as IPlayer = event.player;
 	var world as IWorld = player.world;
 	var data as IData = player.data.openHeldTabGui;
-	var heldItem as IItemStack = player.currentItem;
+	var inventory as ICraftingInventory = event.inventory;
 
-	if(!world.remote && !isNull(heldItem) && isHandHeldTable(heldItem) && !isNull(data) && data.asBool()) {
+	if(!world.remote && inventory.width != 2 && inventory.height != 2 && !isNull(data) && data.asBool()) {
 		player.attackEntityFrom(<damageSource:handHeldTable>, 10);
 	}
 });
 
 events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
 	var block as IBlock = event.block;
+	var player as IPlayer = event.player;
 	var heldItem as IItemStack = event.item;
 
 	if(!event.world.remote && isHandHeldTable(heldItem)) {
-		event.player.update({openHeldTabGui : true as bool});
+		player.update({openHeldTabGui : true as bool});
 	}
 });
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
-	var item as IItemStack = event.item;
 	var block as IBlock = event.block;
 
-	if(!event.world.remote && !isNull(item) && isHandHeldTable(item) && isCraftingTab(block)) {
+	if(!event.world.remote && isCraftingTab(block)) {
 		event.player.update({openHeldTabGui : false as bool});
 	}
 });

@@ -48,25 +48,25 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 				item.mutable().shrink(1);
 				world.setBlockState(output, pos);
 				player.update({PlayerPersisted : {Get : {aqua : (dataAqua + 1)}}});
-				EventUtils.spawnItem(world, getCrystal("aura"), pos.up());
+				EventUtils.spawnItem(world, getCrystal("aqua"), pos.up());
+				break;
 			}
-			break;
 		}
 
-		for input, outputs in crystal_essence {
-			for output in outputs {
-				if(output.block.definition.id == block.definition.id) {
-					var dataNow as int = player.data.PlayerPersisted.Get.memberGet(input).asInt();
+		for output, inputBlocks in crystal_essence {
+			for inputBlock in inputBlocks {
+				if(inputBlock.block.definition.id == block.definition.id) {
+					var dataNow as int = player.data.PlayerPersisted.Get.memberGet(output).asInt();
 
 					if(dataNow < 25) {
-						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + input + '" : ' + (dataNow + 1) + '}}}');
+						var dataModify as IData = fromJson('{"PlayerPersisted" : {Get : {"' + output + '" : ' + (dataNow + 1) + '}}}');
 
 						item.mutable().shrink(1);
 						player.update(dataModify);
-						EventUtils.spawnItem(world, getCrystal(input), pos.up());
+						EventUtils.spawnItem(world, getCrystal(output), pos.up());
 					}
+					break;
 				}
-				break;
 			}
 		}
 	}

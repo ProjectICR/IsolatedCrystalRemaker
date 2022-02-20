@@ -15,13 +15,14 @@ zenClass FusionTableRecipe {
 
     zenConstructor(output as IEntityDefinition, inputs as IItemStack[], time as int) {
         if(isNull(inputs) || isNull(output) || inputs.length != 4 || getNullAmount(inputs) == 4) {
-            Logger.sendError("Create FusionTable Recipe Error");
+            Logger.sendError("Registering fusionTable recipe failed");
         } else {
             this.time = time;
             this.output = output;
             this.inputs = inputs;
             this.nullAmount = getNullAmount(inputs);
             this.langkey = "icr.recipe.info." ~ output.name.toLowerCase();
+            Logger.sendInfo("Registering fusionTable recipe for " ~ output.name.toLowerCase());
         }
     }
 

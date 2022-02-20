@@ -14,6 +14,7 @@ recipes.addShaped(getItemNameWithUnderline(<contenttweaker:ambient_block>), <con
     return ins.manatablet.hasTag && !isNull(ins.manatablet.tag.mana) && ins.manatablet.tag.mana >= 1000 ? out : null;
 }, function(out, cinfo, player) {
     if(!player.world.remote) {
-        cinfo.inventory.getStack(4).mutable().updateTag({mana : item.tag.mana.asInt() - 1000});
+        var item as IItemStack = cinfo.inventory.getStack(4);
+        item.mutable().updateTag({mana : item.tag.mana.asInt() - 1000});
     }
 });

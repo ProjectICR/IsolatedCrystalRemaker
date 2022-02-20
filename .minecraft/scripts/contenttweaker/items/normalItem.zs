@@ -7,7 +7,6 @@ var registerItems as string[] = [
     "puresi",
     "crystalsi",
 	"glass_fragment",
-    "pig_iron_billet"
 ];
 
 for name in registerItems {

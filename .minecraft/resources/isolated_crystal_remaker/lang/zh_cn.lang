@@ -2,6 +2,7 @@
 icr.text.info.lava=你已经用铁和燧石右键过烈焰网啦, 不能再次右键了。
 icr.text.info.handHeldTable=小哥, 要不要苹果?
 icr.text.info.explode=想扫水绣球? 门都没有!
+icr.text.info.recipecompleted=合成完毕
 icr.text.info.crystal.aer=
 icr.text.info.crystal.terra=
 icr.text.info.crystal.ignis=
@@ -24,19 +25,3 @@ tile.fusion_table.name=融合台
 requious.jei.recipe.essences_materializer=元素实体化器
 requious.jei.recipe.essences_fusion=元素融合器
 requious.jei.recipe.fusion_table=融合台
-
-# 中间产物
-icr.tooltip.info.nothing=无
-icr.tooltip.info.state=状态 : %s
-icr.tooltip.info.only_quenching=已淬火
-icr.tooltip.info.only_tempering=已回火
-icr.localization.intermediate_product=%s的中间产物
-
-# 多方块机器
-modularmachinery.blast_furnace=高炉
-modularmachinery.casting_oven=铸铁炉
-modularmachinery.quenching_tank=淬火槽
-modularmachinery.casting_furnace=铸造炉
-modularmachinery.tempering_furnace=回火炉
-modularmachinery.forging_hammer_machine=锻造锤
-modularmachinery.carbon_monoxide_generator=一氧化碳发生器

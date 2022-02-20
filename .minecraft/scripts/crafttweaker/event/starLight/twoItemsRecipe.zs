@@ -19,7 +19,7 @@ var twoItemRecipe as IItemStack[][int] = {
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
-    var totalTime as long = world.worldInfo.worldTotalTime;
+    var totalTime as long = world.provider.worldTime;
 
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
@@ -28,7 +28,7 @@ events.onWorldTick(function(event as WorldTickEvent) {
             var pos as IBlockPos = StarLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in twoItemRecipe {
-                if(world.getBlockState(pos) == StarLightUtils.getFluid() && recipeBox[2].matches(item)) {
+                if(world.getBlockState(pos) == StarLightUtils.fluid && recipeBox[2].matches(item)) {
 
                     if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
                         entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});
@@ -40,7 +40,7 @@ events.onWorldTick(function(event as WorldTickEvent) {
                         }
 
                         if(!isNull(nbt.playerName)) {
-                            world.getPlayerByName(nbt.playerName.asString()).sendChat("合成完毕");
+                            StarLightUtils.sendChatByPlayerName(world, nbt.playerName, "icr.text.info.recipecompleted");
                         }
 
                         item.mutable().shrink(1);
@@ -51,7 +51,7 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     for entity in world.getEntitiesInArea(pos.asPosition3f()) {
                         var otherPos as IBlockPos = StarLightUtils.getBlockPosByEntity(entity);
 
-                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == StarLightUtils.getFluid()) {
+                        if(entity instanceof IEntityItem && world.getBlockState(otherPos) == StarLightUtils.fluid) {
                             var otherItem as IEntityItem = entity;
 
                             if(recipeBox[3].matches(otherItem.item) && (isNull(nbt.needMaterial) || !isNull(nbt.needMaterial) && nbt.needMaterial.asBool())) {

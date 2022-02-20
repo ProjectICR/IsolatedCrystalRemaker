@@ -19,7 +19,7 @@ var oneItemRecipe as IItemStack[][int] = {
 
 events.onWorldTick(function(event as WorldTickEvent) {
     var world as IWorld = event.world;
-    var totalTime as long = world.worldInfo.worldTotalTime;
+    var totalTime as long = world.provider.worldTime;
 
     if(!world.remote) {
         for entityItem in world.getEntityItems() {
@@ -28,7 +28,7 @@ events.onWorldTick(function(event as WorldTickEvent) {
             var pos as IBlockPos = StarLightUtils.getBlockPosByEntity(entityItem);
 
             for seconds, recipeBox in oneItemRecipe {
-                if(world.getBlockState(pos) == StarLightUtils.getFluid() && recipeBox[1].matches(item) && !<minecraft:stone>.matches(item)) {
+                if(world.getBlockState(pos) == StarLightUtils.fluid && recipeBox[1].matches(item) && !<minecraft:stone>.matches(item)) {
 
                     if(isNull(nbt) || isNull(nbt.time) || nbt.time.asLong() == 0) {
                         entityItem.setNBT({time : (totalTime + (seconds * 20)) as long});
@@ -41,8 +41,8 @@ events.onWorldTick(function(event as WorldTickEvent) {
                         if(!isNull(nbt.playerName)) {
                             var playerName as string = nbt.playerName.asString();
 
-                            world.getPlayerByName(playerName).sendChat("合成完毕");
-
+                            StarLightUtils.sendChatByPlayerName(world, playerName, "icr.text.info.recipecompleted");
+                            
                             if(recipeBox[0].matches(<astralsorcery:blockaltar>)) {
                                 server.commandManager.executeCommand(server, "astralsorcery research " ~ playerName ~ " BASIC_CRAFT");
                             }

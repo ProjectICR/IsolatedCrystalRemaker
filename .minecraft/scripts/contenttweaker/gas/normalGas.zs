@@ -3,11 +3,11 @@
 import mods.mekatweaker.GasFactory;
 import mods.mekatweaker.Gas;
 
-function addGas(name as string, path as string, needFluid as bool, needBucket as bool) {
+function addGas(name as string) {
     var gas as Gas = GasFactory.createGas(name);
-    gas.setIcon(path);
-    gas.setNeedFluid(needFluid);
-    gas.setNeedBucket(needBucket);
+    gas.setIcon("blocks/gas/" ~ name);
+    gas.setNeedFluid(true);
+    gas.setNeedBucket(true);
     gas.register();
 }
 
@@ -20,5 +20,5 @@ var gasName as string[] = [
 
 
 for gas in gasName {
-    addGas(gas, ("blocks/gas/" ~ gas), true, true);
+    addGas(gas);
 }

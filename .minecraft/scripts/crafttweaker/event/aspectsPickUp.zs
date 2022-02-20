@@ -24,7 +24,7 @@ events.onPlayerItemPickup(function(event as PlayerItemPickupEvent) {
             var langkey as string = "icr.text.info.crystal." ~ key;
             var message as string = GrassUtils.i18n(langkey);
 
-            if(!isNull(message) || message != "" || message == langkey) {
+            if(!isNull(message) || message != "" || message != langkey) {
                 player.sendChat(message);
             }
         }

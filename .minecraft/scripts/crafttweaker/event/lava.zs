@@ -35,12 +35,9 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
                 offHandItem.mutable().shrink(1);
             }
 
-            if(rightBlock.definition.id == "extrautils2:compressedcobblestone") {
-                if(!isNull(playerData.rightBlazeblock) && playerData.rightBlazeblock.asBool()) {
-
-                    world.setBlockState(<blockstate:lava>, event.position);
-                    offHandItem.mutable().shrink(1);
-                }
+            if(rightBlock.definition.id == "extrautils2:compressedcobblestone" && !isNull(playerData.rightBlazeblock) && playerData.rightBlazeblock.asBool()) {
+                world.setBlockState(<blockstate:lava>, event.position);
+                offHandItem.mutable().shrink(1);
             }
         }
     }
